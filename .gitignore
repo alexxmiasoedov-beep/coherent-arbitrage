@@ -29,6 +29,10 @@ build/
 tmp/
 .cache/
 
+# Состояние бота и журналы сделок (не коммитим)
+bot_state.json
+trades.log
+
 # IDE / ОС
 .vscode/
 .idea/
