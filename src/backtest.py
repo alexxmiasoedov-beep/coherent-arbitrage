@@ -93,20 +93,28 @@ def _simulate_pair(y_form, x_form, y_test, x_test) -> dict | None:
     }
 
 
-def run(symbols: list[str] | None = None, prices: pd.DataFrame | None = None) -> dict:
-    """Бэктест по всем парам вселенной. Возвращает агрегированные метрики и таблицу пар."""
+def run(symbols: list[str] | None = None, prices: pd.DataFrame | None = None,
+        form_bars: int | None = None, verbose: bool = True) -> dict:
+    """Бэктест по всем парам вселенной. Возвращает агрегированные метрики и таблицу пар.
+
+    form_bars — сколько первых баров отвести на формирование (оценку β/mean/σ).
+    По умолчанию config.BACKTEST_FORM_BARS.
+    """
     if prices is None:
         symbols = symbols or data.top_symbols()
-        print(f"Гружу историю по {len(symbols)} контрактам...")
+        if verbose:
+            print(f"Гружу историю по {len(symbols)} контрактам...")
         prices = data.price_matrix(symbols)
-    print(f"История: {prices.shape[0]} баров × {prices.shape[1]} контрактов.")
+    if verbose:
+        print(f"История: {prices.shape[0]} баров × {prices.shape[1]} контрактов.")
 
-    form_n = config.BACKTEST_FORM_BARS
+    form_n = form_bars if form_bars is not None else config.BACKTEST_FORM_BARS
     form = prices.iloc[:form_n]
     test = prices.iloc[form_n:]
     if len(test) < 24:
         raise ValueError("Слишком мало данных на тестовое окно — увеличь LOOKBACK.")
-    print(f"Formation: {len(form)} баров | Test (out-of-sample): {len(test)} баров")
+    if verbose:
+        print(f"Formation: {len(form)} баров | Test (out-of-sample): {len(test)} баров")
 
     from itertools import combinations
     results = []

@@ -55,6 +55,51 @@ def klines(symbol: str, interval: str | None = None, limit: int | None = None) -
     return close
 
 
+def klines_n(symbol: str, interval: str, n_bars: int, page: int = 1440) -> pd.Series:
+    """Как klines, но с пагинацией: собирает n_bars свечей несколькими запросами.
+
+    BingX отдаёт максимум ~1440 свечей за раз. Идём назад по времени через endTime,
+    пока не наберём нужное количество. Возвращает ряд цен закрытия (UTC, по возрастанию).
+    """
+    collected: dict[int, float] = {}
+    end_time: int | None = None
+    guard = 0
+    while len(collected) < n_bars and guard < 200:
+        guard += 1
+        params = {"symbol": symbol, "interval": interval, "limit": page}
+        if end_time is not None:
+            params["endTime"] = end_time
+        raw = _get("/openApi/swap/v3/quote/klines", params)
+        if not raw:
+            break
+        for c in raw:
+            collected[int(c["time"])] = float(c["close"])
+        oldest = min(int(c["time"]) for c in raw)
+        if end_time is not None and oldest >= end_time:
+            break  # не двигаемся дальше — данных больше нет
+        end_time = oldest - 1
+        time.sleep(0.25)  # бережём rate-limit
+    items = sorted(collected.items())[-n_bars:]
+    idx = pd.to_datetime([t for t, _ in items], unit="ms", utc=True)
+    return pd.Series([v for _, v in items], index=idx, name=symbol, dtype="float64")
+
+
+def price_matrix_n(symbols: list[str], interval: str, n_bars: int,
+                   min_coverage: float = 0.9) -> pd.DataFrame:
+    """price_matrix с заданным интервалом и числом баров (через пагинацию)."""
+    series = {}
+    for sym in symbols:
+        try:
+            series[sym] = klines_n(sym, interval, n_bars)
+        except Exception as e:  # noqa: BLE001
+            print(f"  ! пропуск {sym}: {e}")
+    df = pd.DataFrame(series)
+    min_len = int(min_coverage * n_bars)
+    enough = [c for c in df.columns if df[c].notna().sum() >= min_len]
+    df = df[enough].dropna(how="any")
+    return df
+
+
 def latest_price(symbol: str) -> float:
     """Текущая цена контракта."""
     data = _get("/openApi/swap/v2/quote/price", {"symbol": symbol})
