@@ -29,11 +29,16 @@ def top_symbols(n: int | None = None) -> list[str]:
     """Топ-N ликвидных перпетуальных контрактов к QUOTE по обороту за 24ч."""
     n = n or config.TOP_N_BY_VOLUME
     data = _get("/openApi/swap/v2/quote/ticker")
-    rows = [
-        d for d in data
-        if d["symbol"].endswith(f"-{config.QUOTE}")
-        and d["symbol"] not in config.EXCLUDE
-    ]
+    whitelist = getattr(config, "UNIVERSE_WHITELIST", set())
+
+    def ok(sym: str) -> bool:
+        if not sym.endswith(f"-{config.QUOTE}") or sym in config.EXCLUDE:
+            return False
+        if whitelist:                       # фильтр по белому списку базовых активов
+            return sym.split("-")[0] in whitelist
+        return True
+
+    rows = [d for d in data if ok(d["symbol"])]
     rows.sort(key=lambda d: float(d.get("quoteVolume") or 0), reverse=True)
     return [d["symbol"] for d in rows[:n]]
 

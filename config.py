@@ -12,6 +12,20 @@ EXCLUDE = {                   # стейблы и обёртки — бессм�
     "USDC-USDT", "FDUSD-USDT", "TUSD-USDT", "DAI-USDT", "USDP-USDT",
 }
 
+# Белый список настоящих ликвидных крипто-активов. Отсекает токенизированную
+# экзотику BingX (нефть/золото/акции: NCCO*, *2USD, EVAA, BEAT и т.п.), которая
+# ломала коинтеграцию. Вселенная = монеты из списка, топ по обороту.
+# Пустой set → фильтр выключен (берём всё подряд по обороту).
+UNIVERSE_WHITELIST = {
+    "BTC", "ETH", "SOL", "BNB", "XRP", "DOGE", "ADA", "AVAX", "LINK", "DOT",
+    "LTC", "BCH", "TRX", "MATIC", "POL", "ATOM", "UNI", "AAVE", "ETC", "XLM",
+    "NEAR", "APT", "ARB", "OP", "FIL", "INJ", "SUI", "TIA", "SEI", "RUNE",
+    "LDO", "RENDER", "IMX", "GRT", "ALGO", "FTM", "SAND", "MANA", "AXS", "EGLD",
+    "FLOW", "CHZ", "GALA", "ENA", "WLD", "TAO", "YFI", "MKR", "COMP", "SNX",
+    "CRV", "DYDX", "1INCH", "ENS", "PEPE", "1000PEPE", "SHIB", "1000SHIB",
+    "WIF", "BONK", "1000BONK", "JUP", "PYTH", "ONDO", "STX", "ORDI",
+}
+
 # --- Пороги коинтеграции / отбора пар ---
 COINT_PVALUE_MAX = 0.05       # тест Энгла-Грейнджера: p-value < 0.05 → коинтеграция
 MIN_HALFLIFE_H = 1            # период полураспада спреда, часы (быстрее — лучше)
