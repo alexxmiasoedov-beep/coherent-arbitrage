@@ -25,16 +25,39 @@ def _get(path: str, params: dict | None = None) -> object:
     raise RuntimeError("unreachable")
 
 
-def top_symbols(n: int | None = None) -> list[str]:
-    """Топ-N ликвидных перпетуальных контрактов к QUOTE по обороту за 24ч."""
+# Синтетика BingX (токенизированные акции/сырьё): NCCO*/NCS* и всё, что *2USD,
+# плюс токенизированное золото. Ломает коинтеграцию — отсекаем всегда.
+_SYNTH_PREFIXES = ("NCCO", "NCS")
+_SYNTH_BASES = {"XAUT", "PAXG"}
+
+
+def is_synthetic(sym: str) -> bool:
+    base = sym.split("-")[0]
+    return (
+        "2USD" in base
+        or base.startswith(_SYNTH_PREFIXES)
+        or base in _SYNTH_BASES
+    )
+
+
+def top_symbols(n: int | None = None, use_whitelist: bool | None = None) -> list[str]:
+    """Топ-N ликвидных перпетуальных контрактов к QUOTE по обороту за 24ч.
+
+    use_whitelist=None → по наличию config.UNIVERSE_WHITELIST; False → широкий
+    юниверс (все реальные монеты по обороту, синтетика всё равно отсекается).
+    """
     n = n or config.TOP_N_BY_VOLUME
     data = _get("/openApi/swap/v2/quote/ticker")
     whitelist = getattr(config, "UNIVERSE_WHITELIST", set())
+    if use_whitelist is None:
+        use_whitelist = bool(whitelist)
 
     def ok(sym: str) -> bool:
         if not sym.endswith(f"-{config.QUOTE}") or sym in config.EXCLUDE:
             return False
-        if whitelist:                       # фильтр по белому списку базовых активов
+        if is_synthetic(sym):               # токенизированные акции/сырьё — всегда мимо
+            return False
+        if use_whitelist and whitelist:      # фильтр по белому списку базовых активов
             return sym.split("-")[0] in whitelist
         return True
 

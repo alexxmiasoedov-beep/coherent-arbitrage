@@ -54,13 +54,20 @@ def half_life(s: pd.Series) -> float:
     return float(-np.log(2) / lam)
 
 
-def engle_granger_pvalue(y: pd.Series, x: pd.Series) -> float:
-    """P-value теста Энгла-Грейнджера на коинтеграцию. Меньше → сильнее коинтеграция."""
-    _, pvalue, _ = coint(y.values, x.values)
+def engle_granger_pvalue(y: pd.Series, x: pd.Series,
+                         maxlag: int | None = None, autolag: str | None = "aic") -> float:
+    """P-value теста Энгла-Грейнджера на коинтеграцию. Меньше → сильнее коинтеграция.
+
+    maxlag/autolag прокидываются в statsmodels.coint. Для быстрого скрининга по
+    длинным рядам ставим autolag=None, maxlag=1 (одна ADF-регрессия вместо перебора
+    десятков лагов — на порядок быстрее). Выживших потом точно ретестим с autolag='aic'.
+    """
+    _, pvalue, _ = coint(y.values, x.values, maxlag=maxlag, autolag=autolag)
     return float(pvalue)
 
 
-def analyze_pair(y: pd.Series, x: pd.Series, z_window: int = 0) -> dict:
+def analyze_pair(y: pd.Series, x: pd.Series, z_window: int = 0,
+                 coint_maxlag: int | None = None, coint_autolag: str | None = "aic") -> dict:
     """Полный разбор пары (y, x): p-value, beta, half-life, среднее/σ спреда, текущий z.
 
     spread_mean и spread_std сохраняются, чтобы бот считал live z-score из текущих цен:
@@ -71,7 +78,7 @@ def analyze_pair(y: pd.Series, x: pd.Series, z_window: int = 0) -> dict:
     z = zscore(s, z_window)
     current_z = float(z.dropna().iloc[-1]) if len(z.dropna()) else float("nan")
     return {
-        "pvalue": engle_granger_pvalue(y, x),
+        "pvalue": engle_granger_pvalue(y, x, maxlag=coint_maxlag, autolag=coint_autolag),
         "beta": beta,
         "half_life_h": half_life(s),
         "spread_mean": float(s.mean()),
