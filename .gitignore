@@ -29,6 +29,16 @@ build/
 tmp/
 .cache/
 
+# Большие файлы данных — кэши, датасеты (в git не идут)
+*.csv
+*.pkl
+*.pickle
+*.parquet
+*.feather
+*.h5
+data/
+datasets/
+
 # Состояние бота и журналы сделок (не коммитим)
 bot_state.json
 trades.log
