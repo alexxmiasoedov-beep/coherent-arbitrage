@@ -25,16 +25,18 @@ from statsmodels.tsa.stattools import coint
 import config
 from src.cointegration import hedge_ratio, spread, half_life, zscore
 
-CACHE = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                     ".cache", "px_1m_14400_80.pkl")
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                   ".cache", "pairs_1m.csv")
+HERE = os.path.dirname(os.path.abspath(__file__))
+DEFAULT_CACHE = os.path.join(HERE, ".cache", "px_1m_14400_80.pkl")
 PROGRESS = 100
 
 
 def main() -> None:
+    # python analyze_1m.py [limit_pairs] [cache_pkl]
     limit = int(sys.argv[1]) if len(sys.argv) > 1 else 0
-    prices = pd.read_pickle(CACHE)
+    cache = sys.argv[2] if len(sys.argv) > 2 else DEFAULT_CACHE
+    tag = os.path.splitext(os.path.basename(cache))[0].replace("px_", "")
+    out = os.path.join(HERE, ".cache", f"pairs_{tag}.csv")
+    prices = pd.read_pickle(cache)
     print(f"История: {prices.shape[0]} баров × {prices.shape[1]} контрактов",
           flush=True)
 
@@ -92,8 +94,8 @@ def main() -> None:
           f"{int(df['entry_ready'].sum())} (среди всех коинтегр.)", flush=True)
 
     df = df.sort_values("pvalue").reset_index(drop=True)
-    df.to_csv(OUT, index=False)
-    print(f"\nСохранил все коинтегр. пары: {OUT}", flush=True)
+    df.to_csv(out, index=False)
+    print(f"\nСохранил все коинтегр. пары: {out}", flush=True)
 
     show = df.copy()
     show["pvalue"] = show["pvalue"].round(4)
