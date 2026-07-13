@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<link rel="canonical" href="https://romanovdecor.by/calculator">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Калькулятор стоимости микроцемента и наливных полов | Минск</title>
+<meta name="description" content="Рассчитайте стоимость микроцемента или наливного пола за 1 минуту. Точный расчёт с учётом площади, материала и работы. Готовое PDF-предложение. Минск, Беларусь.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Geologica',sans-serif;background:#1e1e1e;color:#efece7;min-height:100vh;overflow-x:hidden}a{text-decoration:none;color:inherit}
+.hd{position:fixed;top:0;left:0;right:0;z-index:500;height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;background:#2c2c2c;border-bottom:1px solid rgba(255,255,255,.06)}
+.logo{font-size:11px;font-weight:500;white-space:nowrap;letter-spacing:2px;text-transform:lowercase}.logo span{color:#b8965a;font-weight:400}
+.hd-r a{font-size:12px;color:#a09a92;letter-spacing:2px}
+html.in-iframe .hd{display:none}
+html.in-iframe body{min-height:auto}
+html.in-iframe .wrap{padding:24px 20px}
+.wrap{max-width:760px;margin:0 auto;padding:90px 20px 60px}
+.prog{display:flex;align-items:center;gap:6px;margin-bottom:28px}
+.dot{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.1);transition:.3s}.dot.on{background:#b8965a}.dot.done{background:#b8965a;opacity:.4}
+.prog-line{flex:1;height:1px;background:rgba(255,255,255,.06)}
+.step{display:none;animation:fadeIn .35s}.step.act{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.step-tag{font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#b8965a;margin-bottom:6px}
+.step h2{font-size:clamp(20px,4vw,28px);font-weight:600;margin-bottom:4px;line-height:1.2;letter-spacing:2px}.step h2 b{color:#b8965a;font-weight:500}
+.step-hint{font-size:13px;color:#a09a92;font-weight:300;margin-bottom:20px;line-height:1.5;letter-spacing:2px}
+.opts{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:20px}
+.opt{padding:16px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.08);background:#2c2c2c;cursor:pointer;transition:.2s;text-align:center}
+.opt:hover{border-color:rgba(184,150,90,.3)}.opt.sel{border-color:#b8965a;background:rgba(184,150,90,.08)}
+.opt h4{font-size:13px;font-weight:600;margin-bottom:2px;letter-spacing:2px}.opt p{font-size:10px;color:#a09a92;font-weight:300;margin:0;letter-spacing:2px}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:11px;font-weight:600;letter-spacing:2px;color:#a09a92;margin-bottom:6px;text-transform:uppercase}
+.field input, .field textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:#2c2c2c;color:#efece7;font-family:'Geologica',sans-serif;font-size:14px;outline:none}
+.field input:focus, .field textarea:focus{border-color:#b8965a}
+.area-input{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.area-input input{flex:1;padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:#2c2c2c;color:#efece7;font-family:'Geologica',sans-serif;font-size:22px;font-weight:600;text-align:center;outline:none;letter-spacing:2px}
+.area-input input:focus{border-color:#b8965a}
+/* Multi-list inputs (несколько площадей / погонных метров) */
+.multi-list{display:flex;flex-direction:column;gap:6px;margin-bottom:8px}
+.multi-row{display:flex;align-items:center;gap:8px}
+.multi-row input{flex:1;padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.1);background:#2c2c2c;color:#efece7;font-family:'Geologica',sans-serif;font-size:15px;font-weight:500;text-align:center;outline:none;letter-spacing:1px;min-width:0}
+.multi-row input:focus{border-color:#b8965a}
+.multi-row .unit{font-size:12px;color:#a09a92;min-width:34px;text-align:left}
+.multi-row .multi-del{width:30px;height:30px;border-radius:8px;border:1px solid rgba(200,60,60,.3);background:rgba(200,60,60,.1);color:#ff8888;cursor:pointer;font-size:14px;padding:0;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.multi-row .multi-del:hover{background:rgba(200,60,60,.2)}
+.multi-row .multi-del:disabled{opacity:.25;cursor:not-allowed}
+.multi-add-btn{padding:8px 14px;border-radius:10px;border:1px dashed rgba(184,150,90,.4);background:transparent;color:#b8965a;cursor:pointer;font-family:'Geologica',sans-serif;font-size:12px;font-weight:500;letter-spacing:1px;transition:.2s}
+.multi-add-btn:hover{background:rgba(184,150,90,.08);border-style:solid;border-color:#b8965a}
+.multi-sum{font-size:12px;color:#b8965a;font-weight:600;margin-top:6px;letter-spacing:1px}
+.area-input span{font-size:14px;color:#a09a92;letter-spacing:2px}
+.btns{display:flex;gap:8px;margin-top:6px;flex-wrap:wrap}
+.btn{padding:12px 20px;border-radius:12px;font-family:'Geologica',sans-serif;font-size:12px;font-weight:600;cursor:pointer;transition:.2s;border:none;letter-spacing:2px;text-transform:uppercase}
+.btn-p{background:#b8965a;color:#1a1a1a;flex:1}.btn-p:hover{background:#d4b883}
+.btn-p:disabled{opacity:.3;cursor:not-allowed}
+.btn-s{background:rgba(255,255,255,.05);color:#efece7;border:1px solid rgba(255,255,255,.1)}.btn-s:hover{background:rgba(255,255,255,.08)}
+.btn-xs{padding:8px 14px;font-size:10px;border-radius:8px;letter-spacing:1px}
+.result{background:#2c2c2c;border-radius:16px;border:1px solid rgba(255,255,255,.08);padding:24px;margin-top:8px}
+.layer{background:#1e1e1e;border-radius:10px;padding:14px;margin-bottom:6px}
+.layer-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.layer-stage{font-size:10px;color:#b8965a;text-transform:uppercase;letter-spacing:2px;font-weight:600}
+.layer-name{font-size:13px;font-weight:500;letter-spacing:2px}
+.layer-row{display:flex;justify-content:space-between;font-size:12px;color:#a09a92;font-weight:300;padding:2px 0;letter-spacing:2px}
+.layer-row .val{color:#efece7;font-weight:500}
+.layer-row.pkg{color:#b8965a}
+.layer-row.pkg .val{color:#b8965a;font-weight:600}
+
+/* Estimate list */
+.est{background:#2c2c2c;border-radius:16px;padding:20px;margin-bottom:16px;border:1px solid rgba(184,150,90,.2)}
+.est-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.est-title{font-size:13px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#b8965a}
+.est-count{font-size:11px;color:#a09a92;letter-spacing:1px}
+.est-empty{text-align:center;padding:24px 10px;font-size:12px;color:#666;letter-spacing:2px;line-height:1.6}
+.est-row{background:#1e1e1e;border-radius:10px;padding:12px 14px;margin-bottom:6px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.est-row-main{flex:1;min-width:200px}
+.est-row-label{font-size:13px;font-weight:600;margin-bottom:2px;letter-spacing:1px}
+.est-row-desc{font-size:10px;color:#a09a92;letter-spacing:1px;line-height:1.4}
+.est-row-sum{text-align:right;font-size:14px;font-weight:700;color:#b8965a;letter-spacing:1px;white-space:nowrap}
+.est-row-actions{display:flex;gap:4px}
+.est-del{width:28px;height:28px;border-radius:8px;background:rgba(255,255,255,.05);border:none;color:#a09a92;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center}
+.est-del:hover{background:rgba(220,80,80,.15);color:#e78080}
+.est-dup{width:28px;height:28px;border-radius:8px;background:rgba(255,255,255,.05);border:none;color:#a09a92;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center}
+.est-dup:hover{background:rgba(184,150,90,.15);color:#b8965a}
+.est-total{display:flex;justify-content:space-between;padding-top:14px;margin-top:10px;border-top:2px solid rgba(184,150,90,.3);font-size:14px;letter-spacing:2px}
+.est-total .label{font-weight:600}.est-total .val{color:#b8965a;font-size:22px;font-weight:700}
+
+.success-box{background:#2c2c2c;border-radius:16px;padding:28px;text-align:center;border:1px solid rgba(184,150,90,.3)}
+.success-box h3{font-size:18px;font-weight:600;letter-spacing:2px;margin-bottom:8px;color:#efece7}
+.success-box p{font-size:12px;color:#a09a92;letter-spacing:1px;margin-bottom:16px}
+
+.waste-note{font-size:11px;color:#666;margin-top:12px;letter-spacing:2px;font-weight:300;line-height:1.5}
+
+.sticky-cta{position:fixed;bottom:24px;right:24px;z-index:550;display:flex;flex-direction:column;align-items:flex-end;gap:8px}.sticky-btn{width:52px;height:52px;border-radius:50%;background:#2c2c2c;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,.3);transition:.3s}.sticky-btn:hover{transform:scale(1.08)}.sticky-btn svg{width:22px;height:22px;fill:#efece7}.sticky-pop{display:none;flex-direction:column;gap:6px;margin-bottom:4px}.sticky-pop.show{display:flex}.sticky-pop a{display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:12px;font-size:12px;font-weight:600;color:#fff;letter-spacing:2px;text-transform:lowercase;box-shadow:0 4px 16px rgba(0,0,0,.3);transition:.2s;white-space:nowrap}.sticky-pop a:hover{transform:translateX(-4px)}
+
+@media(max-width:500px){.opts{grid-template-columns:1fr}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://romanovdecor.by/"},{"@type":"ListItem","position":2,"name":"Калькулятор"}]}</script>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/favicon.svg">
+<meta name="theme-color" content="#2c2c2c">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Romanov Decor Studio">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:image" content="https://romanovdecor.by/img/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://romanovdecor.by/img/og-cover.png">
+<meta property="og:url" content="https://romanovdecor.by/calculator">
+<meta property="og:title" content="Калькулятор систем покрытий — Romanov Decor Studio">
+<meta property="og:description" content="Соберите смету из нескольких позиций — микроцемент, эпоксид, полиуретан. Получите готовое PDF коммерческое предложение.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Калькулятор систем покрытий — Romanov Decor Studio">
+<meta name="twitter:description" content="Соберите смету из нескольких позиций — микроцемент, эпоксид, полиуретан. Получите готовое PDF коммерческое предложение.">
+</head>
+<script>if(window.self!==window.top)document.documentElement.classList.add('in-iframe')</script>
+<body>
+<header class="hd">
+<a href="/" class="logo">romanov <span>decor</span> studio</a>
+<div class="hd-r" style="display:flex;gap:18px;align-items:center">
+<a href="/microcement" style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#a09a92">Микроцемент</a>
+<a href="/price" style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#a09a92">Цены</a>
+<a href="/portfolio" style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#a09a92">Портфолио</a>
+<a href="/">← на сайт</a>
+</div>
+</header>
+<div class="wrap">
+<div class="prog" id="prog"></div>
+
+<!-- STEP 1: КАТЕГОРИЯ / МАТЕРИАЛ -->
+<div class="step act" id="s1">
+<div class="step-tag">Шаг 1 · тип объекта</div>
+<h2>Что <b>рассчитываем</b>?</h2>
+<p class="step-hint">Выберите материал или тип объекта. Позже можно добавить другие позиции.</p>
+<div class="opts" id="catOpts"></div>
+<div class="btns"><button class="btn btn-s" id="b1back" style="display:none" onclick="goEstimate()">← к смете</button><button class="btn btn-p" id="b1" disabled onclick="goStep(2)">далее</button></div>
+</div>
+
+<!-- STEP 2: ПОДТИП -->
+<div class="step" id="s2">
+<div class="step-tag">Шаг 2 · вид покрытия</div>
+<h2>Тип <b>покрытия</b></h2>
+<p class="step-hint" id="s2hint">Выберите вид покрытия</p>
+<div class="opts" id="subOpts"></div>
+<div class="btns"><button class="btn btn-s" onclick="goStep(1)">назад</button><button class="btn btn-p" id="b2" disabled onclick="goStep(3)">далее</button></div>
+</div>
+
+<!-- STEP 3: СИСТЕМА -->
+<div class="step" id="s3">
+<div class="step-tag">Шаг 3 · система</div>
+<h2>Выберите <b>систему</b></h2>
+<p class="step-hint">Рекомендуемые системы для вашего объекта</p>
+<div class="opts" id="sysOpts" style="grid-template-columns:1fr"></div>
+<div class="btns"><button class="btn btn-s" onclick="goStep(2)">назад</button><button class="btn btn-p" id="b3" disabled onclick="goStep(4)">далее</button></div>
+</div>
+
+<!-- STEP 4: ПЛОЩАДЬ + НАЗВАНИЕ -->
+<div class="step" id="s4">
+<div class="step-tag">Шаг 4 · параметры позиции</div>
+<h2>Название и <b>метраж</b></h2>
+<p class="step-hint">Дайте позиции понятное имя, чтобы легко найти её в смете</p>
+<div class="field"><label>Название позиции</label><input type="text" id="labelVal" placeholder="например: санузел №1, стены"></div>
+
+<!-- Поля для НЕ-микроцемента и микроцемент-стен/полов/мебели -->
+<div id="areaSection">
+<div style="font-size:11px;color:#b8965a;letter-spacing:2px;text-transform:uppercase;margin:14px 0 6px;font-weight:600">Общая площадь</div>
+<div class="field"><label>Площадь материала, м²</label><div class="area-input"><input type="number" id="areaVal" value="20" min="0" step="0.01"><span>м²</span></div></div>
+</div>
+
+<!-- Просчёт работ — только для микроцемента (кроме дверей) -->
+<div id="mcExtFields" style="display:none">
+<div style="font-size:11px;color:#b8965a;letter-spacing:2px;text-transform:uppercase;margin:14px 0 6px;font-weight:600">Просчёт работ</div>
+
+<div class="field">
+  <label>Площади работ, м² <span style="color:#a09a92;font-weight:400;font-size:11px">(можно добавить несколько — суммируются)</span></label>
+  <div id="workM2List" class="multi-list"></div>
+  <button type="button" class="multi-add-btn" onclick="addMultiInput('workM2List','м²')">+ добавить площадь</button>
+  <div class="multi-sum" id="workM2Sum">Итого: 0 м²</div>
+</div>
+
+<div class="field">
+  <label>Погонные метры, м.п. <span style="color:#a09a92;font-weight:400;font-size:11px">(стены &lt; 0,5 м — откосы, бортики, простенки)</span></label>
+  <div id="workMpList" class="multi-list"></div>
+  <button type="button" class="multi-add-btn" onclick="addMultiInput('workMpList','м.п.')">+ добавить погонные метры</button>
+  <div class="multi-sum" id="workMpSum">Итого: 0 м.п.</div>
+</div>
+</div>
+
+<!-- Список дверей — только для подтипа «Двери» -->
+<div id="doorsSection" style="display:none">
+<div style="font-size:11px;color:#b8965a;letter-spacing:2px;text-transform:uppercase;margin:14px 0 6px;font-weight:600">Двери</div>
+<div class="field"><label>Количество дверей, шт</label><div class="area-input"><input type="number" id="doorsN" value="1" min="1" step="1" oninput="renderDoorSizes()"><span>шт</span></div></div>
+<div id="doorSizesList" style="display:none">
+  <div style="font-size:11px;color:#efece7;margin-bottom:6px">Размеры каждой двери (Ш × В, м):</div>
+  <div id="doorSizesGrid" style="display:flex;flex-direction:column;gap:6px;margin-bottom:10px"></div>
+  <div style="font-size:11px;color:#a09a92;line-height:1.5">Площадь каждой двери = Ш × В × $40 (материал) + $100/дверь (работа).</div>
+</div>
+</div>
+
+<div id="mcInfoBox" style="display:none;background:rgba(184,150,90,.06);border-left:2px solid #b8965a;padding:10px 12px;border-radius:0 8px 8px 0;font-size:12px;color:#a09a92;margin-top:14px;line-height:1.5">
+  <b style="color:#efece7">Тариф «по факту»:</b> материал <b>$40/м²</b>, работа <b>$24</b>/м² и /м.п., <b>$100</b>/дверь (работа).<br>
+  Расходники (малярка, кисти, валики) — <b>+$80</b> один раз на смету, добавятся автоматически.<br>
+  <span id="rateInfo" style="color:#b8965a;font-weight:500">Курс USD→BYN: загружается...</span>
+</div>
+
+<div class="btns"><button class="btn btn-s" onclick="goStep(3)">назад</button><button class="btn btn-p" onclick="addToEstimate()">добавить в смету</button></div>
+</div>
+
+<!-- ESTIMATE PANEL -->
+<div class="step" id="sE">
+<div class="step-tag">Ваша смета</div>
+<h2>Сводная <b>смета</b></h2>
+<p class="step-hint">Добавьте ещё позицию или оформите заявку — мы пришлём PDF с коммерческим предложением.</p>
+<div class="est">
+  <div class="est-head"><span class="est-title">Позиции</span><span class="est-count" id="estCount">0</span></div>
+  <div id="estList"></div>
+  <div class="est-total" id="estTotalRow" style="display:none"><span class="label">Итого:</span><span class="val" id="estTotal">0 руб</span></div>
+</div>
+<div class="btns">
+  <button class="btn btn-s" onclick="goStep(1)">+ добавить позицию</button>
+  <button class="btn btn-p" id="toContacts" onclick="goStep('contact')" disabled>оформить заявку →</button>
+</div>
+<div class="waste-note">* микроцемент — цена «под ключ» (материал + работа) по курсу USD→BYN 2,8108 НБ РБ на 23.04.2026. Остальные системы — материал с учётом тары, работа рассчитывается по объёму объекта.</div>
+</div>
+
+<!-- CONTACT STEP -->
+<div class="step" id="sC">
+<div class="step-tag">контакты</div>
+<h2>Оформление <b>заявки</b></h2>
+<p class="step-hint">Мы пришлём PDF с коммерческим предложением на все позиции и свяжемся с вами в течение 30 минут.</p>
+<form id="orderForm" onsubmit="submitQuote(event)">
+  <div class="field"><label>имя</label><input type="text" id="orderName" required placeholder="как к вам обращаться"></div>
+  <div class="field"><label>телефон</label><input type="tel" id="orderPhone" required placeholder="+375 ..."></div>
+  <div class="field"><label>комментарий (необязательно)</label><textarea id="orderMsg" placeholder="сроки, особенности объекта, пожелания" style="min-height:80px;resize:vertical"></textarea></div>
+  <div class="btns">
+    <button type="button" class="btn btn-s" onclick="goEstimate()">назад</button>
+    <button type="submit" class="btn btn-p" id="orderBtn">отправить и получить PDF</button>
+  </div>
+</form>
+</div>
+
+<!-- SUCCESS STEP -->
+<div class="step" id="sOk">
+<div class="step-tag">готово</div>
+<h2>Заявка <b>отправлена</b></h2>
+<div class="success-box">
+  <h3>✓ Мы получили вашу смету</h3>
+  <p>PDF с коммерческим предложением сформирован. Менеджер свяжется в течение 30 минут.</p>
+  <div class="btns" style="justify-content:center">
+    <a class="btn btn-p" id="pdfDl" href="#" download="romanov-decor-kp.pdf" style="text-decoration:none;text-align:center">📥 скачать PDF</a>
+  </div>
+  <div style="margin-top:12px"><button class="btn btn-s" onclick="resetAll()" style="width:100%">новый расчёт</button></div>
+</div>
+</div>
+
+<!-- Скрытый шаблон PDF -->
+<div id="pdfTpl" style="position:fixed;left:-9999px;top:0;width:800px"></div>
+</div>
+
+<div class="sticky-cta"><div class="sticky-pop" id="stickyPop"><a href="https://t.me/" style="background:#2AABEE">telegram</a><a href="viber://chat?number=" style="background:#7360F2">viber</a></div><button class="sticky-btn" onclick="document.getElementById('stickyPop').classList.toggle('show')"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.2L4 17.2V4h16v12z"/></svg></button></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+// === SYSTEMS DATABASE (from xlsx files + microcement USD/BYN @2.8108 on 2026-04-23) ===
+var DB = {
+categories: [
+  {id:'microcement', name:'Микроцемент', hint:'Декоративное покрытие 1–1,5 мм: стены и полы'},
+  {id:'decorative', name:'Жилой интерьер', hint:'Декоративные полиуретановые и эпоксидные покрытия'},
+  {id:'industrial', name:'Промышленный объект', hint:'Производства, склады, цеха'},
+  {id:'parking', name:'Паркинг / гараж', hint:'Подземные паркинги, гаражи, рампы'},
+  {id:'agro', name:'Сельское хозяйство', hint:'Фермы, коровники, щелевые полы'}
+],
+subtypes: {
+  microcement: [
+    {id:'mc_walls', name:'Стены', hint:'Vintage / Natural / Metallic'},
+    {id:'mc_floor', name:'Полы', hint:'Vintage / Natural / Metallic'},
+    {id:'mc_doors', name:'Двери', hint:'Нанесение на дверное полотно'},
+    {id:'mc_furniture', name:'Столешница и фартук', hint:'Кухонная или ванная зона'},
+  ],
+  decorative: [
+    {id:'color', name:'Однотонный', hint:'PUR декоративный цветной'},
+    {id:'metallic', name:'Металлик', hint:'Эпоксидный с эффектом металлик'},
+    {id:'flake', name:'С чипсами / флоками', hint:'Декоративные вкрапления'},
+  ],
+  industrial: [
+    {id:'thin', name:'Тонкослойный', hint:'Покраска 0.3-0.5 мм'},
+    {id:'textured', name:'Текстурированный', hint:'С антискольжением'},
+    {id:'selfleveling', name:'Наливной', hint:'Самовыравнивающийся'},
+    {id:'quartz', name:'Кварцевый', hint:'С кварцевым наполнителем'},
+    {id:'antistatic', name:'Антистатический', hint:'ESD-защита'},
+    {id:'cement', name:'Полимерцементный', hint:'Высоконагруженный'},
+  ],
+  parking: [
+    {id:'light', name:'Лёгкая нагрузка', hint:'OS 1-4, импрегнация и покраска'},
+    {id:'medium', name:'Средняя нагрузка', hint:'OS 8, кварц + эпоксид'},
+    {id:'heavy', name:'Тяжёлая нагрузка', hint:'OS 10-14, EP/PUR системы'},
+    {id:'elastic', name:'Эластичные', hint:'OS 8 Elastic / Hybrid'},
+  ],
+  agro: [
+    {id:'thin_agro', name:'Тонкослойный', hint:'Щелевые полы 0.5 мм'},
+    {id:'sl_agro', name:'Наливной', hint:'Самовыравнивающийся для ферм'},
+  ]
+},
+systems: {
+  'mc_walls': [
+    {id:'mc_w', name:'Микроцемент на стены', code:'Vintage / Natural / Metallic', desc:'3 эффекта на выбор, толщина 1–1,5 мм', microcement:'walls'},
+  ],
+  'mc_floor': [
+    {id:'mc_f', name:'Микроцемент на пол', code:'Vintage / Natural / Metallic', desc:'3 эффекта на выбор, толщина 1–1,5 мм', microcement:'floor'},
+  ],
+  'mc_doors': [
+    {id:'mc_d', name:'Микроцемент на двери', code:'Vintage / Natural / Metallic', desc:'Нанесение на дверное полотно по размеру', microcement:'doors'},
+  ],
+  'mc_furniture': [
+    {id:'mc_fn', name:'Микроцемент на столешницу и фартук', code:'Vintage / Natural / Metallic', desc:'Кухонная или ванная зона, толщина 1–1,5 мм', microcement:'furniture'},
+  ],
+  'color': [
+    {id:'dc01_2', name:'Декоративный стандарт', code:'SL Deco Color 01-2', desc:'PUR Uni Color + PUR Color Top M — базовый вариант', layers:[
+      {name:'Эпоксидная грунтовка',stage:'Грунтование',cons:0.3,unit:'л',price:90.96,pkg:29},
+      {name:'Полиуретановый цветной',stage:'Базовый слой',cons:2,unit:'л',price:77.89,pkg:30},
+      {name:'Полиуретановый лак суперпрочный',stage:'Финишный лак',cons:0.12,unit:'л',price:294,pkg:31},
+      {name:'Эпоксидная грунтовка (второй слой)',stage:'Грунтование',cons:0.5,unit:'л',price:90.96,pkg:29},
+      {name:'Кварцевая посыпка',stage:'Грунтование',cons:0.5,unit:'л',price:2.44,pkg:30},
+    ]},
+    {id:'dc01_3', name:'Декоративный премиум', code:'SL Deco Color 01-3', desc:'PUR Deco Color + PUR Top M Plus — максимальная износостойкость', layers:[
+      {name:'Эпоксидная грунтовка',stage:'Грунтование',cons:0.3,unit:'л',price:90.96,pkg:29},
+      {name:'Полиуретановый декоративный',stage:'Базовый слой',cons:3,unit:'л',price:125.28,pkg:30},
+      {name:'Полиуретановый лак PUR Top M Plus',stage:'Финишный лак',cons:0.1,unit:'л',price:610.66,pkg:31},
+    ]},
+    {id:'dc01_4', name:'Декоративный эко (водный лак)', code:'SL Deco Color 01-4', desc:'PUR Deco Color + PUR Aqua Top M — без запаха, экологичный', layers:[
+      {name:'Эпоксидная грунтовка',stage:'Грунтование',cons:0.3,unit:'л',price:90.96,pkg:29},
+      {name:'Полиуретановый декоративный',stage:'Базовый слой',cons:3,unit:'л',price:125.28,pkg:30},
+      {name:'Водный полиуретановый лак',stage:'Финишный лак',cons:0.1,unit:'л',price:410.06,pkg:31},
+    ]},
+  ],
+  'metallic': [
+    {id:'dm01_3', name:'Металлик премиум', code:'SL Deco Metalic 01-03', desc:'Эпоксидный наливной + металлический пигмент + PUR Top M Plus', layers:[
+      {name:'Эпоксидная грунтовка',stage:'Грунтование',cons:0.3,unit:'л',price:90.96,pkg:29},
+      {name:'Эпоксидный праймер',stage:'Базовый слой',cons:0.8,unit:'л',price:66.24,pkg:30},
+      {name:'Кварцевая посыпка',stage:'Базовый слой',cons:0.4,unit:'л',price:2.44,pkg:30},
+      {name:'Эпоксидный UV 100',stage:'Наливной слой',cons:1.5,unit:'л',price:115.69,pkg:31},
+      {name:'Кварцевая посыпка SBL',stage:'Наливной слой',cons:1.5,unit:'л',price:2.44,pkg:30},
+      {name:'Металлический пигмент',stage:'Декор',cons:0.05,unit:'л',price:132.66,pkg:31},
+      {name:'Полиуретановый лак PUR Top M Plus',stage:'Финишный лак',cons:0.1,unit:'л',price:610.66,pkg:31},
+    ]},
+    {id:'dm01_4', name:'Металлик эко', code:'SL Deco Metalic 01-04', desc:'Металлик + PUR Aqua Top M — водный экологичный лак', layers:[
+      {name:'Эпоксидная грунтовка',stage:'Грунтование',cons:0.3,unit:'л',price:90.96,pkg:29},
+      {name:'Эпоксидный праймер',stage:'Базовый слой',cons:0.8,unit:'л',price:66.24,pkg:30},
+      {name:'Кварцевая посыпка',stage:'Базовый слой',cons:0.4,unit:'л',price:2.44,pkg:30},
+      {name:'Эпоксидный UV 100',stage:'Наливной слой',cons:1.5,unit:'л',price:115.69,pkg:31},
+      {name:'Кварцевая посыпка SBL',stage:'Наливной слой',cons:1.5,unit:'л',price:2.44,pkg:30},
+      {name:'Металлический пигмент',stage:'Декор',cons:0.05,unit:'л',price:132.66,pkg:31},
+      {name:'Водный полиуретановый лак',stage:'Финишный лак',cons:0.18,unit:'л',price:410.06,pkg:31},
+    ]},
+  ],
+  'flake': [
+    {id:'df01_3', name:'С флоками премиум', code:'SL Deco Flake 01-3', desc:'PUR Deco Color + Articoflake + PUR Top M Plus', layers:[
+      {name:'Эпоксидная грунтовка',stage:'Грунтование',cons:0.3,unit:'л',price:90.96,pkg:28},
+      {name:'Эпоксидная грунтовка (второй)',stage:'Грунтование',cons:0.5,unit:'л',price:90.96,pkg:29},
+      {name:'Кварцевая посыпка SBL',stage:'Грунтование',cons:0.5,unit:'л',price:2.44,pkg:30},
+      {name:'Полиуретановый декоративный',stage:'Базовый слой',cons:2,unit:'л',price:125.28,pkg:30},
+      {name:'Декоративные флоки Articoflake',stage:'Декор',cons:0.02,unit:'л',price:157.4,pkg:30},
+      {name:'Полиуретановый лак PUR Top M Plus',stage:'Финишный лак',cons:0.1,unit:'л',price:610.66,pkg:31},
+    ]},
+    {id:'df01_8', name:'С флоками на микроцементе', code:'SL Deco Flake 01-8', desc:'BS 3000 SG + Sediment Flakes + PUR Aqua Top M', layers:[
+      {name:'Эпоксидная грунтовка BS 2000',stage:'Грунтование',cons:0.3,unit:'кг',price:78.77,pkg:9.5},
+      {name:'Эпоксидная BS4000',stage:'Базовый слой',cons:0.7,unit:'кг',price:79.43,pkg:25},
+      {name:'Кварцевая посыпка SBL',stage:'Базовый слой',cons:1.05,unit:'кг',price:2.44,pkg:27},
+      {name:'Эпоксидный UV 100 (первый)',stage:'Наливной слой',cons:0.3,unit:'л',price:151.2,pkg:30},
+      {name:'Эпоксидный UV 100 (второй)',stage:'Наливной слой',cons:1,unit:'л',price:151.2,pkg:30},
+      {name:'Водный полиуретановый лак',stage:'Финишный лак',cons:0.12,unit:'л',price:410.06,pkg:31},
+      {name:'Микроцемент BS 3000 SG',stage:'Декор',cons:0.4,unit:'кг',price:90.52,pkg:30},
+      {name:'Седиментные флоки',stage:'Декор',cons:0.7,unit:'кг',price:157.4,pkg:30},
+    ]},
+  ],
+  'thin': [
+    {id:'tc2080', name:'Тонкослойный TC 2080', code:'TC FLOOR 2080', desc:'Минимальная толщина, базовая защита бетона', layers:[
+      {name:'Эпоксидная грунтовка BS2000',stage:'Грунтование',cons:0.2,unit:'кг',price:84.49,pkg:25},
+      {name:'Эпоксидный финиш BS3000',stage:'Финишный слой',cons:0.2,unit:'кг',price:94.92,pkg:25},
+    ]},
+  ],
+  'textured': [
+    {id:'tx01', name:'Текстурированный TX 01', code:'TX FLOOR 01', desc:'С антискольжением, эпоксидный праймер + BS3000', layers:[
+      {name:'Эпоксидный праймер PF',stage:'Грунтование',cons:0.4,unit:'кг',price:66.24,pkg:30},
+      {name:'Эпоксидный праймер PF (второй)',stage:'Грунтование',cons:1,unit:'кг',price:66.24,pkg:30},
+      {name:'Кварцевая посыпка',stage:'Грунтование',cons:0.5,unit:'кг',price:2.44,pkg:25},
+      {name:'Эпоксидный финиш BS3000',stage:'Финишный слой',cons:0.2,unit:'кг',price:94.92,pkg:25},
+    ]},
+    {id:'txsic01', name:'Текстурированный цветной', code:'TX FLOOR SIC 01', desc:'С цветным TX Color финишем', layers:[
+      {name:'Эпоксидный праймер PF',stage:'Грунтование',cons:0.4,unit:'кг',price:66.24,pkg:30},
+      {name:'Эпоксидный праймер PF (второй)',stage:'Грунтование',cons:1,unit:'кг',price:66.24,pkg:30},
+      {name:'Кварцевая посыпка',stage:'Грунтование',cons:0.5,unit:'кг',price:2.44,pkg:25},
+      {name:'Эпоксидный TX Color',stage:'Финишный слой',cons:0.6,unit:'кг',price:71.8,pkg:27},
+    ]},
+  ],
+  'selfleveling': [
+    {id:'sl2180', name:'Наливной SL 2180', code:'SL FLOOR 2180', desc:'Самовыравнивающийся эпоксидный', layers:[
+      {name:'Эпоксидная грунтовка BS2000',stage:'Грунтование',cons:0.2,unit:'кг',price:84.49,pkg:25},
+      {name:'Эпоксидная BS4000',stage:'Базовый слой',cons:0.7,unit:'кг',price:79.43,pkg:25},
+      {name:'Кварцевая посыпка SBL DF',stage:'Базовый слой',cons:0.7,unit:'кг',price:2.44,pkg:15},
+      {name:'Эпоксидный финиш BS3000',stage:'Финишный слой',cons:0.2,unit:'кг',price:94.92,pkg:25},
+    ]},
+  ],
+  'quartz': [
+    {id:'sr0308', name:'Кварцевый SR 03/08', code:'SR FLOOR 03/08 DF', desc:'С кварцевым наполнителем 0.3-0.8 мм', layers:[
+      {name:'Эпоксидная ST100',stage:'Грунтование',cons:1,unit:'кг',price:90.96,pkg:25},
+      {name:'Кварцевая посыпка',stage:'Грунтование',cons:1,unit:'кг',price:2.44,pkg:25},
+      {name:'Кварц 03/08',stage:'Наполнитель',cons:6,unit:'кг',price:2.44,pkg:25},
+      {name:'Эпоксидный Color Top',stage:'Финишный слой',cons:0.9,unit:'кг',price:82.92,pkg:25},
+    ]},
+  ],
+  'antistatic': [
+    {id:'whgas01', name:'Антистатический WHG AS', code:'SL FLOOR WHG AS 01', desc:'ESD-защита, для электроники и чистых помещений', layers:[
+      {name:'Эпоксидная GL 100',stage:'Грунтование',cons:0.3,unit:'кг',price:163.81,pkg:10},
+      {name:'Кварцевая посыпка',stage:'Грунтование',cons:0.5,unit:'кг',price:2.44,pkg:25},
+      {name:'Эпоксидная GL 100 (второй)',stage:'Грунтование',cons:0.5,unit:'кг',price:163.81,pkg:10},
+      {name:'Токопроводящий слой',stage:'ESD',cons:0.15,unit:'кг',price:126,pkg:25},
+      {name:'Эпоксидный WGH Color AS',stage:'Наливной слой',cons:1.5,unit:'кг',price:110.98,pkg:25},
+      {name:'Слюда GHL 3/0',stage:'Декор',cons:0.05,unit:'кг',price:204.72,pkg:2.5},
+    ]},
+  ],
+  'cement': [
+    {id:'crtf60', name:'Полимерцементный CR TF 60', code:'TF FLOOR CR 60', desc:'Тонкослойный цементный полимерный', layers:[
+      {name:'Crete TF 60 (грунт)',stage:'Грунтование',cons:0.4,unit:'кг',price:50.78,pkg:9.5},
+      {name:'Crete TF 60 (финиш)',stage:'Финишный слой',cons:0.4,unit:'кг',price:50.78,pkg:9.5},
+    ]},
+    {id:'crsl80', name:'Наливной цементный CR SL 80', code:'SL FLOOR CR 80', desc:'Самовыравнивающийся цементный полимерный', layers:[
+      {name:'Crete TF 60',stage:'Грунтование',cons:0.4,unit:'кг',price:50.78,pkg:9.5},
+      {name:'Crete SL 80',stage:'Наливной слой',cons:8,unit:'кг',price:39.38,pkg:9.5},
+    ]},
+  ],
+  'light': [
+    {id:'os1', name:'OS1 — импрегнация', code:'OS1 (OS A)', desc:'Funcosil IC — гидрофобизация без покрытия', layers:[
+      {name:'Funcosil IC',stage:'Импрегнация',cons:0.4,unit:'л',price:148.19,pkg:30},
+    ]},
+    {id:'os2', name:'OS2 — покраска', code:'OS2 (OS B)', desc:'Color PA — однослойная покраска', layers:[
+      {name:'Color PA',stage:'Покраска',cons:0.52,unit:'кг',price:72,pkg:12.25},
+    ]},
+  ],
+  'medium': [
+    {id:'os8c', name:'OS 8 Classic', code:'REMMERS DECK OS 8', desc:'Эпоксидный праймер + кварц + Color Top', layers:[
+      {name:'Эпоксидный праймер PF',stage:'Грунтование',cons:0.2,unit:'кг',price:66.24,pkg:30},
+      {name:'Кварцевая посыпка 01/03',stage:'Грунтование',cons:0.7,unit:'кг',price:2.44,pkg:25},
+      {name:'Кварц 03/08',stage:'Наполнитель',cons:6,unit:'кг',price:2.44,pkg:25},
+      {name:'Эпоксидный Color Top',stage:'Финишный слой',cons:0.6,unit:'кг',price:82.92,pkg:25},
+    ]},
+  ],
+  'heavy': [
+    {id:'os10m', name:'OS 10 M (EP/PUR)', code:'REMMERS DECK OS 10 M', desc:'Гибридная система эпоксид + полиуретан', layers:[
+      {name:'Эпоксидный праймер PF',stage:'Грунтование',cons:0.4,unit:'кг',price:66.24,pkg:30},
+      {name:'Кварцевая посыпка',stage:'Грунтование',cons:0.8,unit:'кг',price:2.44,pkg:25},
+      {name:'PUR Color ZS',stage:'Базовый слой',cons:2.3,unit:'кг',price:76.49,pkg:25},
+      {name:'PUR Color VS',stage:'Базовый слой',cons:1.8,unit:'кг',price:62.56,pkg:24},
+      {name:'Кварцевая посыпка',stage:'Наполнитель',cons:2.16,unit:'кг',price:2.44,pkg:25},
+      {name:'Эпоксидный Color Top',stage:'Финишный слой',cons:0.6,unit:'кг',price:82.92,pkg:25},
+    ]},
+    {id:'os14', name:'OS 14 (тяжёлый)', code:'REMMERS DECK OS 14', desc:'Максимальная нагрузка, полная EP/PUR система', layers:[
+      {name:'Эпоксидный праймер PF',stage:'Грунтование',cons:0.4,unit:'кг',price:66.24,pkg:30},
+      {name:'Кварцевая посыпка',stage:'Грунтование',cons:0.8,unit:'кг',price:2.44,pkg:25},
+      {name:'PUR Color ZS',stage:'Базовый слой',cons:2.4,unit:'кг',price:76.49,pkg:23},
+      {name:'Кварцевая посыпка',stage:'Базовый слой',cons:3,unit:'кг',price:2.44,pkg:25},
+      {name:'PUR Color VS',stage:'Базовый слой',cons:2.5,unit:'кг',price:62.56,pkg:24},
+      {name:'Кварц 03/08',stage:'Наполнитель',cons:6,unit:'кг',price:2.44,pkg:25},
+      {name:'Эпоксидный Color Top',stage:'Финишный слой',cons:0.6,unit:'кг',price:82.92,pkg:25},
+    ]},
+  ],
+  'elastic': [
+    {id:'os8el', name:'OS 8 Elastic', code:'REMMERS DECK OS 8 Elastic', desc:'Эластичная система, перекрывает трещины', layers:[
+      {name:'Эпоксидная ST100',stage:'Грунтование',cons:0.5,unit:'кг',price:90.96,pkg:30},
+      {name:'Эпоксидный праймер PF',stage:'Грунтование',cons:1.5,unit:'кг',price:66.24,pkg:30},
+      {name:'Кварц 03/08',stage:'Грунтование',cons:5,unit:'кг',price:2.44,pkg:25},
+      {name:'Эпоксидный праймер PF (второй)',stage:'Грунтование',cons:1.2,unit:'кг',price:66.24,pkg:30},
+      {name:'Кварц 03/08',stage:'Грунтование',cons:5,unit:'кг',price:2.44,pkg:25},
+      {name:'Эпоксидный Color Top',stage:'Финишный слой',cons:1.9,unit:'кг',price:82.92,pkg:25},
+    ]},
+  ],
+  'thin_agro': [
+    {id:'agro_thin', name:'Тонкослойный для ферм', code:'Щелевые полы', desc:'Тонкослойное покрытие 0.5 мм для щелевых полов', layers:[
+      {name:'Эпоксидная грунтовка BS2000',stage:'Грунтование',cons:0.2,unit:'кг',price:84.49,pkg:25},
+      {name:'Эпоксидный финиш BS3000',stage:'Финишный слой',cons:0.2,unit:'кг',price:94.92,pkg:25},
+    ]},
+  ],
+  'sl_agro': [
+    {id:'agro_sl', name:'Наливной для ферм', code:'TF FLOOR WD 01 (SL)', desc:'Самовыравнивающийся наливной для сельхоз объектов', layers:[
+      {name:'Эпоксидная грунтовка BS2000',stage:'Грунтование',cons:0.2,unit:'кг',price:78.76,pkg:25},
+      {name:'Кварцевая посыпка SBL DF',stage:'Грунтование',cons:1.5,unit:'кг',price:2.44,pkg:15},
+      {name:'Эпоксидная BS4000',stage:'Базовый слой',cons:1,unit:'кг',price:79.43,pkg:25},
+      {name:'Эпоксидный финиш BS3000',stage:'Финишный слой',cons:0.2,unit:'кг',price:94.92,pkg:25},
+    ]},
+  ],
+}};
+
+// === STATE ===
+var S = {step:1, cat:null, sub:null, sys:null, label:'', estimate:[], pdfBlob:null, contacts:null};
+var STEPS = 4;
+
+// Подтягиваем реальные контакты из KV (с тихим fallback на дефолты в PDF)
+fetch('/api/contacts').then(function(r){return r.json()}).then(function(j){
+  if(j && j.ok && j.contacts) S.contacts = j.contacts;
+}).catch(function(){});
+
+// === PROGRESS DOTS ===
+function renderProg(){
+  var h='';
+  var curStep = (typeof S.step === 'number') ? S.step : 0;
+  for(var i=1;i<=STEPS;i++){
+    h+='<div class="dot'+(i===curStep?' on':i<curStep?' done':'')+'"></div>';
+    if(i<STEPS) h+='<div class="prog-line"></div>';
+  }
+  document.getElementById('prog').innerHTML=h;
+}
+
+// === NAVIGATION ===
+function goStep(n){
+  document.querySelectorAll('.step').forEach(function(s){s.classList.remove('act')});
+  if(n===1) document.getElementById('s1').classList.add('act');
+  else if(n===2){buildSubs();document.getElementById('s2').classList.add('act')}
+  else if(n===3){buildSystems();document.getElementById('s3').classList.add('act')}
+  else if(n===4){
+    var lblEl = document.getElementById('labelVal');
+    if(!lblEl.value) lblEl.value = suggestLabel();
+    var isMc = (S.cat === 'microcement');
+    var isDoors = (S.sub === 'mc_doors');
+    // Секции: areaSection (общая площадь) — для всех КРОМЕ дверей
+    //         mcExtFields (просчёт работ) — только для микроцемент-нон-дверь
+    //         doorsSection — только для микроцемент-двери
+    //         mcInfoBox — для всех микроцементных
+    document.getElementById('areaSection').style.display = isDoors ? 'none' : '';
+    document.getElementById('mcExtFields').style.display = (isMc && !isDoors) ? '' : 'none';
+    document.getElementById('doorsSection').style.display = isDoors ? '' : 'none';
+    document.getElementById('mcInfoBox').style.display = isMc ? '' : 'none';
+    // Сброс полей при каждом открытии
+    if (isMc) {
+      if (!isDoors) {
+        resetMultiList('workM2List', 'м²', '');
+        resetMultiList('workMpList', 'м.п.', '');
+      }
+      if (isDoors) {
+        document.getElementById('doorsN').value = '1';
+        renderDoorSizes();
+      }
+    }
+    document.getElementById('s4').classList.add('act');
+  }
+  else if(n==='estimate' || n===5) {renderEstimate(); document.getElementById('sE').classList.add('act'); S.step=5; renderProg(); window.scrollTo({top:0,behavior:'smooth'}); return}
+  else if(n==='contact') {document.getElementById('sC').classList.add('act'); S.step=6; renderProg(); window.scrollTo({top:0,behavior:'smooth'}); return}
+  else if(n==='ok') {document.getElementById('sOk').classList.add('act'); S.step=7; renderProg(); window.scrollTo({top:0,behavior:'smooth'}); return}
+  S.step=n; renderProg(); window.scrollTo({top:0,behavior:'smooth'});
+  document.getElementById('b1back').style.display = S.estimate.length>0 ? 'inline-block' : 'none';
+}
+
+function goEstimate(){ goStep('estimate') }
+
+function pick(el,group,val){
+  el.parentElement.querySelectorAll('.opt').forEach(function(o){o.classList.remove('sel')});
+  el.classList.add('sel');
+  S[group]=val;
+  var btnMap={cat:'b1',sub:'b2',sys:'b3'};
+  if(btnMap[group]) document.getElementById(btnMap[group]).disabled=false;
+}
+
+function suggestLabel(){
+  var catName = (DB.categories.find(function(c){return c.id===S.cat})||{}).name || '';
+  var subName = '';
+  if(DB.subtypes[S.cat]){
+    var sub = DB.subtypes[S.cat].find(function(s){return s.id===S.sub});
+    subName = sub ? sub.name : '';
+  }
+  if(S.cat==='microcement') return 'Микроцемент · '+(subName||'');
+  return catName+(subName?' · '+subName:'');
+}
+
+// Init categories
+(function(){
+  var g=document.getElementById('catOpts');
+  DB.categories.forEach(function(c){
+    var d=document.createElement('div');d.className='opt';d.onclick=function(){pick(this,'cat',c.id)};
+    d.innerHTML='<h4>'+c.name+'</h4><p>'+c.hint+'</p>';g.appendChild(d);
+  });
+})();
+
+function buildSubs(){
+  var subs=DB.subtypes[S.cat]||[];
+  var g=document.getElementById('subOpts');g.innerHTML='';S.sub=null;
+  document.getElementById('b2').disabled=true;
+  subs.forEach(function(s){
+    var d=document.createElement('div');d.className='opt';d.onclick=function(){pick(this,'sub',s.id)};
+    d.innerHTML='<h4>'+s.name+'</h4><p>'+s.hint+'</p>';g.appendChild(d);
+  });
+  if(subs.length===1){g.children[0].classList.add('sel');S.sub=subs[0].id;document.getElementById('b2').disabled=false;}
+}
+
+function buildSystems(){
+  var systems=DB.systems[S.sub]||[];
+  var g=document.getElementById('sysOpts');g.innerHTML='';S.sys=null;
+  document.getElementById('b3').disabled=true;
+  systems.forEach(function(s){
+    var d=document.createElement('div');d.className='opt';d.onclick=function(){pick(this,'sys',s.id)};
+    d.innerHTML='<h4>'+s.name+'</h4><p>'+s.desc+'</p>';g.appendChild(d);
+  });
+  if(systems.length===1){g.children[0].classList.add('sel');S.sys=systems[0].id;document.getElementById('b3').disabled=false;}
+}
+
+function findSystem(id){
+  for(var k in DB.systems){var arr=DB.systems[k];for(var i=0;i<arr.length;i++){if(arr[i].id===id)return arr[i]}}return null;
+}
+
+// === CALCULATION ===
+// === КОНСТАНТЫ для «по факту»-расчёта микроцемента (USD) ===
+var USD_BYN = 2.8108; // курс НБ РБ — обновляется через API при загрузке
+var USD_RATE_DATE = '23.04.2026'; // дата курса (показывается пользователю)
+var MC_MAT_USD = 40;   // материал, $/м²
+var MC_WORK_USD = 24;  // работа, $/м² и $/м.п.
+var MC_DOOR_USD = 100; // нанесение на дверь (работа), $/шт
+var MC_CONSUMABLES_USD = 80; // расходники на смету (один раз)
+var DEFAULT_DOOR_W = 0.9; // ширина стандартной межкомнатной двери, м
+var DEFAULT_DOOR_H = 2.3; // высота, м
+
+// Подгружаем актуальный курс с API НБ РБ
+(async function loadNbrbRate(){
+  try{
+    var r = await fetch('https://api.nbrb.by/exrates/rates/USD?parammode=2');
+    if (!r.ok) throw new Error('NBRB API '+r.status);
+    var j = await r.json();
+    if (j && j.Cur_OfficialRate && j.Cur_Scale) {
+      USD_BYN = j.Cur_OfficialRate / j.Cur_Scale;
+      if (j.Date) {
+        var d = new Date(j.Date);
+        USD_RATE_DATE = String(d.getDate()).padStart(2,'0')+'.'+String(d.getMonth()+1).padStart(2,'0')+'.'+d.getFullYear();
+      }
+      updateRateInfo();
+    }
+  }catch(e){
+    console.warn('NBRB API недоступен, использую дефолтный курс', e);
+    updateRateInfo();
+  }
+})();
+
+function updateRateInfo(){
+  var el = document.getElementById('rateInfo');
+  if (el) el.textContent = 'Курс USD→BYN: ' + USD_BYN.toFixed(4).replace('.', ',') + ' (НБ РБ на ' + USD_RATE_DATE + ')';
+}
+
+// === Динамические инпуты для размеров дверей ===
+function renderDoorSizes(){
+  var n = parseInt(document.getElementById('doorsN').value, 10) || 0;
+  var wrap = document.getElementById('doorSizesList');
+  var grid = document.getElementById('doorSizesGrid');
+  if (n <= 0) { wrap.style.display = 'none'; grid.innerHTML = ''; return; }
+  wrap.style.display = '';
+  // Сохраняем уже введённые значения если они есть
+  var existing = Array.from(grid.querySelectorAll('.door-size')).map(function(row){
+    return {
+      w: row.querySelector('.door-w').value,
+      h: row.querySelector('.door-h').value
+    };
+  });
+  grid.innerHTML = '';
+  for (var i = 0; i < n; i++) {
+    var ex = existing[i] || {};
+    var w = ex.w || DEFAULT_DOOR_W;
+    var h = ex.h || DEFAULT_DOOR_H;
+    var row = document.createElement('div');
+    row.className = 'door-size';
+    row.style.cssText = 'display:flex;align-items:center;gap:6px;font-size:12px;color:#a09a92';
+    row.innerHTML =
+      '<span style="min-width:70px;color:#efece7">Дверь '+(i+1)+'</span>'+
+      '<input class="door-w" type="number" min="0.1" max="3" step="0.01" value="'+w+'" style="width:70px;padding:6px 8px;font-size:13px">'+
+      '<span>м (Ш)</span>'+
+      '<span style="color:#666">×</span>'+
+      '<input class="door-h" type="number" min="0.5" max="3" step="0.01" value="'+h+'" style="width:70px;padding:6px 8px;font-size:13px">'+
+      '<span>м (В)</span>';
+    grid.appendChild(row);
+  }
+}
+
+function collectDoorSizes(){
+  return Array.from(document.querySelectorAll('#doorSizesGrid .door-size')).map(function(row){
+    return {
+      w: parseFloat(row.querySelector('.door-w').value) || DEFAULT_DOOR_W,
+      h: parseFloat(row.querySelector('.door-h').value) || DEFAULT_DOOR_H
+    };
+  });
+}
+
+// === Мульти-инпуты: «Площади работ» и «Погонные метры» можно добавлять несколько раз ===
+function addMultiInput(listId, unit, value){
+  var list = document.getElementById(listId);
+  if (!list) return;
+  var row = document.createElement('div');
+  row.className = 'multi-row';
+  var val = (value !== undefined ? value : '');
+  row.innerHTML = '<input type="number" min="0" step="0.01" placeholder="0" value="'+val+'" oninput="updateMultiSum(\''+listId+'\',\''+unit+'\')">'+
+    '<span class="unit">'+unit+'</span>'+
+    '<button type="button" class="multi-del" title="Удалить" onclick="removeMultiInput(this,\''+listId+'\',\''+unit+'\')">×</button>';
+  list.appendChild(row);
+  updateMultiSum(listId, unit);
+  // Поставить фокус на новое поле
+  var inp = row.querySelector('input');
+  if (inp && value === undefined) inp.focus();
+}
+function removeMultiInput(btn, listId, unit){
+  var list = document.getElementById(listId);
+  if (list.children.length <= 1) return; // не удаляем последнюю строку
+  btn.closest('.multi-row').remove();
+  updateMultiSum(listId, unit);
+}
+function updateMultiSum(listId, unit){
+  var list = document.getElementById(listId);
+  var sum = 0;
+  list.querySelectorAll('input').forEach(function(inp){
+    sum += parseFloat(inp.value) || 0;
+  });
+  var sumEl = document.getElementById(listId.replace('List','Sum'));
+  if (sumEl) {
+    var formatted = (sum % 1 === 0) ? sum : sum.toFixed(2).replace(/\.?0+$/,'');
+    sumEl.textContent = 'Итого: ' + formatted + ' ' + unit;
+  }
+  // Скрыть удалить-кнопку если только 1 строка
+  var rows = list.querySelectorAll('.multi-row');
+  rows.forEach(function(r, i){
+    var d = r.querySelector('.multi-del');
+    if (d) d.disabled = (rows.length <= 1);
+  });
+}
+function collectMultiValues(listId){
+  var list = document.getElementById(listId);
+  if (!list) return [];
+  return Array.from(list.querySelectorAll('input')).map(function(inp){
+    return parseFloat(inp.value) || 0;
+  }).filter(function(v){return v > 0});
+}
+function sumMultiValues(listId){
+  return collectMultiValues(listId).reduce(function(a,b){return a+b}, 0);
+}
+function resetMultiList(listId, unit, initialValue){
+  var list = document.getElementById(listId);
+  if (!list) return;
+  list.innerHTML = '';
+  addMultiInput(listId, unit, initialValue !== undefined ? initialValue : '');
+}
+
+function calcMicrocement(kind, area){
+  var fix = kind==='floor' ? 4216 : 3654;
+  var tiers = kind==='floor'
+    ? [[45,211],[80,205],[100,200],[Infinity,197]]
+    : [[45,180],[80,171],[100,163],[Infinity,155]];
+  if(area<=20) return {total:fix, perM2:Math.round(fix/area), tierLabel:'Фиксированный пакет ≤ 20 м²', fix:true};
+  var rate=tiers[tiers.length-1][1];
+  var from=21, to=45;
+  for(var i=0;i<tiers.length;i++){ if(area<=tiers[i][0]){ rate=tiers[i][1]; to=tiers[i][0]; break; } from=tiers[i][0]+1; }
+  var label = to===Infinity ? 'Тариф 101+ м²' : 'Тариф '+from+'–'+to+' м²';
+  return {total: rate*area, perM2: rate, tierLabel: label, fix:false};
+}
+
+// Расчёт «по факту» — два режима:
+//  - doorsOnly: чистая «дверная» позиция, matM2 = площадь всех дверей, doors = их размеры
+//  - смешанный: matM2 = общая площадь (включая двери, если есть)
+function calcMicrocementExact(matM2, workM2, workMp, doors, doorsOnly){
+  doors = doors || [];
+  var doorArea = doors.reduce(function(a, d){return a + d.w * d.h}, 0);
+  var wallArea, wallMatCost, doorMatCost, workCost;
+  if (doorsOnly) {
+    // Позиция «Двери»: материал = площадь дверей × $40, работа = N × $100
+    wallArea = 0;
+    wallMatCost = 0;
+    doorMatCost = doorArea * MC_MAT_USD;
+    workCost = doors.length * MC_DOOR_USD;
+  } else {
+    // Стены/Полы/Фартук: возможно с встроенными дверями (вычитаем их площадь)
+    wallArea = Math.max(0, matM2 - doorArea);
+    wallMatCost = wallArea * MC_MAT_USD;
+    doorMatCost = doorArea * MC_MAT_USD;
+    workCost = (workM2 + workMp) * MC_WORK_USD + doors.length * MC_DOOR_USD;
+  }
+  var matCost = wallMatCost + doorMatCost;
+  var totalUSD = matCost + workCost;
+  var totalBYN = totalUSD * USD_BYN;
+  return {
+    total: Math.round(totalBYN),
+    totalUSD: totalUSD,
+    matCost: matCost,
+    workCost: workCost,
+    wallArea: wallArea,
+    wallMatCost: wallMatCost,
+    doorArea: doorArea,
+    doorMatCost: doorMatCost,
+    matM2: matM2,
+    workM2: workM2,
+    workMp: workMp,
+    doorsN: doors.length,
+    doors: doors,
+    doorsOnly: !!doorsOnly,
+    perM2: matM2 > 0 ? Math.round(totalBYN / matM2) : 0,
+    tierLabel: 'Тариф «по факту»',
+    isExact: true
+  };
+}
+
+function calcPosition(sys, area, ext){
+  if(sys.microcement){
+    // Если ext-режим (передан объект с workM2/workMp/doors или doorsOnly) — считаем «по факту»
+    var hasExt = ext && (ext.doorsOnly || ext.workMp > 0 || (ext.doors && ext.doors.length > 0) || (ext.workM2 > 0 && Math.abs(ext.workM2 - area) > 0.01));
+    if(hasExt){
+      var rx = calcMicrocementExact(area, ext.workM2 || area, ext.workMp || 0, ext.doors || [], !!ext.doorsOnly);
+      return {
+        total: rx.total,
+        perM2: rx.perM2,
+        tier: rx.tierLabel,
+        layers: null,
+        isMicrocement: true,
+        isExact: true,
+        exactBreakdown: {
+          matM2: rx.matM2, workM2: rx.workM2, workMp: rx.workMp,
+          workM2Items: ext.workM2Items || [], workMpItems: ext.workMpItems || [],
+          doorsN: rx.doorsN, doors: rx.doors, doorsOnly: rx.doorsOnly,
+          wallArea: rx.wallArea, wallMatCost: rx.wallMatCost,
+          doorArea: rx.doorArea, doorMatCost: rx.doorMatCost,
+          matCostUsd: rx.matCost, workCostUsd: rx.workCost, totalUsd: rx.totalUSD
+        },
+        structure: '4 слоя эпоксидной грунтовки + 1 слой микроцемента + 1 слой полиуретанового лака',
+      };
+    }
+    var r = calcMicrocement(sys.microcement, area);
+    return {
+      total: Math.round(r.total),
+      perM2: r.perM2,
+      tier: r.tierLabel,
+      layers: null,
+      isMicrocement: true,
+      structure: '4 слоя эпоксидной грунтовки + 1 слой микроцемента + 1 слой полиуретанового лака',
+    };
+  }
+  var totalCost=0;
+  var layerDetails = [];
+  sys.layers.forEach(function(L){
+    var needed = L.cons * area;
+    var pkgs = Math.ceil(needed / L.pkg);
+    var costPerPkg = L.price * L.pkg;
+    var cost = pkgs * costPerPkg;
+    totalCost += cost;
+    layerDetails.push({name:L.name, stage:L.stage, cons:L.cons, unit:L.unit, needed:needed, pkgs:pkgs, pkg:L.pkg, cost:cost});
+  });
+  return {
+    total: Math.round(totalCost),
+    perM2: Math.round(totalCost/area),
+    tier: '',
+    layers: layerDetails,
+    isMicrocement: false,
+  };
+}
+
+// === ESTIMATE MANAGEMENT ===
+function addToEstimate(){
+  var label = (document.getElementById('labelVal').value || '').trim() || suggestLabel();
+  var sys = findSystem(S.sys);
+  if(!sys){alert('Система не выбрана');return}
+
+  var isDoors = (S.sub === 'mc_doors');
+  var area = 0;
+  var ext = null;
+
+  if (isDoors) {
+    // Для подтипа «Двери»: площадь = сумма площадей всех дверей
+    var doors = collectDoorSizes();
+    if (!doors.length) { alert('Добавьте хотя бы одну дверь'); return; }
+    area = doors.reduce(function(a, d){return a + d.w * d.h}, 0);
+    ext = { workM2: 0, workMp: 0, doors: doors, doorsOnly: true };
+  } else {
+    area = parseFloat(document.getElementById('areaVal').value) || 0;
+    if(area<=0){alert('Введите площадь больше 0');return}
+    if (S.cat === 'microcement') {
+      var workM2List = collectMultiValues('workM2List');
+      var workMpList = collectMultiValues('workMpList');
+      var workM2 = workM2List.reduce(function(a,b){return a+b}, 0);
+      var workMp = workMpList.reduce(function(a,b){return a+b}, 0);
+      if (workM2 <= 0) workM2 = area; // по умолчанию = площадь материала
+      ext = {
+        workM2: workM2,
+        workMp: workMp,
+        workM2Items: workM2List, // храним отдельные значения для возможного редактирования
+        workMpItems: workMpList,
+        doors: []
+      };
+    }
+  }
+
+  var calc = calcPosition(sys, area, ext);
+  var catName = (DB.categories.find(function(c){return c.id===S.cat})||{}).name || S.cat;
+  var subName = '';
+  if(DB.subtypes[S.cat]){
+    var sub = DB.subtypes[S.cat].find(function(s){return s.id===S.sub});
+    subName = sub ? sub.name : S.sub;
+  }
+
+  S.estimate.push({
+    id: Date.now().toString(36),
+    label: label,
+    cat: S.cat, catName: catName,
+    sub: S.sub, subName: subName,
+    sysId: S.sys, sysName: sys.name, sysCode: sys.code || '', sysDesc: sys.desc || '',
+    area: area,
+    total: calc.total, perM2: calc.perM2,
+    tier: calc.tier, structure: calc.structure || '',
+    isMicrocement: calc.isMicrocement,
+    isExact: calc.isExact || false,
+    exactBreakdown: calc.exactBreakdown || null,
+    layers: calc.layers,
+  });
+
+  // Авто-добавление расходников при первой микроцементной позиции
+  ensureConsumablesRow();
+
+  // Сброс локального выбора, чтобы следующий раз чистый
+  document.getElementById('labelVal').value = '';
+  goStep('estimate');
+}
+
+// === РАСХОДНИКИ — добавляются один раз на смету, если есть хотя бы 1 микроцементная позиция «по факту»
+function ensureConsumablesRow(){
+  var hasMcExact = S.estimate.some(function(p){return p.isExact});
+  var hasCons = S.estimate.some(function(p){return p.id === '__consumables'});
+  if (hasMcExact && !hasCons) {
+    S.estimate.push({
+      id: '__consumables',
+      label: 'Расходные материалы',
+      cat: 'extra', catName: 'Прочее', sub:'', subName:'',
+      sysId:'consumables', sysName:'малярка, кисти, валики, плёнка',
+      sysCode:'', sysDesc:'',
+      area: 0,
+      total: Math.round(MC_CONSUMABLES_USD * USD_BYN),
+      perM2: 0,
+      tier: '$' + MC_CONSUMABLES_USD + ' (фикс. на смету)',
+      structure: '',
+      isMicrocement: false,
+      isExtra: true,
+    });
+  }
+  // Если ни одной микроцементной exact-позиции нет — убираем расходники
+  if (!hasMcExact && hasCons) {
+    S.estimate = S.estimate.filter(function(p){return p.id !== '__consumables'});
+  }
+}
+
+function removePosition(id){
+  S.estimate = S.estimate.filter(function(p){return p.id !== id});
+  ensureConsumablesRow();
+  renderEstimate();
+}
+
+function duplicatePosition(id){
+  var p = S.estimate.find(function(x){return x.id===id});
+  if(!p || p.id === '__consumables') return;
+  S.cat = p.cat; S.sub = p.sub; S.sys = p.sysId;
+  goStep(4);
+  document.getElementById('labelVal').value = p.label;
+  document.getElementById('areaVal').value = p.area;
+  // Восстановить расширенные поля если были
+  if (p.isExact && p.exactBreakdown) {
+    var b = p.exactBreakdown;
+    // Мульти-списки работ
+    var w2items = (b.workM2Items && b.workM2Items.length) ? b.workM2Items : (b.workM2 > 0 ? [b.workM2] : []);
+    var wMpitems = (b.workMpItems && b.workMpItems.length) ? b.workMpItems : (b.workMp > 0 ? [b.workMp] : []);
+    if (document.getElementById('workM2List')) {
+      document.getElementById('workM2List').innerHTML = '';
+      if (w2items.length === 0) addMultiInput('workM2List', 'м²', '');
+      else w2items.forEach(function(v){ addMultiInput('workM2List', 'м²', v); });
+    }
+    if (document.getElementById('workMpList')) {
+      document.getElementById('workMpList').innerHTML = '';
+      if (wMpitems.length === 0) addMultiInput('workMpList', 'м.п.', '');
+      else wMpitems.forEach(function(v){ addMultiInput('workMpList', 'м.п.', v); });
+    }
+    // Двери
+    if (document.getElementById('doorsN')) {
+      document.getElementById('doorsN').value = b.doorsN || 1;
+      renderDoorSizes();
+      var doorsArr = b.doors || [];
+      var rows = document.querySelectorAll('#doorSizesGrid .door-size');
+      doorsArr.forEach(function(d, i){
+        if (rows[i]) {
+          rows[i].querySelector('.door-w').value = d.w;
+          rows[i].querySelector('.door-h').value = d.h;
+        }
+      });
+    }
+  }
+}
+
+function renderEstimate(){
+  var list = document.getElementById('estList');
+  var totalRow = document.getElementById('estTotalRow');
+  var countEl = document.getElementById('estCount');
+  var toCt = document.getElementById('toContacts');
+  list.innerHTML = '';
+  if(S.estimate.length===0){
+    list.innerHTML = '<div class="est-empty">пока позиций нет — добавьте первую через шаг 1</div>';
+    totalRow.style.display='none';
+    countEl.textContent = '0';
+    toCt.disabled = true;
+    return;
+  }
+  var sum = 0;
+  S.estimate.forEach(function(p, i){
+    sum += p.total;
+    var row = document.createElement('div');
+    row.className = 'est-row';
+    var areaText = p.area > 0 ? p.area+' м²' : '';
+    var descParts = [];
+    descParts.push(escapeHtml(p.catName));
+    if (p.subName) descParts.push(escapeHtml(p.subName));
+    descParts.push(escapeHtml(p.sysName));
+    if (areaText) descParts.push(areaText);
+    if (p.tier) descParts.push(escapeHtml(p.tier));
+    var descHtml = descParts.join(' · ');
+    // Расшифровка по факту
+    var breakdown = '';
+    if (p.isExact && p.exactBreakdown) {
+      var b = p.exactBreakdown;
+      var parts = [];
+      // Стены — материал (если есть двери, показываем за вычетом)
+      if (b.wallArea > 0) {
+        parts.push('Стены: '+b.wallArea.toFixed(2)+' м² × $'+MC_MAT_USD+' = $'+b.wallMatCost.toFixed(2));
+      } else {
+        parts.push(b.matM2.toFixed(2)+' м² материал × $'+MC_MAT_USD+' = $'+(b.matM2*MC_MAT_USD).toFixed(2));
+      }
+      // Двери — материал
+      if (b.doorArea > 0 && b.doors && b.doors.length) {
+        var dimsStr = b.doors.map(function(d){return d.w+'×'+d.h}).join(', ');
+        parts.push('Двери ('+dimsStr+'): '+b.doorArea.toFixed(2)+' м² × $'+MC_MAT_USD+' = $'+b.doorMatCost.toFixed(2));
+      }
+      // Работа
+      var workItems = [];
+      if (b.workM2 > 0) workItems.push(b.workM2+' м²');
+      if (b.workMp > 0) workItems.push(b.workMp+' м.п.');
+      if (workItems.length) parts.push('Работа: '+workItems.join(' + ')+' × $'+MC_WORK_USD+' = $'+((b.workM2+b.workMp)*MC_WORK_USD).toFixed(2));
+      if (b.doorsN > 0) parts.push('Работа дверей: '+b.doorsN+' шт × $'+MC_DOOR_USD+' = $'+(b.doorsN*MC_DOOR_USD).toFixed(2));
+      breakdown = '<div style="font-size:11px;color:#a09a92;margin-top:4px;line-height:1.5">'+parts.map(function(x){return '• '+x}).join('<br>')+'<br><b style="color:#b8965a">Итого по позиции: $'+b.totalUsd.toFixed(2)+' ≈ '+p.total.toLocaleString('ru')+' руб</b></div>';
+    }
+    var actionsHtml = (p.id === '__consumables')
+      ? '<button class="est-del" title="Расходники добавляются автоматически" disabled style="opacity:.4;cursor:not-allowed">🔒</button>'
+      : '<button class="est-dup" title="Добавить похожую" onclick="duplicatePosition(\''+p.id+'\')">+</button>'
+        +'<button class="est-del" title="Удалить" onclick="removePosition(\''+p.id+'\')">✕</button>';
+    row.innerHTML = ''
+      +'<div class="est-row-main">'
+        +'<div class="est-row-label">'+(i+1)+'. '+escapeHtml(p.label)+'</div>'
+        +'<div class="est-row-desc">'+descHtml+'</div>'
+        +breakdown
+      +'</div>'
+      +'<div class="est-row-sum">'+p.total.toLocaleString('ru')+' руб'
+        +(p.perM2 ? '<br><span style="font-size:10px;color:#a09a92;font-weight:400">'+p.perM2+' руб/м²</span>' : '')
+      +'</div>'
+      +'<div class="est-row-actions">'+actionsHtml+'</div>';
+    list.appendChild(row);
+  });
+  totalRow.style.display = 'flex';
+  document.getElementById('estTotal').textContent = Math.round(sum).toLocaleString('ru')+' руб';
+  countEl.textContent = S.estimate.length + (S.estimate.length===1?' позиция':' позиции/й');
+  toCt.disabled = false;
+}
+
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+
+function resetAll(){
+  S = {step:1, cat:null, sub:null, sys:null, label:'', estimate:[], pdfBlob:null};
+  document.querySelectorAll('.opt').forEach(function(o){o.classList.remove('sel')});
+  ['b1','b2','b3'].forEach(function(id){var b=document.getElementById(id);if(b)b.disabled=true});
+  document.getElementById('areaVal').value = 20;
+  document.getElementById('labelVal').value = '';
+  if (document.getElementById('workM2List')) resetMultiList('workM2List','м²','');
+  if (document.getElementById('workMpList')) resetMultiList('workMpList','м.п.','');
+  var dN = document.getElementById('doorsN'); if (dN) dN.value = '1';
+  goStep(1);
+}
+
+// === PDF BUILD ===
+function renderPositionBreakdown(p){
+  if(p.isMicrocement && p.structure){
+    return '<span class="cell-meta"><b style="color:#5a6a3a">Структура:</b> '+escapeHtml(p.structure)+'</span>';
+  }
+  if(p.layers && p.layers.length){
+    var items = p.layers.map(function(L){
+      return '<span style="color:#888;display:block;margin-top:1px"><span style="color:#5a6a3a;font-size:8px;text-transform:uppercase;letter-spacing:1px;margin-right:4px">'+escapeHtml(L.stage)+'</span>'+escapeHtml(L.name)+' — '+L.cons+' '+L.unit+'/м² × '+p.area+' = '+L.needed.toFixed(1)+' '+L.unit+'</span>';
+    }).join('');
+    return '<span class="cell-meta"><b style="color:#5a6a3a">Состав:</b></span>'+items;
+  }
+  return '';
+}
+
+function buildPdfHtml(clientInfo){
+  var date = new Date().toLocaleDateString('ru-BY', {day:'2-digit',month:'long',year:'numeric'});
+  var num = 'RD-' + Date.now().toString(36).toUpperCase().slice(-6);
+  var c = S.contacts || {};
+  var phone = c.phone || '+375 33 628-04-86';
+  var email = c.email || 'info@romanovdecor.by';
+  var addr = c.address || 'Минск, Беларусь';
+  var site = 'romanovdecor.by';
+
+  // Группируем: основные позиции и расходники
+  var positions = S.estimate.filter(function(p){return p.id !== '__consumables'});
+  var consumables = S.estimate.find(function(p){return p.id === '__consumables'});
+
+  // Считаем USD суммарно
+  var totalUsd = 0, matUsdTot = 0, workUsdTot = 0;
+  var totalMatM2 = 0, hasMp = false;
+  positions.forEach(function(p){
+    if (p.isExact && p.exactBreakdown) {
+      var b = p.exactBreakdown;
+      totalUsd += b.totalUsd;
+      matUsdTot += b.matCostUsd;
+      workUsdTot += b.workCostUsd;
+      totalMatM2 += b.matM2;
+      if (b.workMp > 0) hasMp = true;
+    } else {
+      // Простая позиция — в USD по курсу
+      var pUsd = p.total / USD_BYN;
+      totalUsd += pUsd;
+      matUsdTot += pUsd; // считаем как материал (нет разделения)
+      totalMatM2 += (parseFloat(p.area) || 0);
+    }
+  });
+  if (consumables) {
+    totalUsd += MC_CONSUMABLES_USD;
+    matUsdTot += MC_CONSUMABLES_USD;
+  }
+  var totalByn = totalUsd * USD_BYN;
+
+  // === Стили ячеек таблицы ===
+  var STY = {
+    th_top_mat: 'background:#5a7236;color:#fff;font-size:10px;letter-spacing:2px;text-transform:uppercase;font-weight:700;padding:8px 6px;text-align:center;border-left:3px solid #4a5e2c;border-right:3px solid #4a5e2c',
+    th_top_work: 'background:#a07a32;color:#fff;font-size:10px;letter-spacing:2px;text-transform:uppercase;font-weight:700;padding:8px 6px;text-align:center;border-left:3px solid #856428;border-right:3px solid #856428',
+    th_top_tot: 'background:#1f1b14;color:#b8965a;font-size:10px;letter-spacing:2px;text-transform:uppercase;font-weight:700;padding:8px 6px;text-align:right;border-left:3px solid #b8965a',
+    th_top_name: 'background:#2c2c2c;color:#fff;padding:8px 8px;text-align:left;font-weight:500;letter-spacing:1px;font-size:10px;vertical-align:middle',
+    th_sub_mat: 'background:#3d4a2e;color:#cfe0a8;font-weight:500;letter-spacing:1px;font-size:9px;padding:6px 6px;text-align:right',
+    th_sub_work: 'background:#4a3a1f;color:#e8c88a;font-weight:500;letter-spacing:1px;font-size:9px;padding:6px 6px;text-align:right',
+    td_name: 'padding:5px 6px;border-bottom:1px solid #eee;vertical-align:middle;font-size:10px',
+    td_mat: 'padding:5px 6px;border-bottom:1px solid #eee;vertical-align:middle;font-size:10px;text-align:right;white-space:nowrap;background:#eef3dd;border-left:3px solid #5a7236',
+    td_mat2: 'padding:5px 6px;border-bottom:1px solid #eee;vertical-align:middle;font-size:10px;text-align:right;white-space:nowrap;background:#eef3dd;border-left:1px dashed #b8c98a',
+    td_work: 'padding:5px 6px;border-bottom:1px solid #eee;vertical-align:middle;font-size:10px;text-align:right;white-space:nowrap;background:#f8ead0;border-left:3px solid #a07a32',
+    td_work2: 'padding:5px 6px;border-bottom:1px solid #eee;vertical-align:middle;font-size:10px;text-align:right;white-space:nowrap;background:#f8ead0;border-left:1px dashed #d4b478',
+    td_tot: 'padding:5px 6px;border-bottom:1px solid #eee;vertical-align:middle;font-size:10px;text-align:right;white-space:nowrap;background:#fdf4e0;font-weight:700;color:#2c2c2c;border-left:3px solid #b8965a;padding-right:12px',
+  };
+  var ZONE_TD = 'background:#2c2c2c;color:#b8965a;font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:9px;padding:5px 10px';
+  var SUB_TD_NAME = 'background:#f4f1ea;font-weight:600;font-size:10px;color:#3a3a3a;border-top:1px solid #d4d0c8;border-bottom:1px solid #d4d0c8;padding:6px 6px';
+  var SUB_TD_MAT = 'background:#dde6c5;font-weight:700;color:#3a4a1c;font-size:10px;padding:6px 6px;text-align:right;white-space:nowrap;border-top:1px solid #d4d0c8;border-bottom:1px solid #d4d0c8';
+  var SUB_TD_WORK = 'background:#f0d9a8;font-weight:700;color:#6a4a14;font-size:10px;padding:6px 6px;text-align:right;white-space:nowrap;border-top:1px solid #d4d0c8;border-bottom:1px solid #d4d0c8';
+  var SUB_TD_TOT = 'background:#f5e2bb;font-weight:700;color:#7a5614;font-size:10px;padding:6px 6px;text-align:right;white-space:nowrap;border-top:1px solid #d4d0c8;border-bottom:1px solid #d4d0c8;border-left:3px solid #b8965a;padding-right:12px';
+
+  function zone(label){
+    return '<tr><td colspan="6" style="'+ZONE_TD+'">'+escapeHtml(label)+'</td></tr>';
+  }
+  function row(name, matExpr, matSum, workExpr, workSum, tot){
+    return '<tr>'
+      +'<td style="'+STY.td_name+'">'+name+'</td>'
+      +'<td style="'+STY.td_mat+'">'+matExpr+'</td>'
+      +'<td style="'+STY.td_mat2+'">'+matSum+'</td>'
+      +'<td style="'+STY.td_work+'">'+workExpr+'</td>'
+      +'<td style="'+STY.td_work2+'">'+workSum+'</td>'
+      +'<td style="'+STY.td_tot+'">'+tot+'</td>'
+      +'</tr>';
+  }
+  function sub(name, matExpr, matSum, workExpr, workSum, tot){
+    return '<tr>'
+      +'<td style="'+SUB_TD_NAME+'">'+escapeHtml(name)+'</td>'
+      +'<td style="'+SUB_TD_MAT+'">'+matExpr+'</td>'
+      +'<td style="'+SUB_TD_MAT+'">'+matSum+'</td>'
+      +'<td style="'+SUB_TD_WORK+'">'+workExpr+'</td>'
+      +'<td style="'+SUB_TD_WORK+'">'+workSum+'</td>'
+      +'<td style="'+SUB_TD_TOT+'">'+tot+'</td>'
+      +'</tr>';
+  }
+  function fmtUsd(v){ return '$'+v.toFixed(2).replace(/\.00$/, ''); }
+  function fmtUsdRus(v){ return '$'+v.toFixed(2).replace('.', ',').replace(/,00$/, ''); }
+
+  var rowsHtml = '';
+  positions.forEach(function(p){
+    rowsHtml += zone(p.label);
+    if (p.isExact && p.exactBreakdown) {
+      var b = p.exactBreakdown;
+      // 1) Микроцемент на стенах (или поверхности) — только если есть площадь стен
+      if (!b.doorsOnly && (b.wallArea > 0 || (b.matM2 > 0 && b.doorArea === 0))) {
+        var workItems = [];
+        if (b.workM2 > 0) workItems.push(b.workM2 + ' м²');
+        if (b.workMp > 0) workItems.push(b.workMp + ' м.п.<sup>*</sup>');
+        var workSum = (b.workM2 + b.workMp) * MC_WORK_USD;
+        var wallArea = b.wallArea > 0 ? b.wallArea : b.matM2;
+        var wallCost = wallArea * MC_MAT_USD;
+        rowsHtml += row(
+          'Микроцемент на поверхностях',
+          wallArea.toFixed(2) + ' м² × $' + MC_MAT_USD,
+          fmtUsdRus(wallCost),
+          workItems.join(' + ') + ' × $' + MC_WORK_USD,
+          fmtUsdRus(workSum),
+          fmtUsdRus(wallCost + workSum)
+        );
+      }
+      // 2) Двери — по каждой отдельная строка с размером
+      if (b.doorArea > 0 && b.doors && b.doors.length) {
+        b.doors.forEach(function(d){
+          var dArea = d.w * d.h;
+          var dMat = dArea * MC_MAT_USD;
+          rowsHtml += row(
+            '<span style="display:inline-block;font-size:9px;letter-spacing:1px;padding:2px 6px;border-radius:3px;margin-right:6px;background:#e8e8f0;color:#4a4a7a">дверь</span>' + d.w + ' × ' + d.h + ' м',
+            dArea.toFixed(2) + ' м² × $' + MC_MAT_USD,
+            fmtUsdRus(dMat),
+            '1 шт × $' + MC_DOOR_USD,
+            fmtUsdRus(MC_DOOR_USD),
+            fmtUsdRus(dMat + MC_DOOR_USD)
+          );
+        });
+      }
+      // 3) Subtotal
+      var workItemsSub = [];
+      if (b.workM2 > 0) workItemsSub.push(b.workM2 + ' м²');
+      if (b.workMp > 0) workItemsSub.push(b.workMp + ' м.п.');
+      if (b.doorArea > 0) workItemsSub.push((b.doorsN || b.doors.length) + ' дв.');
+      rowsHtml += sub(
+        'Итого по позиции «' + p.label + '»',
+        b.matM2.toFixed(2) + ' м²',
+        fmtUsdRus(b.matCostUsd),
+        workItemsSub.join(' + '),
+        fmtUsdRus(b.workCostUsd),
+        fmtUsdRus(b.totalUsd)
+      );
+    } else {
+      // Простая позиция (старый тарифный пакет / другая система)
+      var pUsd = p.total / USD_BYN;
+      rowsHtml += row(
+        escapeHtml(p.sysName) + (p.sysCode ? ' (' + escapeHtml(p.sysCode) + ')' : ''),
+        p.area + ' м²' + (p.tier ? '<br><span style="font-size:8px;color:#888">' + escapeHtml(p.tier) + '</span>' : ''),
+        fmtUsdRus(pUsd),
+        '—',
+        '—',
+        fmtUsdRus(pUsd)
+      );
+    }
+  });
+
+  // Расходники
+  if (consumables) {
+    rowsHtml += zone('Расходные материалы');
+    rowsHtml += row(
+      '<span style="display:inline-block;font-size:9px;letter-spacing:1px;padding:2px 6px;border-radius:3px;margin-right:6px;background:#e8e8f0;color:#4a4a7a">прочее</span>Малярная лента, кисти, валики',
+      'комплект',
+      fmtUsdRus(MC_CONSUMABLES_USD),
+      '—',
+      '—',
+      fmtUsdRus(MC_CONSUMABLES_USD)
+    );
+  }
+
+  // Финальная sub-строка «Всего по проекту»
+  rowsHtml += sub(
+    'Всего по проекту',
+    totalMatM2 > 0 ? totalMatM2.toFixed(2) + ' м²' : '—',
+    fmtUsdRus(matUsdTot),
+    '—',
+    fmtUsdRus(workUsdTot),
+    fmtUsdRus(totalUsd)
+  );
+
+  var todayRate = USD_BYN.toFixed(4).replace('.', ',');
+  var todayBYN = Math.round(totalByn).toLocaleString('ru').replace(/,/g,' ');
+
+  var logoSvg = '<svg width="44" height="44" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">'
+    +'<rect width="32" height="32" rx="6" fill="#2c2c2c"/>'
+    +'<text x="50%" y="54%" font-family="Geologica,Arial,sans-serif" font-size="20" font-weight="700" fill="#b8965a" text-anchor="middle" dominant-baseline="middle">r</text>'
+    +'</svg>';
+
+  var footnote = hasMp
+    ? '<b style="color:#2c2c2c"><sup>*</sup> м.п.</b> — погонные метры, считаются для стен высотой менее 0,5 м (откосы, ниши, бортики, простенки). Учёт по м.п. позволяет корректно нормировать труд: на коротких поверхностях нанесение медленнее, чем на сплошной стене.<br>'
+    : '';
+
+  return ''
+  +'<div style="width:100%;padding:24px 44px 24px 32px;background:#fff;color:#2c2c2c;font-family:Geologica,Arial,sans-serif;box-sizing:border-box">'
+    // HEAD
+    +'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;border-bottom:2px solid #b8965a;padding-bottom:10px">'
+      +'<div style="display:flex;align-items:center;gap:10px">'
+        +logoSvg
+        +'<div>'
+          +'<div style="font-size:16px;letter-spacing:2px;font-weight:500;text-transform:lowercase;line-height:1.1">romanov <span style="color:#b8965a">decor</span> studio</div>'
+          +'<div style="font-size:9px;color:#888;margin-top:3px;letter-spacing:1px;text-transform:uppercase">микроцемент · собственное производство</div>'
+        +'</div>'
+      +'</div>'
+      +'<div style="text-align:right;font-size:10px;color:#666;letter-spacing:1px">'
+        +'<div>'+escapeHtml(date)+'</div>'
+        +'<div style="margin-top:2px;font-weight:600;color:#b8965a">КП № '+num+'</div>'
+      +'</div>'
+    +'</div>'
+    // TITLE
+    +'<h1 style="font-size:16px;font-weight:600;letter-spacing:2px;margin-bottom:2px;color:#2c2c2c">Коммерческое предложение</h1>'
+    +'<p style="font-size:10px;color:#888;margin-bottom:12px;letter-spacing:1px">Микроцемент · '+positions.length+' '+(positions.length===1?'позиция':'позиции/й')+'</p>'
+    // CARDS
+    +'<div style="display:flex;gap:10px;margin-bottom:14px">'
+      +'<div style="flex:1;padding:10px 12px;border-radius:6px;font-size:10px;line-height:1.55;background:#f7f5f0">'
+        +'<div style="font-size:8px;text-transform:uppercase;letter-spacing:2px;color:#b8965a;font-weight:600;margin-bottom:2px">Заказчик</div>'
+        +'<div><b>'+escapeHtml(clientInfo.name)+'</b></div>'
+        +'<div>'+escapeHtml(clientInfo.phone)+'</div>'
+        +(clientInfo.msg?'<div style="margin-top:4px;color:#666;font-size:9px;font-style:italic">«'+escapeHtml(clientInfo.msg)+'»</div>':'')
+      +'</div>'
+      +'<div style="flex:1;padding:10px 12px;border-radius:6px;font-size:10px;line-height:1.55;background:#2c2c2c;color:#efece7">'
+        +'<div style="font-size:8px;text-transform:uppercase;letter-spacing:2px;color:#b8965a;font-weight:600;margin-bottom:2px">Исполнитель</div>'
+        +'<div><b>RomanovDecorStudio</b></div>'
+        +'<div>'+escapeHtml(phone)+'</div>'
+        +'<div style="color:#a09a92">'+escapeHtml(email)+' · '+escapeHtml(site)+'</div>'
+      +'</div>'
+    +'</div>'
+    // SECTION HEADER
+    +'<h3 style="font-size:10px;letter-spacing:3px;text-transform:uppercase;margin:10px 0 4px;color:#b8965a;font-weight:600">Спецификация работ и материалов</h3>'
+    // TABLE
+    +'<table style="width:100%;border-collapse:separate;border-spacing:0;font-size:10px">'
+      +'<colgroup>'
+        +'<col style="width:24%">'
+        +'<col style="width:17%">'
+        +'<col style="width:14%">'
+        +'<col style="width:18%">'
+        +'<col style="width:14%">'
+        +'<col style="width:13%">'
+      +'</colgroup>'
+      +'<thead>'
+        +'<tr>'
+          +'<th rowspan="2" style="'+STY.th_top_name+'">Наименование</th>'
+          +'<th colspan="2" style="'+STY.th_top_mat+'">Материалы</th>'
+          +'<th colspan="2" style="'+STY.th_top_work+'">Работы</th>'
+          +'<th rowspan="2" style="'+STY.th_top_tot+'">Итого, $</th>'
+        +'</tr>'
+        +'<tr>'
+          +'<th style="'+STY.th_sub_mat+'">Объём × $/ед.</th>'
+          +'<th style="'+STY.th_sub_mat+'">Сумма, $</th>'
+          +'<th style="'+STY.th_sub_work+'">Метраж × $/ед.</th>'
+          +'<th style="'+STY.th_sub_work+'">Сумма, $</th>'
+        +'</tr>'
+      +'</thead>'
+      +'<tbody>'+rowsHtml+'</tbody>'
+      +'<tfoot>'
+        +'<tr>'
+          +'<td colspan="5" style="padding:8px 6px;border-top:2px solid #b8965a;font-weight:700;letter-spacing:1px;text-align:right;font-size:11px;color:#2c2c2c">ИТОГО:</td>'
+          +'<td style="padding:8px 6px;border-top:2px solid #b8965a;font-weight:700;text-align:right;font-size:14px;color:#b8965a;white-space:nowrap;padding-right:12px">'+fmtUsdRus(totalUsd)+'</td>'
+        +'</tr>'
+        +'<tr>'
+          +'<td colspan="5" style="padding:4px 6px;font-size:9px;color:#888;letter-spacing:1px;text-align:right">в эквиваленте по курсу НБ РБ '+todayRate+' BYN/USD на '+USD_RATE_DATE+':</td>'
+          +'<td style="padding:4px 6px;font-size:9px;color:#888;letter-spacing:1px;text-align:right;white-space:nowrap">≈ '+todayBYN+' руб</td>'
+        +'</tr>'
+      +'</tfoot>'
+    +'</table>'
+    // SUMMARY CARDS
+    +'<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:8px 0 4px">'
+      +'<div style="padding:6px 10px;background:#f7f5f0;border-radius:4px;font-size:10px">'
+        +'<div style="color:#888;letter-spacing:2px;text-transform:uppercase;font-size:8px;font-weight:600">Материалы</div>'
+        +'<div style="font-size:13px;font-weight:700;color:#2c2c2c;margin-top:2px">'+fmtUsdRus(matUsdTot)+'</div>'
+      +'</div>'
+      +'<div style="padding:6px 10px;background:#f7f5f0;border-radius:4px;font-size:10px">'
+        +'<div style="color:#888;letter-spacing:2px;text-transform:uppercase;font-size:8px;font-weight:600">Работы</div>'
+        +'<div style="font-size:13px;font-weight:700;color:#2c2c2c;margin-top:2px">'+fmtUsdRus(workUsdTot)+'</div>'
+      +'</div>'
+      +'<div style="padding:6px 10px;background:#2c2c2c;color:#efece7;border-radius:4px;font-size:10px">'
+        +'<div style="color:#b8965a;letter-spacing:2px;text-transform:uppercase;font-size:8px;font-weight:600">Всего</div>'
+        +'<div style="font-size:14px;font-weight:700;color:#b8965a;margin-top:2px">'+fmtUsdRus(totalUsd)+'</div>'
+      +'</div>'
+    +'</div>'
+    // CONDITIONS
+    +'<div style="margin-top:10px;padding:8px 12px;background:#f7f5f0;border-left:2px solid #b8965a;border-radius:3px;font-size:9px;color:#666;line-height:1.5">'
+      +footnote
+      +'<b style="color:#2c2c2c">Условия:</b> Микроцемент — собственное производство Romanov Decor Studio, толщина 1–1,5 мм, эффекты Vintage / Natural / Metallic на выбор. Технология: 4 слоя эпоксидной грунтовки + 1–2 слоя микроцемента + 2 слоя усиленного полиуретанового лака (для влажных зон). Оплата в белорусских рублях по курсу НБ РБ на день оплаты. <b>Срок действия КП — 14 дней.</b>'
+    +'</div>'
+    // FOOTER
+    +'<div style="margin-top:8px;padding-top:6px;border-top:1px solid #eee;display:flex;justify-content:space-between;align-items:center;font-size:9px;color:#888;letter-spacing:1px">'
+      +'<div>'+escapeHtml(site)+' · '+escapeHtml(email)+' · '+escapeHtml(phone)+' · Минск</div>'
+      +'<div style="color:#b8965a;font-weight:600">Спасибо за доверие!</div>'
+    +'</div>'
+  +'</div>';
+}
+
+// === SUBMIT ===
+async function submitQuote(e){
+  e.preventDefault();
+  var btn = document.getElementById('orderBtn');
+  btn.disabled = true; btn.textContent = 'формируем PDF...';
+
+  // Guard: если CDN html2pdf не загрузился — отправляем заявку без PDF, а не молча падаем
+  if (typeof html2pdf === 'undefined') {
+    try {
+      var clientNoPdf = {
+        name: document.getElementById('orderName').value.trim(),
+        phone: document.getElementById('orderPhone').value.trim(),
+        msg: document.getElementById('orderMsg').value.trim(),
+      };
+      var sumNP = S.estimate.reduce(function(a,p){return a+p.total},0);
+      var summaryNP = S.estimate.map(function(p,i){return (i+1)+'. '+p.label+' — '+p.total.toLocaleString('ru')+' руб'}).join('\n');
+      await fetch('/api/lead', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({
+        name: clientNoPdf.name, phone: clientNoPdf.phone,
+        message: 'СМЕТА (PDF не сформирован — CDN недоступен):\n' + summaryNP + '\nИтого: ' + Math.round(sumNP).toLocaleString('ru') + ' руб\n' + clientNoPdf.msg,
+        source: '/calculator (без PDF)'
+      })});
+      goStep('ok');
+      var dlBtn = document.getElementById('pdfDl');
+      if (dlBtn) dlBtn.style.display = 'none';
+    } catch (err2) {
+      alert('Ошибка сети: ' + err2.message);
+    }
+    btn.disabled = false; btn.textContent = 'отправить и получить PDF';
+    return;
+  }
+
+  var client = {
+    name: document.getElementById('orderName').value.trim(),
+    phone: document.getElementById('orderPhone').value.trim(),
+    msg: document.getElementById('orderMsg').value.trim(),
+  };
+
+  var tpl = document.getElementById('pdfTpl');
+  tpl.innerHTML = buildPdfHtml(client);
+  var node = tpl.firstChild;
+
+  try {
+    var pdfBlob = await html2pdf().set({
+      margin: [8, 8, 8, 8],
+      filename: 'romanov-decor-kp.pdf',
+      image: {type:'jpeg', quality:0.95},
+      html2canvas: {scale:2, useCORS:true, backgroundColor:'#fff', windowWidth: 820},
+      jsPDF: {unit:'mm', format:'a4', orientation:'portrait', compress:true},
+      pagebreak: {mode:['avoid-all', 'css'], avoid:['tr','tbody','thead','tfoot']},
+    }).from(node).outputPdf('blob');
+    S.pdfBlob = pdfBlob;
+    var pdfUrl = URL.createObjectURL(pdfBlob);
+    document.getElementById('pdfDl').href = pdfUrl;
+
+    btn.textContent = 'отправляем...';
+    var fd = new FormData();
+    fd.append('pdf', pdfBlob, 'romanov-decor-kp.pdf');
+    var sum = S.estimate.reduce(function(a,p){return a+p.total},0);
+    var summary = S.estimate.map(function(p,i){
+      return (i+1)+'. '+p.label+' — '+p.catName+(p.subName?'/'+p.subName:'')+' · '+p.sysName+' · '+p.area+' м² · '+p.total.toLocaleString('ru')+' руб';
+    }).join('\n');
+    fd.append('meta', JSON.stringify({
+      name: client.name, phone: client.phone, message: client.msg,
+      positions: S.estimate.length, total: Math.round(sum), summary: summary,
+      source: 'Калькулятор (смета)',
+    }));
+
+    var r = await fetch('/api/quote', {method:'POST', body: fd});
+    var j = await r.json();
+    if(!j.ok) throw new Error(j.error || 'Ошибка сервера');
+
+    goStep('ok');
+    btn.disabled = false; btn.textContent = 'отправить и получить PDF';
+  } catch(err) {
+    alert('Ошибка: '+(err.message||err));
+    btn.disabled = false; btn.textContent = 'отправить и получить PDF';
+  }
+}
+
+renderProg();
+</script>
+</body>
+</html>

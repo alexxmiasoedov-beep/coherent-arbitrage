@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Микроцемент для пола в Минске | Romanov Decor Studio</title>
+<meta name="description" content="Микроцемент собственного производства для пола. Толщина 1–1,5 мм, совместим с тёплым полом. Эффекты Vintage, Natural, Metallic. Минск и вся Беларусь.">
+<link rel="canonical" href="https://romanovdecor.by/microcement-floor">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}body{font-family:'Geologica',sans-serif;background:#fff;color:#1e1e1e;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;font-feature-settings:'kern' 1,'liga' 1,'calt' 1}a{text-decoration:none;color:inherit}
+.hd{position:fixed;top:14px;left:0;right:0;z-index:500;display:flex;align-items:center;justify-content:space-between;padding:0 14px;background:none;border:none;height:auto;pointer-events:none}
+.hd > *{pointer-events:auto}
+.hd-pill{background:#2c2c2c;border:1px solid rgba(255,255,255,.08);border-radius:24px;box-shadow:0 8px 24px rgba(0,0,0,.4),0 0 0 1px rgba(184,150,90,.04) inset;height:42px;display:flex;align-items:center;transition:all .3s cubic-bezier(.34,1.2,.64,1);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+.hd-logo-pill{width:42px;justify-content:center;padding:0;border-radius:10px}
+.hd-logo-pill .logo-r{font-family:'Geologica',sans-serif;font-size:17px;font-weight:700;color:#efece7;text-transform:lowercase;line-height:1;letter-spacing:0;display:block}
+.hd-nav-pill{position:absolute;left:50%;transform:translateX(-50%);padding:0 20px;gap:14px;max-width:calc(100vw - 120px)}
+.hd-nav-pill > a, .hd-nav-pill > .dd, .hd-nav-pill .dd-label{font-size:10px!important;font-weight:500!important;letter-spacing:1.5px!important;text-transform:uppercase!important;line-height:1!important;color:#a09a92;white-space:nowrap}
+.hd-nav-pill:hover{background:#1f1f1f;box-shadow:0 12px 32px rgba(0,0,0,.5),0 0 0 1px rgba(184,150,90,.12) inset}
+.hd-burger-pill{width:42px;justify-content:center;padding:0;border-radius:10px;overflow:hidden;position:relative}
+.hd-burger-pill::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at center,rgba(184,150,90,.25),transparent 70%);opacity:0;transition:opacity .4s cubic-bezier(.34,1.2,.64,1)}
+.hd-burger-pill:hover{background:#1f1f1f;border-color:rgba(184,150,90,.25);box-shadow:0 8px 24px rgba(0,0,0,.5),0 0 0 1px rgba(184,150,90,.18) inset}
+.hd-burger-pill:hover::before{opacity:1}
+.hd-burger-pill .bur{width:42px;height:42px;border-radius:10px;border:none;background:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;-webkit-tap-highlight-color:transparent;position:relative;z-index:1}
+.hd-burger-pill .bur span{display:block;width:14px;height:1.5px;background:#efece7;border-radius:1px;transition:transform .35s cubic-bezier(.34,1.5,.64,1),background .25s ease,width .35s cubic-bezier(.34,1.5,.64,1)}
+.hd-burger-pill:hover .bur span{background:#b8965a}
+.hd-burger-pill:hover .bur span:nth-child(1){transform:translateY(2px) rotate(8deg);width:16px}
+.hd-burger-pill:hover .bur span:nth-child(2){width:8px;transform:translateX(-3px)}
+.hd-burger-pill:hover .bur span:nth-child(3){transform:translateY(-2px) rotate(-8deg);width:16px}
+@media(max-width:760px){.hd{padding:0 10px;top:10px}.hd-pill{height:38px;border-radius:22px}.hd-logo-pill{width:38px;border-radius:9px}.hd-logo-pill .logo-r{font-size:15px}.hd-burger-pill{width:38px;border-radius:9px}.hd-burger-pill .bur{width:38px;height:38px;border-radius:9px}.hd-nav-pill{display:none}}
+.logo{font-size:11px;font-weight:500;white-space:nowrap;letter-spacing:2px;text-transform:lowercase;color:#efece7}.logo span{color:#b8965a;font-weight:400}
+.nav{display:flex;gap:16px;align-items:center}.nav>a,.dd{font-size:11px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:#a09a92;transition:color .2s;cursor:pointer;position:relative}.nav>a:hover,.dd:hover{color:#b8965a}.nav>a.act{color:#b8965a}.dd-menu a.act{color:#b8965a;font-weight:600}
+.dd-label{font-size:11px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:#a09a92;display:flex;align-items:center;gap:3px}.dd-label:hover{color:#b8965a}
+.dd-arrow{border:solid #a09a92;border-width:0 1.5px 1.5px 0;display:inline-block;padding:2px;transform:rotate(45deg);transition:.2s;margin-top:-2px}.dd:hover .dd-arrow{transform:rotate(-135deg);border-color:#b8965a}
+.dd-menu{position:absolute;top:100%;left:-12px;min-width:260px;background:#2c2c2c;border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:8px 0;opacity:0;visibility:hidden;transform:translateY(8px);transition:all .25s;margin-top:12px;box-shadow:0 12px 32px rgba(0,0,0,.3)}.dd:hover .dd-menu{opacity:1;visibility:visible;transform:translateY(0)}
+.dd-menu a{display:block;padding:7px 16px;font-size:12px;font-weight:400;letter-spacing:0;text-transform:none;color:#a09a92;transition:.15s}.dd-menu a:hover{color:#b8965a;background:rgba(184,150,90,.06)}
+.dd-group{padding:8px 16px 2px;font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#b8965a;opacity:.65}
+
+.overlay{position:fixed;inset:0;z-index:510;background:rgba(0,0,0,.4);display:none}.overlay.show{display:block}
+.drawer{position:fixed;top:0;right:-340px;width:320px;max-width:85vw;height:100%;z-index:520;background:#2c2c2c;border-left:1px solid rgba(255,255,255,.06);transition:right .35s;padding:80px 24px 24px;overflow-y:auto;color:#efece7}
+.dr-close-btn{position:absolute;top:20px;right:20px;width:36px;height:36px;background:none;border:none;color:#a09a92;cursor:pointer;display:flex;align-items:center;justify-content:center;-webkit-tap-highlight-color:transparent;z-index:5;transition:color .2s,transform .2s;padding:0}.dr-close-btn:hover{color:#b8965a}.dr-close-btn:active{transform:translateX(3px)}.drawer.show{right:0}
+.dr-lb{font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#b8965a;margin-bottom:8px;margin-top:16px}
+.dr-lb.dr-toggle,.dr-label.dr-toggle{cursor:pointer;display:flex;align-items:center;justify-content:space-between;padding:8px 0;margin:0;-webkit-tap-highlight-color:transparent;user-select:none;transition:color .25s}
+.dr-lb.dr-toggle::after,.dr-label.dr-toggle::after{content:'';width:7px;height:7px;border:solid #a09a92;border-width:0 1.5px 1.5px 0;transform:rotate(45deg);transition:transform .25s ease,border-color .25s ease;margin-right:6px;display:inline-block}
+.dr-lb.dr-toggle.open,.dr-label.dr-toggle.open{color:#d4b883}
+.dr-lb.dr-toggle.open::after,.dr-label.dr-toggle.open::after{transform:rotate(-135deg);border-color:#b8965a}
+.dr-sub{max-height:0;overflow:hidden;transition:max-height .35s cubic-bezier(.4,0,.2,1);margin-bottom:0}
+.dr-sub.open{max-height:600px;margin-bottom:6px}
+.dr-a{display:block;padding:5px 0 5px 12px;font-size:14px;font-weight:400;color:#a09a92}.dr-a:hover{color:#b8965a}
+.dr-a-main{display:block;padding:9px 0 9px 14px;font-size:14px;font-weight:600;color:#efece7;border-left:2px solid #b8965a;margin:4px 0;letter-spacing:.3px;background:rgba(184,150,90,.06);border-radius:0 8px 8px 0;transition:background .2s,color .2s}
+.dr-a-main:hover{color:#b8965a;background:rgba(184,150,90,.12)}
+.dr-a2{display:block;padding:6px 0;font-size:15px;font-weight:500;color:#efece7}
+.dr-it{margin-bottom:10px}.dr-it h4{font-size:13px;font-weight:500;color:#efece7}.dr-it p,.dr-it a{font-size:12px;color:#a09a92;font-weight:300;display:block}
+.dr-div{height:1px;background:rgba(255,255,255,.06);margin:12px 0}
+.dr-btns{display:flex;gap:8px;margin-top:12px}.dr-btns a{flex:1;display:flex;align-items:center;justify-content:center;padding:12px;color:#fff;border-radius:14px;font-size:13px;font-weight:600}
+.s{padding:60px 20px}.mx{max-width:800px;margin:0 auto}
+.gray{background:#2c2c2c;color:#efece7}.white{background:#fff;color:#1e1e1e}.cream{background:#f7f5f0;color:#1e1e1e}
+.tag{font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#b8965a;margin-bottom:6px}
+.ln{width:30px;height:2px;background:#b8965a;margin-bottom:16px;border-radius:1px}
+.btn-g{display:inline-block;padding:12px 24px;font-family:'Geologica',sans-serif;font-size:13px;font-weight:600;border-radius:14px;background:#b8965a;color:#1a1a1a;border:none;cursor:pointer;transition:.2s;letter-spacing:2px}.btn-g:hover{background:#d4b883}
+.btn-o{display:inline-block;padding:12px 24px;font-family:'Geologica',sans-serif;font-size:13px;font-weight:600;border-radius:14px;background:none;border:1px solid rgba(184,150,90,.25);color:#b8965a;cursor:pointer;transition:.2s;letter-spacing:2px}.btn-o:hover{background:rgba(184,150,90,.06)}
+.bc{padding-top:68px;font-size:12px;color:#a09a92;letter-spacing:2px}.bc a{color:#b8965a}
+h1{font-size:32px;font-weight:600;line-height:1.15;margin-bottom:8px;color:#1e1e1e}h1 b{color:#1e1e1e;font-weight:600}
+h2{font-size:24px;font-weight:600;margin:48px 0 8px;line-height:1.3}h2 b{color:#b8965a;font-weight:500}
+h3{font-size:18px;font-weight:600;margin:32px 0 6px}
+p{font-size:15px;line-height:1.65;margin-bottom:12px;font-weight:300}.gray p{color:#ccc}.cream p,.white p{color:#555}
+strong{font-weight:600}
+.fi{border-bottom:1px solid rgba(0,0,0,.06);padding:14px 0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.fq{display:flex;justify-content:space-between;align-items:center;gap:8px}.fq h4{font-size:15px;font-weight:500}
+.fq i{color:#b8965a;font-size:14px;font-style:normal;flex-shrink:0;transition:transform .3s}.fi.open .fq i{transform:rotate(45deg)}
+.fa{max-height:0;overflow:hidden;transition:max-height .35s;font-size:14px;line-height:1.7;font-weight:300;color:#555}.fi.open .fa{max-height:400px;padding-top:8px}
+/* HERO минималистичный (single-page стиль главной) */
+.hero-min{position:relative;display:flex;align-items:center;justify-content:center;text-align:center;padding:0;min-height:90vh;min-height:90svh;background:#2c2c2c;background-size:cover;background-position:center;overflow:hidden}
+.hero-min::after{content:"";position:absolute;inset:0;background:linear-gradient(rgba(30,30,30,.62),rgba(30,30,30,.45));pointer-events:none;z-index:1}
+.hero-min-bc{position:absolute;top:80px;left:0;right:0;text-align:center;font-size:11px;color:rgba(239,236,231,.7);letter-spacing:2px;text-transform:lowercase;z-index:3}
+.hero-min-bc a{color:#b8965a}
+.hero-min-in{position:relative;z-index:4;max-width:1100px;padding:80px 24px;margin:0 auto}
+.hero-min-brand{font-family:'Geologica',sans-serif;font-weight:300;font-size:clamp(40px,8vw,90px);line-height:1;letter-spacing:.02em;color:#fff;text-transform:lowercase;margin:0;text-shadow:0 4px 24px rgba(0,0,0,.45);white-space:nowrap}
+.hero-min-studio{font-family:'Geologica',sans-serif;font-weight:400;font-size:clamp(13px,1.5vw,18px);letter-spacing:6px;color:#fff;text-transform:lowercase;margin-top:18px;text-shadow:0 1px 8px rgba(0,0,0,.4)}
+.hero-min-studio span{color:#fff;font-weight:400}
+.hero-min-tag{font-family:'Geologica',sans-serif;font-weight:300;font-size:clamp(13px,1.4vw,16px);color:rgba(239,236,231,.8);letter-spacing:1.5px;margin-top:48px;line-height:1.5;text-shadow:0 1px 8px rgba(0,0,0,.4)}
+@media(max-width:600px){.hero-min-in{padding:60px 20px 40px}.hero-min-brand{font-size:clamp(40px,12vw,60px)}.hero-min-studio{font-size:13px;letter-spacing:2.5px;margin-top:8px}.hero-min-tag{margin-top:32px;font-size:13px;letter-spacing:.5px;line-height:1.45}.hero-min-bc{top:72px;font-size:10px}}
+.hero-scroll{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);width:24px;height:38px;border:1.5px solid rgba(255,255,255,.3);border-radius:14px;z-index:5;pointer-events:none;display:flex;justify-content:center}
+.hero-scroll span{display:block;width:3px;height:8px;background:rgba(255,255,255,.55);border-radius:2px;margin-top:6px;animation:scrollDot 1.6s cubic-bezier(.65,.05,.36,1) infinite}
+@keyframes scrollDot{0%{opacity:0;transform:translateY(-4px)}30%{opacity:1}80%{opacity:0;transform:translateY(14px)}100%{opacity:0;transform:translateY(14px)}}
+@media(max-width:600px){.hero-scroll{bottom:18px;width:22px;height:34px}}
+.hero-intro{background:#fff;padding:64px 20px 32px}
+.hero-intro .mx{max-width:800px;margin:0 auto}
+.hero-intro h1{font-size:clamp(26px,4vw,38px);line-height:1.15;margin:8px 0 0;color:#1e1e1e;font-weight:600}
+.hero-intro h1 b{color:#1e1e1e;font-weight:600}
+.hero-intro .ln{width:30px;height:2px;background:#b8965a;margin:18px 0}
+.hero-intro p{font-size:16px;line-height:1.65;color:#555;font-weight:300;margin:0 0 24px}
+.hero-intro-btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+@media(max-width:600px){.hero-intro{padding:48px 20px 24px}.hero-intro-btns .btn-g,.hero-intro-btns .btn-o{flex:1;text-align:center;padding:11px 16px;font-size:12px}}
+.layers-section{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin:20px 0}
+.layers-img{border-radius:14px;background:#e8e3da;background-size:cover;background-position:center;min-height:320px}
+.layers-list{display:flex;flex-direction:column;gap:16px}
+.layer-card{display:flex;gap:16px;align-items:flex-start}
+.layer-dot{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;flex-shrink:0}
+.layer-card:nth-child(1) .layer-dot{background:#3a342c;color:#efece7}
+.layer-card:nth-child(2) .layer-dot{background:#8a7a5a;color:#fff}
+.layer-card:nth-child(3) .layer-dot{background:#b8965a;color:#1a1a1a}
+.layer-card h4{font-size:15px;font-weight:600;margin-bottom:3px}
+.layer-card p{font-size:13px;margin:0;color:#706a62;font-weight:300;line-height:1.5}
+.layer-card .layer-line{width:24px;height:2px;margin:6px 0;border-radius:1px}
+.layer-card:nth-child(1) .layer-line{background:#3a342c}
+.layer-card:nth-child(2) .layer-line{background:#8a7a5a}
+.layer-card:nth-child(3) .layer-line{background:#b8965a}
+@media(max-width:900px){.layers-section{grid-template-columns:1fr;gap:20px}.layers-img{min-height:220px;order:-1}}
+.sys-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:20px 0}
+.sys-card{background:#fff;border-radius:16px;padding:24px;border:1px solid rgba(0,0,0,.06);display:flex;flex-direction:column}
+.sys-card h4{font-size:16px;font-weight:600;margin:0 0 4px;color:#1e1e1e}
+.sys-card .sys-sub{font-size:11px;color:#b8965a;letter-spacing:2px;text-transform:uppercase;font-weight:600;margin-bottom:12px}
+.sys-card p{font-size:13px;line-height:1.55;color:#555;flex:1}
+.sys-card .sys-price{font-size:14px;font-weight:600;color:#1e1e1e;margin-top:14px}
+@media(max-width:768px){.sys-grid{grid-template-columns:1fr}}
+.cta{background:#2c2c2c;color:#efece7;padding:40px;border-radius:20px;text-align:center;margin:40px 0}
+.cta h3{color:#b8965a;font-size:22px;margin:0 0 8px;letter-spacing:2px}.cta p{color:#a09a92;margin-bottom:16px;letter-spacing:2px}
+.ft{position:relative;background:#1a1a1a;border-top:1px solid rgba(184,150,90,.18);padding:64px 20px 28px;color:#a09a92}
+.ft::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,#b8965a 30%,#d4b883 50%,#b8965a 70%,transparent 100%);opacity:.7}
+.ft-grid{max-width:1100px;margin:0 auto 40px;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:48px}
+.ft-col h4{font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#b8965a;margin-bottom:18px;position:relative;padding-bottom:8px}
+.ft-col h4::after{content:"";position:absolute;bottom:0;left:0;width:24px;height:1px;background:#b8965a;opacity:.5}
+.ft-col p,.ft-col a{font-size:13px;color:#a09a92;font-weight:300;line-height:1.85;display:block;margin-bottom:2px;letter-spacing:1.5px;text-decoration:none;transition:color .25s ease,padding-left .25s ease}
+.ft-col a:hover{color:#efece7;padding-left:6px}
+.ft-logo{font-size:12px;font-weight:500;letter-spacing:2px;text-transform:lowercase;color:#efece7;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.ft-logo::before{content:"r";display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;background:#2c2c2c;border:1px solid rgba(184,150,90,.2);border-radius:8px;color:#b8965a;font-weight:700;font-size:16px;font-family:'Geologica',sans-serif}
+.ft-logo span{color:#b8965a;font-weight:500}
+.ft-desc{font-size:12px;color:#888;font-weight:300;line-height:1.7;letter-spacing:.8px;max-width:340px;margin-top:0}
+.ft-bottom{max-width:1100px;margin:0 auto;padding-top:24px;border-top:1px solid rgba(255,255,255,.06);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.ft-copy{font-size:10px;color:#555;letter-spacing:2px;text-transform:uppercase}
+.ft-bottom > div a{font-size:11px;color:#888;letter-spacing:2px;transition:color .25s ease;text-decoration:none;text-transform:lowercase}
+.ft-bottom > div a:hover{color:#b8965a}
+@media(max-width:768px){.ft{padding:48px 20px 24px}.ft-grid{grid-template-columns:1fr 1fr;gap:32px;margin-bottom:32px}.ft-col:first-child{grid-column:1/-1}.ft-bottom{flex-direction:column;gap:14px;text-align:center}.ft-bottom > div{flex-wrap:wrap;justify-content:center}.ft-desc{max-width:none}}
+@media(max-width:420px){.ft-grid{grid-template-columns:1fr;gap:28px}}
+@media(max-width:768px){.ft-grid{grid-template-columns:1fr 1fr;gap:28px}}
+@media(max-width:500px){.ft-grid{grid-template-columns:1fr;gap:24px}.ft-bottom{flex-direction:column;text-align:center}}
+@media(max-width:900px){.nav{display:none}}
+@media(max-width:600px){h1{font-size:24px}h2{font-size:20px}.s{padding:48px 20px}}
+.sticky-cta{position:fixed;bottom:24px;right:24px;z-index:550;display:flex;flex-direction:column;align-items:flex-end;gap:8px}.sticky-btn{width:52px;height:52px;border-radius:50%;background:#2c2c2c;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,.3);transition:.3s}.sticky-btn:hover{transform:scale(1.08)}.sticky-btn svg{width:22px;height:22px;fill:#efece7}.sticky-pop{display:none;flex-direction:column;gap:6px;margin-bottom:4px}.sticky-pop.show{display:flex}.sticky-pop a{display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:12px;font-size:12px;font-weight:600;color:#fff;letter-spacing:2px;text-transform:lowercase;box-shadow:0 4px 16px rgba(0,0,0,.3);transition:.2s;white-space:nowrap}.sticky-pop a:hover{transform:translateX(-4px)}
+.adv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0}
+.adv-card{display:flex;align-items:flex-start;gap:14px;padding:20px 16px;background:rgba(255,255,255,.04);border-radius:14px;border:1px solid rgba(255,255,255,.05)}
+.adv-card svg{flex-shrink:0;margin-top:2px}
+.adv-card .adv-h{font-size:14px;font-weight:600;color:#efece7;margin-bottom:3px}
+.adv-card .adv-p{font-size:12px;color:#a09a92;font-weight:300}
+@media(max-width:768px){.adv-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.adv-grid{grid-template-columns:1fr}}
+.nw-grid{display:grid;grid-template-columns:minmax(150px,0.28fr) 1fr;min-height:280px}
+.nw-grid>div:nth-child(2){border-left:1px solid rgba(184,150,90,.25);padding:50px 40px;display:flex;align-items:center}
+.nw-grid>div:first-child{display:flex;align-items:center;justify-content:center;padding:40px 20px}
+@media(max-width:768px){.nw-grid{grid-template-columns:1fr;min-height:auto}.nw-grid>div:nth-child(2){border-left:none;border-top:1px solid rgba(184,150,90,.25);padding:32px 20px}.nw-grid>div:first-child{padding:28px 20px 8px}}
+.nw-grid-3{display:grid;grid-template-columns:minmax(150px,0.28fr) auto 1fr;min-height:280px}
+.nw-grid-3>div:first-child{display:flex;align-items:center;justify-content:center;padding:40px 20px}
+.nw-grid-3>div:nth-child(3){padding:50px 40px;display:flex;align-items:center}
+@media(max-width:768px){.nw-grid-3{grid-template-columns:1fr;min-height:auto}.nw-grid-3>div:nth-child(2){display:none}.nw-grid-3>div:nth-child(3){padding:32px 20px;border-top:1px solid rgba(184,150,90,.25)}.nw-grid-3>div:first-child{padding:28px 20px 8px}}
+@media(max-width:768px){[style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr 1fr !important}}@media(max-width:500px){[style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr !important}}
+.rel-block{padding:40px 20px;background:#f7f5f0}
+.rel-block .mx{max-width:1060px;margin:0 auto}
+.rel-block h2{font-size:20px;font-weight:600;margin:0 0 4px;color:#1e1e1e}
+.rel-block .rel-sub{font-size:12px;color:#706a62;margin-bottom:18px;font-weight:300}
+.rel-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px}
+.rel-grid a{display:block;padding:12px 16px;background:#fff;border-radius:10px;border:1px solid rgba(0,0,0,.06);font-size:13px;color:#1e1e1e;font-weight:500;transition:.15s}
+.rel-grid a:hover{border-color:#b8965a;color:#b8965a;transform:translateY(-1px)}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","serviceType":"Микроцемент на пол","provider":{"@type":"LocalBusiness","name":"Romanov Decor Studio","areaServed":{"@type":"Country","name":"Беларусь"},"address":{"@type":"PostalAddress","addressLocality":"Минск","addressCountry":"BY"}},"description":"Микроцемент на пол под ключ: бесшовное напольное покрытие 1,5 мм для квартиры, коттеджа, офиса.","offers":{"@type":"Offer","priceCurrency":"USD","priceSpecification":{"@type":"UnitPriceSpecification","price":"55","unitCode":"MTK","priceCurrency":"USD"}}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://romanovdecor.by/"},{"@type":"ListItem","position":2,"name":"Микроцемент","item":"https://romanovdecor.by/microcement"},{"@type":"ListItem","position":3,"name":"Пол"}]}</script>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/favicon.svg">
+<meta name="theme-color" content="#2c2c2c">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Romanov Decor Studio">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:image" content="https://romanovdecor.by/img/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://romanovdecor.by/img/og-cover.png">
+<meta property="og:url" content="https://romanovdecor.by/microcement-floor">
+<meta property="og:title" content="Микроцемент на полу в Минске — бесшовное напольное покрытие | Romanov Decor Studio">
+<meta property="og:description" content="Микроцемент на пол под ключ: бесшовное напольное покрытие 1,5 мм для квартиры, коттеджа, офиса. Прочность выше ламината, эффект архитектурного бетона. Совместим с тёплым полом. Гарантия 5 лет. Минск.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Микроцемент на полу в Минске — бесшовное напольное покрытие | Romanov Decor Studio">
+<meta name="twitter:description" content="Микроцемент на пол под ключ: бесшовное напольное покрытие 1,5 мм для квартиры, коттеджа, офиса. Прочность выше ламината, эффект архитектурного бетона. Совместим с тёплым полом. Гарантия 5 лет. Минск.">
+</head>
+<body>
+
+<header class="hd">
+<div class="hd-pill hd-logo-pill"><a href="/" class="logo-r" aria-label="Romanov Decor Studio">r</a></div>
+<nav class="hd-pill hd-nav-pill nav">
+<div class="dd"><div class="dd-label">Микроцемент <i class="dd-arrow"></i></div><div class="dd-menu"><a href="/microcement">О микроцементе</a><div class="dd-group">Применение</div><a href="/microcement-walls">На стенах</a><a href="/microcement-floor" class="act">На полу</a><a href="/microcement-bathroom">В ванной</a><a href="/microcement-kitchen">На кухне</a><a href="/microcement-stairs">На лестнице</a><a href="/microcement-furniture">На мебели</a><a href="/microcement-facade">На фасаде</a><div class="dd-group">Гайды</div><a href="/walls">Подготовка стен</a><a href="/floors">Подготовка пола</a><a href="/bathroom">Микроцемент в ванной</a><a href="/furniture">Микроцемент на мебели</a></div></div>
+<div class="dd"><div class="dd-label">Наливные полы <i class="dd-arrow"></i></div><div class="dd-menu"><div class="dd-group">Покрытия</div><a href="/epoxy">Об эпоксиде</a><a href="/polyurethane">О полиуретане</a><div class="dd-group">Применение</div><a href="/garage">Гараж</a><a href="/warehouse">Склад</a><a href="/production">Производство</a><a href="/food">Пищевой цех</a><a href="/office">Офис</a><a href="/restaurant">Ресторан</a></div></div>
+<a href="/portfolio">Портфолио</a><a href="/price">Цены</a><a href="/blog">Блог</a><a href="/about">О студии</a>
+</nav>
+<div class="hd-pill hd-burger-pill">
+<button class="bur" id="burgerBtn" type="button" onclick="toggleDrawer()" aria-label="Меню"><span></span><span></span><span></span></button>
+</div>
+</header>
+<div class="overlay" id="overlay" onclick="closeDrawer()"></div>
+<div class="drawer" id="drawer">
+<a class="dr-a2" href="/" onclick="closeDrawer()" style="border-bottom:1px solid rgba(255,255,255,.06);padding-bottom:10px;margin-bottom:10px">Главная</a>
+<div class="dr-lb">Микроцемент</div>
+<a class="dr-a-main" href="/microcement" onclick="closeDrawer()">О микроцементе</a><a class="dr-a" href="/microcement-walls" onclick="closeDrawer()">На стенах</a><a class="dr-a" href="/microcement-floor" onclick="closeDrawer()">На полу</a><a class="dr-a" href="/microcement-bathroom" onclick="closeDrawer()">В ванной</a><a class="dr-a" href="/microcement-kitchen" onclick="closeDrawer()">На кухне</a><a class="dr-a" href="/microcement-stairs" onclick="closeDrawer()">На лестнице</a><a class="dr-a" href="/microcement-furniture" onclick="closeDrawer()">На мебели</a><a class="dr-a" href="/microcement-facade" onclick="closeDrawer()">На фасаде</a>
+<div class="dr-lb">Наливные полы</div>
+<a class="dr-a-main" href="/epoxy" onclick="closeDrawer()">Об эпоксиде</a><a class="dr-a-main" href="/polyurethane" onclick="closeDrawer()">О полиуретане</a><a class="dr-a" href="/garage" onclick="closeDrawer()">Пол для гаража</a><a class="dr-a" href="/warehouse" onclick="closeDrawer()">Пол для склада</a><a class="dr-a" href="/production" onclick="closeDrawer()">Пол для производства</a><a class="dr-a" href="/food" onclick="closeDrawer()">Пол для пищевого цеха</a><a class="dr-a" href="/office" onclick="closeDrawer()">Пол для офиса</a><a class="dr-a" href="/restaurant" onclick="closeDrawer()">Пол для ресторана</a><div class="dr-lb">Гайды</div><a class="dr-a" href="/walls" onclick="closeDrawer()">Подготовка стен</a><a class="dr-a" href="/floors" onclick="closeDrawer()">Подготовка пола</a><a class="dr-a" href="/bathroom" onclick="closeDrawer()">Микроцемент в ванной</a><a class="dr-a" href="/furniture" onclick="closeDrawer()">Микроцемент на мебели</a><div class="dr-div"></div>
+<a class="dr-a2" href="/portfolio" onclick="closeDrawer()">Портфолио</a><a class="dr-a2" href="/price" onclick="closeDrawer()">Цены</a><a class="dr-a2" href="/calculator" onclick="closeDrawer()">Калькулятор</a><a class="dr-a2" href="/blog" onclick="closeDrawer()">Блог</a><a class="dr-a2" href="/about" onclick="closeDrawer()">О студии</a><a class="dr-a2" href="/#contact" onclick="closeDrawer()">Контакты</a>
+<div class="dr-div"></div>
+<div class="dr-lb">Контакты</div>
+<div class="dr-it"><h4>Телефон</h4><a href="tel:+375XXXXXXXX">+375 (XX) XXX-XX-XX</a></div>
+<div class="dr-it"><h4>Email</h4><a href="/cdn-cgi/l/email-protection#bbd2d5ddd4fbc9d4d6dad5d4cddfded8d4c995d9c2">info&#64;romanovdecor.by</a></div>
+<div class="dr-btns"><a href="https://t.me/" style="background:#2AABEE">Telegram</a><a href="viber://chat?number=" style="background:#7360F2">Viber</a></div>
+</div>
+
+<!-- HERO минималистичный — бренд-обложка в стиле главной -->
+<section class="hero-min" data-slot="mc-floor-hero">
+<div class="hero-min-bc"><a href="/">главная</a> / <a href="/microcement">микроцемент</a> / пол</div>
+<div class="hero-min-in">
+<div class="hero-min-brand">floor</div>
+<div class="hero-min-studio">микроцемент для пола</div>
+<div class="hero-min-tag">Бесшовные полы и площадки</div>
+</div>
+<div class="hero-scroll" aria-hidden="true"><span></span></div>
+</section>
+
+<section class="s gray" style="padding:60px clamp(20px,6vw,80px)">
+<div class="nw-grid">
+<div>
+<div style="text-align:center">
+<div style="font-size:10px;font-weight:500;letter-spacing:2px;text-transform:lowercase;color:#a09a92;line-height:1.8">romanov</div>
+<div style="font-size:22px;font-weight:600;letter-spacing:3px;text-transform:lowercase;color:#b8965a;line-height:1">microcement floor</div>
+</div>
+</div>
+<div>
+<div style="line-height:1.55">
+<div class="tag" style="color:#b8965a">микроцемент для пола</div>
+<h1 style="color:#efece7;margin:6px 0 14px;font-size:clamp(24px,3.4vw,32px);line-height:1.2;font-weight:600">Микроцемент <b style="color:#efece7">на полу</b></h1>
+<p>Пол — самая нагружаемая поверхность в квартире и доме. Ламинат изнашивается в проходных зонах за 5–7 лет, плитка даёт холодные швы с затиркой, дерево требует обновления лака, паркет не любит влажность. Современные дизайнеры всё чаще ищут альтернативу — бесшовный, монолитный, визуально цельный пол.</p>
+<p>Микроцемент на пол — тонкослойное декоративное покрытие (1,5 мм) на основе цемента, полимерных добавок и пигментов. Создаёт монолитную бесшовную поверхность от стены до стены без переходов и стыков. Прочность выше ламината и линолеума, стойкость к ножкам кресел, пылесосам, робот-пылесосам и повседневному износу. Финишный полиуретановый лак даёт водо-, грязе- и износостойкость.</p>
+<p>Подходит для квартир-студий и лофтов, частных домов и коттеджей, офисов open-space, шоурумов, ресторанов, кофеен. Наносится по существующему основанию: бетонная стяжка, плитка, старый наливной пол, ламинат (с подготовкой). Совместим с водяным и электрическим тёплым полом — толщина 1,5 мм даёт отличную теплопроводность. Микроцемент также применяем на <a href="/microcement-walls" style="color:#b8965a;border-bottom:1px solid rgba(184,150,90,.4)">стенах и потолках</a>, в <a href="/microcement-bathroom" style="color:#b8965a;border-bottom:1px solid rgba(184,150,90,.4)">ванных комнатах</a>, на <a href="/microcement-stairs" style="color:#b8965a;border-bottom:1px solid rgba(184,150,90,.4)">лестницах</a> — подробнее о материале на странице <a href="/microcement" style="color:#b8965a;border-bottom:1px solid rgba(184,150,90,.4)">микроцемента</a>.</p>
+<p>Romanov Decor Studio производит микроцемент собственной рецептуры на немецких компонентах и наносит под ключ в Минске и по всей Беларуси. Цвет — любой по RAL или NCS, фактура Vintage, Natural или Metallic. Часто комбинируем один цвет на полу и стенах для эффекта «монолитный бетонный интерьер». Гарантия 5 лет.</p>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:18px">
+<a href="javascript:void(0)" onclick="openCalc()" class="btn-g">Рассчитать стоимость →</a>
+<a href="/portfolio?filter=residential" class="btn-o">Посмотреть работы</a>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+<section class="s gray"><div class="mx">
+<h2 style="color:#efece7;margin-top:0">Почему микроцемент <b>на полу</b></h2>
+<div class="adv-grid">
+<div class="adv-card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#b8965a" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><div><div class="adv-h">Бесшовность</div><div class="adv-p">От стены до стены без швов и стыков.</div></div></div>
+<div class="adv-card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#b8965a" stroke-width="1.5"><path d="M12 2v6M12 16v6M2 12h6M16 12h6"/><circle cx="12" cy="12" r="3"/></svg><div><div class="adv-h">Тёплый пол</div><div class="adv-p">Совместим с водяным и электрическим контуром.</div></div></div>
+<div class="adv-card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#b8965a" stroke-width="1.5"><path d="M4 20h16M4 20V10M20 20V10M12 20V4"/></svg><div><div class="adv-h">Всего 1,5 мм</div><div class="adv-p">Не поднимает уровень пола, не мешает дверям.</div></div></div>
+<div class="adv-card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#b8965a" stroke-width="1.5"><path d="M12 2v20M2 12h20"/></svg><div><div class="adv-h">Водостойкость</div><div class="adv-p">Финишный лак не боится воды и бытовой химии.</div></div></div>
+<div class="adv-card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#b8965a" stroke-width="1.5"><path d="M5 13l4 4L19 7"/></svg><div><div class="adv-h">Износостойкость</div><div class="adv-p">Выдерживает кресла на роликах и робот-пылесос.</div></div></div>
+<div class="adv-card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#b8965a" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><div><div class="adv-h">Срок 15–25 лет</div><div class="adv-p">Без обновления и ремонта при нормальной нагрузке.</div></div></div>
+</div>
+</div></section>
+
+<section class="s cream"><div class="mx" style="max-width:960px">
+<div class="tag">где применяется</div>
+<h2 style="margin-top:0">Микроцемент <b>на полу в разных помещениях</b></h2>
+<div class="sys-grid">
+<div class="sys-card">
+<div class="sys-sub">жильё</div>
+<h4>Квартира и коттедж</h4>
+<p>Гостиная, спальня, коридор, кухня-столовая. Монолитный пол во всей квартире без порогов и переходов между комнатами. Тёплый пол по желанию.</p>
+<div class="sys-price">от $55/м²</div>
+</div>
+<div class="sys-card">
+<div class="sys-sub">коммерция</div>
+<h4>Офис, шоурум</h4>
+<p>Open-space, кабинеты, ресепшн, коворкинги, бутики, автосалоны. Износостойкое покрытие под большую проходимость + дизайнерский внешний вид.</p>
+<div class="sys-price">от $60/м²</div>
+</div>
+<div class="sys-card">
+<div class="sys-sub">премиум</div>
+<h4>Ресторан, лофт, вилла</h4>
+<p>Комплексная отделка полов в ресторанных залах, кафе, виллах премиум-сегмента. Один цвет на полу и стенах — эффект монолитного интерьера.</p>
+<div class="sys-price">от $70/м²</div>
+</div>
+</div>
+</div></section>
+
+<!-- ЭТАПЫ РАБОТЫ — три этапа, шесть слоёв (адаптированы под пол) -->
+<section class="s white"><div class="mx" style="max-width:960px">
+<div class="tag">этапы работы</div>
+<h2 style="margin-top:0">Монтаж микроцемента на полу — <b>5–7 рабочих дней</b></h2>
+<p style="max-width:620px;color:#555">Три этапа, шесть слоёв. Каждый слой выполняет свою задачу — подготовка, декор, защита.</p>
+
+<div class="layers-section" style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin:30px 0">
+<div class="layers-img" data-slot="mc-floor-layers" style="border-radius:14px;background:#e8e3da;background-size:contain;background-position:center;background-repeat:no-repeat;min-height:320px"></div>
+<div class="layers-list" style="display:flex;flex-direction:column;gap:18px">
+
+<div class="layer-card" style="display:flex;gap:16px;align-items:flex-start">
+<div class="layer-dot" style="width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;flex-shrink:0;background:#3a342c;color:#efece7">1</div>
+<div>
+<h4 style="font-size:15px;font-weight:600;margin-bottom:3px">Подготовка основания · 4 слоя эпоксидной грунтовки</h4>
+<p style="font-size:13px;margin:0;color:#706a62;font-weight:300;line-height:1.5">Шлифовка стяжки, обеспыливание, ремонт трещин. Эпоксидная грунтовка с кварцевой посыпкой для адгезии. На слабом основании — больше слоёв.</p>
+</div>
+</div>
+
+<div class="layer-card" style="display:flex;gap:16px;align-items:flex-start">
+<div class="layer-dot" style="width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;flex-shrink:0;background:#8a7a5a;color:#fff">2</div>
+<div>
+<h4 style="font-size:15px;font-weight:600;margin-bottom:3px">Декоративный слой · 1 слой микроцемента</h4>
+<p style="font-size:13px;margin:0;color:#706a62;font-weight:300;line-height:1.5">Наша авторская рецептура. Слой, который видно. Цвет, фактура, эффекты Vintage / Natural / Metallic — выбираются под интерьер.</p>
+</div>
+</div>
+
+<div class="layer-card" style="display:flex;gap:16px;align-items:flex-start">
+<div class="layer-dot" style="width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;flex-shrink:0;background:#b8965a;color:#1a1a1a">3</div>
+<div>
+<h4 style="font-size:15px;font-weight:600;margin-bottom:3px">Защита · 1 слой полиуретанового лака</h4>
+<p style="font-size:13px;margin:0;color:#706a62;font-weight:300;line-height:1.5">УФ-стойкий полиуретановый лак для пола. Защищает от истирания, влаги, бытовой химии. Матовый, сатиновый или глянцевый финиш.</p>
+</div>
+</div>
+
+</div>
+</div>
+
+<div style="background:#faf8f3;border-left:3px solid #b8965a;padding:18px 22px;border-radius:12px;margin-top:24px;max-width:680px">
+<strong style="display:block;font-size:14px;color:#1e1e1e;margin-bottom:6px">Прочность пола зависит от основания.</strong>
+<span style="font-size:13px;color:#555;line-height:1.55;font-weight:300">На стяжке марки М300 покрытие служит десятилетиями. Если стяжка сыпется — её нужно оценить и усилить перед нанесением. Наши мастера проверяют основание на каждом объекте.</span>
+</div>
+</div></section>
+
+<section class="s cream"><div class="mx">
+<h2>Частые <b>вопросы</b> про микроцемент на полу</h2>
+<div class="fi"><div class="fq"><h4>Сколько стоит пол из микроцемента?</h4><i>+</i></div><div class="fa">От $55 за м² в квартире по готовой стяжке. Офис — от $60/м². Премиум-объекты — от $70/м². Квартира 70 м² под ключ — типично $4500–5500 включая материал, работу и финишный лак. Точную цену даём после замера.</div></div>
+<div class="fi"><div class="fq"><h4>Можно ли нанести микроцемент на плитку?</h4><i>+</i></div><div class="fa">Да. Плитка должна держаться прочно (нет отслоений). Обезжириваем, шлифуем глянец, наносим специальный адгезионный грунт, затем микроцемент. Толщина 1,5 мм не меняет высоту пола критично. Это быстрое обновление без демонтажа плитки и пыли.</div></div>
+<div class="fi"><div class="fq"><h4>Совместим ли с тёплым полом?</h4><i>+</i></div><div class="fa">Да, полностью. 1,5 мм — отличная теплопроводность, лучше чем у плитки 8–12 мм. Важно: перед нанесением микроцемента прогреть контур до рабочей температуры и выдержать режим 48 часов. Во время работы тёплый пол отключаем, включаем через 7 дней после финишного лака.</div></div>
+<div class="fi"><div class="fq"><h4>Скользкий ли пол из микроцемента?</h4><i>+</i></div><div class="fa">Матовый финиш — нет, комфортный для хождения. Сатиновый и глянцевый во влажном состоянии могут скользить — для ванной и мокрых зон добавляем антискользящие частицы R10–R11. Для гостиной и спальни обычно хватает матового — без добавок.</div></div>
+<div class="fi"><div class="fq"><h4>Будут ли трещины?</h4><i>+</i></div><div class="fa">На качественной стяжке М200 и выше — нет. На слабом основании возможны при усадке и деформациях. Перед работой проверяем стяжку CM-методом и визуально. При необходимости укрепляем или заливаем новую. Без качественной основы гарантии не даём — но с подготовкой проблем не бывает.</div></div>
+<div class="fi"><div class="fq"><h4>Как ведёт себя при падении тяжёлых предметов?</h4><i>+</i></div><div class="fa">Царапины и небольшие вмятины от случайных падений ключей, инструмента, сковородок — возможны (как на любом покрытии кроме плитки). Ремонтируются точечно без замены пола в комнате. Сколы на кромках — нет (это преимущество перед плиткой и керамогранитом).</div></div>
+<div class="fi"><div class="fq"><h4>Как ухаживать за полом?</h4><i>+</i></div><div class="fa">Сухая уборка пылесосом (включая робот), влажная уборка мягкой тряпкой 1–3 раза в неделю. Нейтральные моющие (pH 5–8). Нельзя: абразивы, хлор, растворители. Пятна от вина, кофе, сока — стираются сразу мыльной водой.</div></div>
+<div class="fi"><div class="fq"><h4>Сколько занимает укладка в квартире?</h4><i>+</i></div><div class="fa">Квартира 60–70 м² — 5 рабочих дней. Первый день — подготовка основания и грунт, второй — первый слой микроцемента, третий — второй слой, четвёртый — первый слой лака, пятый — финишный лак. Хождение через 48 часов, въезд мебели через 7 дней.</div></div>
+</div></section>
+
+<section class="s white"><div class="mx">
+<div class="cta"><h3>Нужен микроцемент на пол?</h3><p>Бесплатный замер, палитра на объекте, подбор фактуры. Гарантия 5 лет.</p><div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center"><a href="javascript:void(0)" onclick="openCalc()" class="btn-g">рассчитать стоимость</a><a href="javascript:void(0)" onclick="openGM()" class="btn-o" style="color:#b8965a">обсудить проект</a></div></div>
+</div></section>
+
+<section class="rel-block"><div class="mx">
+<h2>Смотрите также</h2>
+<div class="rel-sub">Микроцемент в других применениях</div>
+<div class="rel-grid"><a href="/microcement-walls">Микроцемент на стенах</a><a href="/microcement-bathroom">Микроцемент в ванной</a><a href="/microcement-kitchen">Микроцемент на кухне</a><a href="/microcement-stairs">Микроцемент на лестнице</a><a href="/microcement-furniture">Микроцемент на мебели</a><a href="/microcement-facade">Микроцемент для фасада</a></div>
+</div></section>
+<section style="padding:28px 20px;background:#f7f5f0"><div style="max-width:800px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap"><div style="font-size:14px;color:#555;font-weight:300">Хотите разобраться в деталях? <b style="color:#2c2c2c;font-weight:600">Как готовят пол и стяжку — экспертный гайд</b></div><a href="/floors" style="display:inline-block;padding:10px 20px;font-size:12px;font-weight:600;border-radius:12px;border:1px solid rgba(184,150,90,.4);color:#b8965a;letter-spacing:1.5px;white-space:nowrap">читать гайд →</a></div></section>
+<footer class="ft">
+<div class="ft-grid">
+<div class="ft-col"><div class="ft-logo">romanov <span>decor</span> studio</div><div style="font-size:11px;color:rgba(255,255,255,.4);letter-spacing:1.5px;margin-top:6px">Поверхности, которые создают пространство</div><p class="ft-desc">Собственное производство микроцемента на немецких компонентах. Официальные дилеры Remmers — монтаж полиуретановых и эпоксидных полов под ключ.</p></div>
+<div class="ft-col"><h4>материалы</h4><a href="/microcement">микроцемент</a><a href="/epoxy">эпоксидные полы</a><a href="/polyurethane">полиуретановые полы</a></div>
+<div class="ft-col"><h4>применение</h4><a href="/microcement-walls">стены</a><a href="/microcement-floor">пол</a><a href="/microcement-bathroom">ванная</a><a href="/microcement-kitchen">кухня</a><a href="/garage">гараж</a><a href="/office">офис</a></div>
+<div class="ft-col" id="ftContacts"><h4>контакты</h4><a href="tel:+375XXXXXXXX">+375 (XX) XXX-XX-XX</a><a href="/cdn-cgi/l/email-protection#6900070f06291b06040807061f0d0c0a061b470b10">info&#64;romanovdecor.by</a><p>г. Минск, Беларусь</p></div>
+</div>
+<div class="ft-bottom"><div class="ft-copy">© 2026 romanov decor studio</div><div style="display:flex;gap:12px"><a href="/portfolio" style="font-size:11px;color:#666;letter-spacing:2px">портфолио</a><a href="/about" style="font-size:11px;color:#666;letter-spacing:2px">о студии</a><a href="/blog" style="font-size:11px;color:#666;letter-spacing:2px">блог</a><a href="/price" style="font-size:11px;color:#666;letter-spacing:2px">цены</a></div></div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+function toggleDrawer(){var d=document.getElementById('drawer');var o=document.getElementById('overlay');if(d.classList.contains('show')){d.classList.remove('show');o.classList.remove('show')}else{d.classList.add('show');o.classList.add('show')}}
+function closeDrawer(){document.getElementById('drawer').classList.remove('show');document.getElementById('overlay').classList.remove('show')}
+var f=document.querySelectorAll('.fi');for(var i=0;i<f.length;i++){f[i].addEventListener('click',function(){if(this.classList.contains('open')){this.classList.remove('open')}else{this.classList.add('open')}})}
+(async function(){try{var r=await fetch('/api/slots');if(!r.ok)return;var j=await r.json();var map=j&&j.slots||{};Object.keys(map).forEach(function(key){if(/__pos$|__x$|__y$|__zoom$/.test(key))return;var el=document.querySelector('[data-slot="'+key+'"]');if(!el||!map[key])return;var url='/api/image/'+map[key];var x=Number(map[key+'__x']);var y=Number(map[key+'__y']);var zoom=Number(map[key+'__zoom'])||100;if(isNaN(x))x=50;if(isNaN(y)){var legacy=map[key+'__pos'];y=legacy==='top'?0:legacy==='bottom'?100:50}el.style.backgroundImage='url("'+url+'")';el.style.backgroundRepeat='no-repeat';el.style.backgroundPosition=x+'% '+y+'%';el.style.backgroundSize=zoom === 100 ? 'cover' : (zoom+'%')})}catch(e){}})();
+(async function(){try{var r=await fetch('/api/contacts');if(!r.ok)return;var j=await r.json();var c=j&&j.contacts||{};if(c.phone)document.querySelectorAll('a[href^="tel:"]').forEach(function(a){a.href='tel:'+c.phone.replace(/[\s()-]/g,'');a.textContent=c.phone});if(c.email)document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){a.href='mailto:'+c.email;a.textContent=c.email});if(c.telegram)document.querySelectorAll('a[href^="https://t.me"]').forEach(function(a){a.href=c.telegram});if(c.viber)document.querySelectorAll('a[href^="viber:"]').forEach(function(a){a.href='viber://chat?number='+c.viber.replace(/[^+\d]/g,'')});var fc=document.getElementById('ftContacts');if(fc){var esc=function(s){return String(s||'').replace(/[&<>"']/g,function(m){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]})};var h='<h4>контакты</h4>';if(c.phone)h+='<a href="tel:'+esc(c.phone).replace(/[\s()-]/g,'')+'">'+esc(c.phone)+'</a>';if(c.email)h+='<a href="mailto:'+esc(c.email)+'">'+esc(c.email)+'</a>';if(c.address)h+='<p>'+esc(c.address)+'</p>';if(c.hours)h+='<p>'+esc(c.hours)+'</p>';fc.innerHTML=h}}catch(e){}})();
+</script>
+<div class="sticky-cta"><div class="sticky-pop" id="stickyPop"><a href="https://t.me/" style="background:#2AABEE">telegram</a><a href="viber://chat?number=" style="background:#7360F2">viber</a></div><button class="sticky-btn" onclick="document.getElementById('stickyPop').classList.toggle('show')" aria-label="Связаться"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.2L4 17.2V4h16v12z"/></svg></button></div>
+<!-- CONTACT + CALC MODALS (gm) -->
+<style>
+.gm{position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:700;display:none;align-items:flex-start;justify-content:center;padding:20px;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.gm.show{display:flex}
+.gm-body{background:#1e1e1e;border:1px solid rgba(255,255,255,.08);border-radius:20px;max-width:460px;width:100%;padding:36px;position:relative;margin:auto;color:#efece7}
+.gm-close{position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.08);border:none;color:#efece7;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:3}
+.gm-close:hover{background:rgba(255,255,255,.15)}
+.gm h3{font-family:'Geologica',sans-serif;font-size:22px;color:#efece7;margin:0 0 6px;font-weight:600;letter-spacing:2px;text-transform:lowercase}
+.gm h3 b{color:#b8965a;font-weight:500}
+.gm .gm-hint{font-size:13px;color:#a09a92;margin-bottom:18px;font-weight:300;letter-spacing:2px}
+.gm-form{display:flex;flex-direction:column;gap:10px}
+.gm-form input,.gm-form textarea{padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:#2c2c2c;color:#efece7;font-family:'Geologica',sans-serif;font-size:14px;outline:none;letter-spacing:1px}
+.gm-form input:focus,.gm-form textarea:focus{border-color:#b8965a}
+.gm-form textarea{resize:vertical;min-height:70px}
+.gm-form button{padding:14px;background:#b8965a;color:#1a1a1a;border:none;border-radius:12px;font-family:'Geologica',sans-serif;font-size:13px;font-weight:600;letter-spacing:2px;cursor:pointer;text-transform:uppercase;margin-top:6px}
+.gm-form button:hover{background:#d4b883}
+.gm-msg{display:flex;gap:8px;margin-top:14px}
+.gm-msg a{flex:1;padding:12px;border-radius:12px;color:#fff;font-size:12px;font-weight:600;text-align:center;letter-spacing:2px;text-transform:lowercase}
+.gm-calc{max-width:760px;padding:0;overflow:hidden;background:#1e1e1e;border:none}
+.gm-calc iframe{display:block;width:100%;height:min(92vh,820px);border:0;border-radius:20px;background:#1e1e1e}
+@media(max-width:600px){.gm-body{padding:28px 20px}.gm-calc iframe{height:90vh}}
+
+/* Global text justify */
+body section p:not(.tag):not(.bc):not(.fa):not([class*="hero-"]):not(.cell-meta):not(.fcopy){text-align:justify;hyphens:none;-webkit-hyphens:none}
+
+/* Headings: убрать color-split — b наследует цвет заголовка */
+h1 b,h2 b,h3 b,h4 b,.ttl b,.hero h1 b,.hero-headline b,.hero-content h1 b{color:inherit!important;font-weight:600}
+
+/* Mobile compact buttons (.btn-sm + auto-fit для парных hero-кнопок) */
+@media(max-width:600px){
+  .btn-g.btn-sm,.btn-o.btn-sm{padding:10px 14px;font-size:11px;letter-spacing:1.2px;white-space:nowrap;flex:1;text-align:center}
+  .hero-btns,.hero-text .btns,div[style*="display:flex"][style*="gap:8px"][style*="flex-wrap:wrap"]{flex-wrap:nowrap!important}
+  .hero-btns .btn,.hero-text .btn-g,.hero-text .btn-o{padding:10px 14px;font-size:11px;letter-spacing:1.2px;white-space:nowrap;flex:1;text-align:center}
+}
+
+/* READ MORE — collapsible на мобиле */
+@media(max-width:600px){
+  .rm-wrap{display:block;width:100%;flex:1 1 100%;min-width:0}
+  .rm-block{position:relative;max-height:240px;overflow:hidden;transition:max-height .55s cubic-bezier(.34,1.2,.64,1)}
+  .rm-block.rm-expanded{max-height:8000px}
+  .rm-block::after{content:"";position:absolute;bottom:0;left:0;right:0;height:60px;background:linear-gradient(transparent,var(--rm-bg,#fff));pointer-events:none;transition:opacity .3s}
+  .rm-block.rm-expanded::after{opacity:0}
+  .rm-btn{position:relative;display:flex;align-items:center;justify-content:center;gap:8px;margin:16px 0 4px;padding:14px 22px;background:transparent;border:none;border-radius:50px;color:#b8965a;font-family:'Geologica',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:lowercase;cursor:pointer;-webkit-tap-highlight-color:transparent;box-sizing:border-box;outline:none;width:100%;overflow:hidden;text-align:center;transition:background-color .25s ease,color .25s ease}
+  .rm-svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;display:block;overflow:hidden}
+  .rm-svg path{fill:none;stroke:#b8965a;stroke-width:1.5;stroke-linejoin:round;stroke-linecap:round;transition:stroke-dashoffset 3.5s cubic-bezier(.4,0,.2,1)}
+  .rm-btn span,.rm-btn::after{position:relative;z-index:1}
+  .rm-btn::after{content:"↓";font-weight:400;font-size:12px;transition:transform .3s}
+  .rm-btn.exp::after{transform:rotate(180deg)}
+  .rm-btn:hover{background-color:rgba(184,150,90,.06);color:#d4b883}
+}
+</style>
+
+<div class="gm" id="gmContact" onclick="if(event.target===this)gmClose('Contact')">
+<div class="gm-body">
+<button class="gm-close" onclick="gmClose('Contact')" aria-label="Закрыть">✕</button>
+<h3>обсудить <b>проект</b></h3>
+<p class="gm-hint">Перезвоним в течение 30 минут в рабочее время.</p>
+<form class="gm-form" onsubmit="gmSubmit(event)">
+<input type="text" placeholder="имя" required>
+<input type="tel" placeholder="телефон" required>
+<textarea placeholder="кратко опишите задачу"></textarea>
+<button type="submit">отправить</button>
+</form>
+<div class="gm-msg">
+<a href="https://t.me/" style="background:#2AABEE">telegram</a>
+<a href="viber://chat?number=" style="background:#7360F2">viber</a>
+</div>
+</div>
+</div>
+
+<div class="gm" id="gmCalc" onclick="if(event.target===this)gmClose('Calc')">
+<div class="gm-body gm-calc">
+<button class="gm-close" onclick="gmClose('Calc')" aria-label="Закрыть">✕</button>
+<iframe id="gmCalcFrame" src="about:blank" loading="lazy" title="Калькулятор стоимости"></iframe>
+</div>
+</div>
+
+<script>
+function gmOpen(id){var m=document.getElementById('gm'+id);if(!m)return;if(id==='Calc'){var fr=document.getElementById('gmCalcFrame');if(fr&&(!fr.src||fr.src==='about:blank'))fr.src='/calculator'}m.classList.add('show');document.body.style.overflow='hidden'}
+function gmClose(id){var m=document.getElementById('gm'+id);if(m){m.classList.remove('show');document.body.style.overflow=''}}
+async function gmSubmit(e){e.preventDefault();var f=e.target;var btn=f.querySelector('button[type=submit]');var inputs=f.querySelectorAll('input,textarea');var data={name:inputs[0]&&inputs[0].value||'',phone:inputs[1]&&inputs[1].value||'',message:inputs[2]&&inputs[2].value||'',source:location.pathname};if(btn)btn.disabled=true;try{var r=await fetch('/api/lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});var j=await r.json();if(j.ok){f.innerHTML='<div style="text-align:center;padding:16px"><p style="font-size:16px;color:#efece7;margin-bottom:6px;letter-spacing:2px">спасибо!</p><p style="font-size:12px;color:#a09a92;letter-spacing:2px">перезвоним в течение 30 минут</p></div>';setTimeout(function(){gmClose('Contact')},2500)}else{alert('Ошибка: '+(j.error||'попробуйте ещё раз'));if(btn)btn.disabled=false}}catch(err){alert('Ошибка сети: '+err.message);if(btn)btn.disabled=false}}
+function openGM(){gmOpen('Contact')}
+function openCalc(){gmOpen('Calc')}
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){gmClose('Contact');gmClose('Calc')}});
+</script>
+
+
+<script>
+// READ MORE — авто-collapse длинных СПЛОШНЫХ текстовых блоков на мобиле, кроме hero/steps/cards
+(function(){
+  if (window.innerWidth > 600) return;
+  var drawIO = ('IntersectionObserver' in window) ? new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) {
+        var btn = e.target;
+        var pth = btn.querySelector('.rm-svg path');
+        setTimeout(function(){
+          btn.classList.add('drawn');
+          if (pth) requestAnimationFrame(function(){
+            requestAnimationFrame(function(){ pth.style.strokeDashoffset = '0'; });
+          });
+        }, 700);
+        drawIO.unobserve(btn);
+      }
+    });
+  }, {threshold:.25}) : null;
+  function makeCollapsible(el) {
+    if (!el || el.dataset.rmDone) return;
+    if (el.closest('.hero, .hero-min, .hero-2col, .hero-text, .hero-content, [class*="hero-"]')) return;
+    if (el.querySelector('form,table,.cmp-wrap,.cmp-scroll,.char-grid,.apply-row,.tex-grid,.pf,.px-grid,.bn-wrap,.why-grid,.partners-grid,.ag,.ms-block,iframe,video,.proc-step,.step-card,.steps,.st,.pc,.sys-grid,.sys-card,.fi,.app-grid,.gen-grid,.grid2,.grid3,.pf-mini,.cta')) return;
+    if (el.scrollHeight < 320) return;
+    el.dataset.rmDone = '1';
+    var wrap = document.createElement('div');
+    wrap.className = 'rm-wrap';
+    el.parentNode.insertBefore(wrap, el);
+    wrap.appendChild(el);
+    el.classList.add('rm-block');
+    var target = wrap, bg = '';
+    while (target && target !== document.body) {
+      var c = getComputedStyle(target).backgroundColor;
+      if (c && c !== 'rgba(0, 0, 0, 0)' && c !== 'transparent') { bg = c; break; }
+      target = target.parentElement;
+    }
+    if (!bg) bg = getComputedStyle(document.body).backgroundColor || '#fff';
+    el.style.setProperty('--rm-bg', bg);
+    var btn = document.createElement('button');
+    btn.className = 'rm-btn';
+    btn.type = 'button';
+    btn.innerHTML = '<svg class="rm-svg"><path d=""/></svg><span>развернуть</span>';
+    wrap.appendChild(btn);
+    btn.addEventListener('click', function(){
+      var isExp = el.classList.toggle('rm-expanded');
+      btn.classList.toggle('exp', isExp);
+      btn.querySelector('span').textContent = isExp ? 'свернуть' : 'развернуть';
+    });
+    requestAnimationFrame(function(){
+      var w = btn.offsetWidth, h = btn.offsetHeight;
+      if (!w || !h) return;
+      var svg = btn.querySelector('.rm-svg');
+      var path = svg.querySelector('path');
+      path.style.transition = 'none';
+      svg.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
+      var r = h / 2;
+      var cx = w / 2;
+      var d = 'M ' + cx + ',0.75 H ' + (w - r) +
+              ' A ' + (r - 0.75) + ',' + (r - 0.75) + ' 0 0 1 ' + (w - 0.75) + ',' + r +
+              ' A ' + (r - 0.75) + ',' + (r - 0.75) + ' 0 0 1 ' + (w - r) + ',' + (h - 0.75) +
+              ' H ' + r +
+              ' A ' + (r - 0.75) + ',' + (r - 0.75) + ' 0 0 1 0.75,' + r +
+              ' A ' + (r - 0.75) + ',' + (r - 0.75) + ' 0 0 1 ' + r + ',0.75 H ' + cx + ' Z';
+      path.setAttribute('d', d);
+      var len = path.getTotalLength ? path.getTotalLength() : (w * 2 + h * Math.PI);
+      path.style.strokeDasharray = len + 'px';
+      path.style.strokeDashoffset = len + 'px';
+      void path.getBoundingClientRect();
+      path.style.transition = '';
+      if (drawIO) drawIO.observe(btn);
+      else setTimeout(function(){
+        btn.classList.add('drawn');
+        requestAnimationFrame(function(){ path.style.strokeDashoffset = '0'; });
+      }, 200);
+    });
+  }
+  var sels = '.manifesto-right, .prod-text .inner, section .mx, .hw-content';
+  document.querySelectorAll(sels).forEach(makeCollapsible);
+  document.querySelectorAll('section div, section article').forEach(function(el){
+    if (el.dataset.rmDone) return;
+    var blockChildren = Array.from(el.children).filter(function(c){
+      return ['P','UL','OL'].indexOf(c.tagName) !== -1;
+    });
+    if (blockChildren.length >= 3) makeCollapsible(el);
+  });
+})();
+
+(function(){var d=document.getElementById('drawer');if(!d||d.dataset.accInit)return;d.dataset.accInit='1';var labels=Array.from(d.querySelectorAll('.dr-lb,.dr-label'));labels.forEach(function(lbl){var n=lbl.nextElementSibling;if(!n||n.tagName!=='A')return;var ls=[],c=n;while(c&&c.tagName==='A'){ls.push(c);c=c.nextElementSibling}if(ls.length<3)return;var w=document.createElement('div');w.className='dr-sub';lbl.parentNode.insertBefore(w,ls[0]);ls.forEach(function(a){w.appendChild(a)});lbl.classList.add('dr-toggle');lbl.setAttribute('role','button');lbl.setAttribute('tabindex','0');lbl.setAttribute('aria-expanded','false');function t(){var o=lbl.classList.toggle('open');w.classList.toggle('open',o);lbl.setAttribute('aria-expanded',String(o))}lbl.addEventListener('click',t);lbl.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();t()}})})})();
+(function(){var d=document.getElementById('drawer');if(!d||d.dataset.closeBtnInit)return;d.dataset.closeBtnInit='1';var b=document.createElement('button');b.className='dr-close-btn';b.setAttribute('aria-label','Закрыть меню');b.setAttribute('type','button');b.innerHTML='<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><polyline points="12 5 19 12 12 19"/></svg>';b.addEventListener('click',function(){if(typeof closeDrawer==='function'){closeDrawer();return}d.classList.remove('show');var ov=document.getElementById('overlay');if(ov)ov.classList.remove('show')});d.insertBefore(b,d.firstChild)})();</script>
+</body></html>

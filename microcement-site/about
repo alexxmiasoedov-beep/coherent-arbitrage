@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>О студии Romanov Decor — декоративные покрытия в Минске</title>
+<meta name="description" content="Команда специалистов по микроцементу, наливным полам и декоративным покрытиям. Собственное производство, официальный дилер Remmers. Минск и вся Беларусь.">
+<link rel="canonical" href="https://romanovdecor.by/about">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}body{font-family:'Geologica',sans-serif;background:#fff;color:#1e1e1e;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;font-feature-settings:'kern' 1,'liga' 1,'calt' 1;-webkit-text-size-adjust:100%}a{text-decoration:none;color:inherit}
+.hd{position:fixed;top:14px;left:0;right:0;z-index:500;display:flex;align-items:center;justify-content:space-between;padding:0 14px;background:none;border:none;height:auto;pointer-events:none}
+.hd > *{pointer-events:auto}
+.hd-pill{background:#2c2c2c;border:1px solid rgba(255,255,255,.08);border-radius:24px;box-shadow:0 8px 24px rgba(0,0,0,.4),0 0 0 1px rgba(184,150,90,.04) inset;height:42px;display:flex;align-items:center;transition:all .3s cubic-bezier(.34,1.2,.64,1);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+.hd-logo-pill{width:42px;justify-content:center;padding:0;border-radius:10px}
+.hd-logo-pill .logo-r{font-family:'Geologica',sans-serif;font-size:17px;font-weight:700;color:#efece7;text-transform:lowercase;line-height:1;letter-spacing:0;display:block}
+.hd-nav-pill{position:absolute;left:50%;transform:translateX(-50%);padding:0 20px;gap:14px;max-width:calc(100vw - 120px)}
+.hd-nav-pill > a, .hd-nav-pill > .dd, .hd-nav-pill .dd-label{font-size:10px!important;font-weight:500!important;letter-spacing:1.5px!important;text-transform:uppercase!important;line-height:1!important;color:#a09a92;white-space:nowrap}
+.hd-nav-pill:hover{background:#1f1f1f;box-shadow:0 12px 32px rgba(0,0,0,.5),0 0 0 1px rgba(184,150,90,.12) inset}
+.hd-burger-pill{width:42px;justify-content:center;padding:0;border-radius:10px;overflow:hidden;position:relative}
+.hd-burger-pill::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at center,rgba(184,150,90,.25),transparent 70%);opacity:0;transition:opacity .4s cubic-bezier(.34,1.2,.64,1)}
+.hd-burger-pill:hover{background:#1f1f1f;border-color:rgba(184,150,90,.25);box-shadow:0 8px 24px rgba(0,0,0,.5),0 0 0 1px rgba(184,150,90,.18) inset}
+.hd-burger-pill:hover::before{opacity:1}
+.hd-burger-pill .bur{width:42px;height:42px;border-radius:10px;border:none;background:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;-webkit-tap-highlight-color:transparent;position:relative;z-index:1}
+.hd-burger-pill .bur span{display:block;width:14px;height:1.5px;background:#efece7;border-radius:1px;transition:transform .35s cubic-bezier(.34,1.5,.64,1),background .25s ease,width .35s cubic-bezier(.34,1.5,.64,1)}
+.hd-burger-pill:hover .bur span{background:#b8965a}
+.hd-burger-pill:hover .bur span:nth-child(1){transform:translateY(2px) rotate(8deg);width:16px}
+.hd-burger-pill:hover .bur span:nth-child(2){width:8px;transform:translateX(-3px)}
+.hd-burger-pill:hover .bur span:nth-child(3){transform:translateY(-2px) rotate(-8deg);width:16px}
+@media(max-width:760px){.hd{padding:0 10px;top:10px}.hd-pill{height:38px;border-radius:22px}.hd-logo-pill{width:38px;border-radius:9px}.hd-logo-pill .logo-r{font-size:15px}.hd-burger-pill{width:38px;border-radius:9px}.hd-burger-pill .bur{width:38px;height:38px;border-radius:9px}.hd-nav-pill{display:none}}
+.logo{font-size:11px;font-weight:500;white-space:nowrap;letter-spacing:2px;text-transform:lowercase;color:#efece7}.logo span{color:#b8965a;font-weight:400}
+.nav{display:flex;gap:16px;align-items:center}.nav>a,.dd{font-size:11px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:#a09a92;transition:color .2s;cursor:pointer;position:relative}.nav>a:hover,.dd:hover{color:#b8965a}.nav>a.act{color:#b8965a}.dd-menu a.act{color:#b8965a;font-weight:600}
+.dd-label{font-size:11px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:#a09a92;display:flex;align-items:center;gap:3px}.dd-label:hover{color:#b8965a}
+.dd-arrow{border:solid #a09a92;border-width:0 1.5px 1.5px 0;display:inline-block;padding:2px;transform:rotate(45deg);transition:.2s;margin-top:-2px}.dd:hover .dd-arrow{transform:rotate(-135deg);border-color:#b8965a}
+.dd-menu{position:absolute;top:100%;left:-12px;min-width:260px;background:#2c2c2c;border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:8px 0;opacity:0;visibility:hidden;transform:translateY(8px);transition:all .25s;margin-top:12px;box-shadow:0 12px 32px rgba(0,0,0,.3)}.dd:hover .dd-menu{opacity:1;visibility:visible;transform:translateY(0)}
+.dd-group{padding:8px 16px 2px;font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#b8965a;opacity:.65}
+.dd-menu a{display:block;padding:8px 16px;font-size:12px;font-weight:400;letter-spacing:0;text-transform:none;color:#a09a92;transition:.15s}.dd-menu a:hover{color:#b8965a;background:rgba(184,150,90,.06)}
+
+.overlay{position:fixed;inset:0;z-index:510;background:rgba(0,0,0,.4);display:none}.overlay.show{display:block}
+.drawer{position:fixed;top:0;right:-340px;width:320px;max-width:85vw;height:100%;z-index:520;background:#2c2c2c;border-left:1px solid rgba(255,255,255,.06);transition:right .35s;padding:80px 24px 24px;overflow-y:auto;color:#efece7}
+.dr-close-btn{position:absolute;top:20px;right:20px;width:36px;height:36px;background:none;border:none;color:#a09a92;cursor:pointer;display:flex;align-items:center;justify-content:center;-webkit-tap-highlight-color:transparent;z-index:5;transition:color .2s,transform .2s;padding:0}.dr-close-btn:hover{color:#b8965a}.dr-close-btn:active{transform:translateX(3px)}.drawer.show{right:0}
+.dr-lb{font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#b8965a;margin-bottom:8px;margin-top:16px}
+.dr-lb.dr-toggle,.dr-label.dr-toggle{cursor:pointer;display:flex;align-items:center;justify-content:space-between;padding:8px 0;margin:0;-webkit-tap-highlight-color:transparent;user-select:none;transition:color .25s}
+.dr-lb.dr-toggle::after,.dr-label.dr-toggle::after{content:'';width:7px;height:7px;border:solid #a09a92;border-width:0 1.5px 1.5px 0;transform:rotate(45deg);transition:transform .25s ease,border-color .25s ease;margin-right:6px;display:inline-block}
+.dr-lb.dr-toggle.open,.dr-label.dr-toggle.open{color:#d4b883}
+.dr-lb.dr-toggle.open::after,.dr-label.dr-toggle.open::after{transform:rotate(-135deg);border-color:#b8965a}
+.dr-sub{max-height:0;overflow:hidden;transition:max-height .35s cubic-bezier(.4,0,.2,1);margin-bottom:0}
+.dr-sub.open{max-height:600px;margin-bottom:6px}
+.dr-a{display:block;padding:5px 0 5px 12px;font-size:14px;font-weight:400;color:#a09a92}.dr-a:hover{color:#b8965a}
+.dr-a-main{display:block;padding:9px 0 9px 14px;font-size:14px;font-weight:600;color:#efece7;border-left:2px solid #b8965a;margin:4px 0;letter-spacing:.3px;background:rgba(184,150,90,.06);border-radius:0 8px 8px 0;transition:background .2s,color .2s}
+.dr-a-main:hover{color:#b8965a;background:rgba(184,150,90,.12)}
+.dr-a2{display:block;padding:6px 0;font-size:15px;font-weight:500;color:#efece7}
+.dr-it{margin-bottom:10px}.dr-it h4{font-size:13px;font-weight:500;color:#efece7}.dr-it p,.dr-it a{font-size:12px;color:#a09a92;font-weight:300;display:block}
+.dr-div{height:1px;background:rgba(255,255,255,.06);margin:12px 0}
+.dr-btns{display:flex;gap:8px;margin-top:12px}.dr-btns a{flex:1;display:flex;align-items:center;justify-content:center;padding:12px;color:#fff;border-radius:14px;font-size:13px;font-weight:600}
+
+.bc{padding:80px 20px 0;font-size:12px;color:#a09a92;max-width:1100px;margin:0 auto}.bc a{color:#b8965a}
+
+/* HERO */
+.hero-a{padding:30px 20px 50px;max-width:1100px;margin:0 auto}
+.tag{font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#b8965a;margin-bottom:10px;display:block}
+h1{font-size:clamp(28px,4vw,44px);font-weight:600;line-height:1.15;margin-bottom:12px;max-width:780px}h1 b{color:#b8965a;font-weight:500}
+.hero-a p{font-size:16px;color:#706a62;max-width:680px;line-height:1.7;font-weight:300;margin-bottom:18px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:24px}
+.st-c{padding:18px;background:#f7f5f0;border-radius:14px}
+.st-c b{display:block;font-size:28px;font-weight:600;color:#b8965a;line-height:1;margin-bottom:4px}
+.st-c span{font-size:11px;color:#706a62;font-weight:500;letter-spacing:2px;text-transform:uppercase}
+
+/* SECTIONS */
+.s{padding:60px 20px}
+.gray{background:#2c2c2c;color:#efece7}.white{background:#fff;color:#1e1e1e}.cream{background:#f7f5f0;color:#1e1e1e}
+.mx{max-width:1100px;margin:0 auto}
+.ln{width:30px;height:2px;background:#b8965a;margin-bottom:16px;border-radius:1px}
+h2{font-size:24px;font-weight:600;margin:48px 0 8px;line-height:1.25}h2 b{color:#b8965a;font-weight:500}
+h3{font-size:18px;font-weight:600;margin:24px 0 6px}
+p{font-size:15px;line-height:1.8;margin-bottom:14px;font-weight:300}.gray p{color:#ccc}.white p,.cream p{color:#555}
+
+/* HISTORY TIMELINE */
+.tl{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:24px}
+.tl-it{padding:22px 20px;border-radius:18px;border:1px solid rgba(0,0,0,.06);background:#fff}
+.tl-it .y{font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#b8965a;margin-bottom:6px}
+.tl-it h4{font-size:15px;font-weight:600;margin-bottom:4px}
+.tl-it p{font-size:13px;color:#706a62;margin:0;line-height:1.65}
+
+/* MISSION */
+.miss{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}
+.mi{padding:24px;border-radius:18px;background:#fff;border-left:3px solid #b8965a}
+.mi h4{font-size:16px;font-weight:600;margin-bottom:6px}
+.mi p{font-size:14px;color:#706a62;font-weight:300;line-height:1.7;margin:0}
+
+/* PRODUCTION */
+.pr-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start;margin-top:24px}
+.pr-img{aspect-ratio:4/3;border-radius:18px;background:linear-gradient(135deg,#3a342c,#1c1812);position:relative;overflow:hidden}
+.pr-img::after{content:'{{ Фото производства }}';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(184,150,90,.4);font-size:13px;letter-spacing:2px}
+.pr-list{list-style:none}
+.pr-list li{padding:10px 0;border-bottom:1px solid rgba(0,0,0,.06);font-size:14px;font-weight:300;color:#555;display:flex;gap:10px}
+.pr-list li:last-child{border:none}
+.pr-list li::before{content:'';width:6px;height:6px;border-radius:50%;background:#b8965a;flex-shrink:0;margin-top:8px}
+
+/* TEAM (placeholder) */
+.team{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:24px}
+.tm{padding:22px 18px;background:#fff;border-radius:18px;text-align:center;border:1px solid rgba(0,0,0,.06)}
+.tm-av{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,#d5cfc5,#b8a890);margin:0 auto 12px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.7);font-size:11px;letter-spacing:2px}
+.tm h4{font-size:15px;font-weight:600;margin-bottom:2px}
+.tm p{font-size:12px;color:#706a62;margin:0;font-weight:300}
+
+/* CERTIFICATES */
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:24px}
+.cert{padding:24px 20px;background:#fff;border-radius:18px;border:1px solid rgba(0,0,0,.06);text-align:center;transition:transform .2s}
+.cert:hover{transform:translateY(-2px)}
+.cert .ic{width:48px;height:48px;border-radius:14px;background:rgba(184,150,90,.1);display:flex;align-items:center;justify-content:center;margin:0 auto 10px;color:#b8965a;font-size:22px}
+.cert h4{font-size:14px;font-weight:600;margin-bottom:4px}
+.cert p{font-size:12px;color:#706a62;margin:0;font-weight:300;line-height:1.55}
+
+.partners{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:24px}
+.pt{padding:24px 16px;background:#fff;border-radius:14px;border:1px solid rgba(0,0,0,.06);text-align:center;font-size:13px;font-weight:500;color:#706a62;letter-spacing:2px}
+
+.note{padding:14px 18px;border-left:3px solid #b8965a;background:rgba(184,150,90,.06);border-radius:0 14px 14px 0;margin:14px 0;font-size:13px;line-height:1.65;font-weight:300;color:#555}
+.ph{color:#b8965a;font-style:normal;font-weight:500}
+
+/* CTA */
+.cta-w{max-width:1100px;margin:40px auto 80px;padding:0 20px}
+.cta{background:#2c2c2c;color:#efece7;padding:48px 32px;border-radius:20px;text-align:center}
+.cta h3{color:#b8965a;font-size:24px;margin:0 0 8px}.cta p{color:#a09a92;margin-bottom:18px;font-size:15px;font-weight:300}
+.btn-g{display:inline-block;padding:12px 24px;font-family:'Geologica',sans-serif;font-size:13px;font-weight:600;border-radius:14px;background:#b8965a;color:#1a1a1a;border:none;cursor:pointer;transition:.2s;text-transform:uppercase;letter-spacing:2px}.btn-g:hover{background:#d4b883}
+
+footer{padding:20px;border-top:1px solid rgba(0,0,0,.06);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;max-width:1100px;margin:0 auto}
+.fl{font-size:13px;font-weight:600}.fl span{color:#b8965a;font-weight:400}
+.fc{font-size:10px;color:#a09a92}
+
+@media(max-width:900px){.nav{display:none}.stats{grid-template-columns:repeat(2,1fr)}.miss{grid-template-columns:1fr}.pr-grid{grid-template-columns:1fr}}
+@media(max-width:600px){h2{font-size:22px}footer{flex-direction:column;text-align:center}}
+.sticky-cta{position:fixed;bottom:24px;right:24px;z-index:550;display:flex;flex-direction:column;align-items:flex-end;gap:8px}.sticky-btn{width:52px;height:52px;border-radius:50%;background:#2c2c2c;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,.3);transition:.3s}.sticky-btn:hover{transform:scale(1.08)}.sticky-btn svg{width:22px;height:22px;fill:#efece7}.sticky-pop{display:none;flex-direction:column;gap:6px;margin-bottom:4px}.sticky-pop.show{display:flex}.sticky-pop a{display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:12px;font-size:12px;font-weight:600;color:#fff;letter-spacing:2px;text-transform:lowercase;box-shadow:0 4px 16px rgba(0,0,0,.3);transition:.2s;white-space:nowrap}.sticky-pop a:hover{transform:translateX(-4px)}
+
+/* Unified footer */
+.ft{position:relative;background:#1a1a1a;border-top:1px solid rgba(184,150,90,.18);padding:64px 20px 28px;color:#a09a92}
+.ft::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,#b8965a 30%,#d4b883 50%,#b8965a 70%,transparent 100%);opacity:.7}
+.ft-grid{max-width:1100px;margin:0 auto 40px;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:48px}
+.ft-col h4{font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#b8965a;margin-bottom:18px;position:relative;padding-bottom:8px}
+.ft-col h4::after{content:"";position:absolute;bottom:0;left:0;width:24px;height:1px;background:#b8965a;opacity:.5}
+.ft-col p,.ft-col a{font-size:13px;color:#a09a92;font-weight:300;line-height:1.85;display:block;margin-bottom:2px;letter-spacing:1.5px;text-decoration:none;transition:color .25s ease,padding-left .25s ease}
+.ft-col a:hover{color:#efece7;padding-left:6px}
+.ft-logo{font-size:12px;font-weight:500;letter-spacing:2px;text-transform:lowercase;color:#efece7;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.ft-logo::before{content:"r";display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;background:#2c2c2c;border:1px solid rgba(184,150,90,.2);border-radius:8px;color:#b8965a;font-weight:700;font-size:16px;font-family:'Geologica',sans-serif}
+.ft-logo span{color:#b8965a;font-weight:500}
+.ft-desc{font-size:12px;color:#888;font-weight:300;line-height:1.7;letter-spacing:.8px;max-width:340px;margin-top:0}
+.ft-bottom{max-width:1100px;margin:0 auto;padding-top:24px;border-top:1px solid rgba(255,255,255,.06);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.ft-copy{font-size:10px;color:#555;letter-spacing:2px;text-transform:uppercase}
+.ft-bottom > div a{font-size:11px;color:#888;letter-spacing:2px;transition:color .25s ease;text-decoration:none;text-transform:lowercase}
+.ft-bottom > div a:hover{color:#b8965a}
+@media(max-width:768px){.ft{padding:48px 20px 24px}
+.ft-grid{grid-template-columns:1fr 1fr;gap:32px;margin-bottom:32px}
+.ft-col:first-child{grid-column:1/-1}
+.ft-bottom{flex-direction:column;gap:14px;text-align:center}
+.ft-bottom > div{flex-wrap:wrap;justify-content:center}
+.ft-desc{max-width:none}}
+@media(max-width:420px){.ft-grid{grid-template-columns:1fr;gap:28px}}
+@media(max-width:768px){.ft-grid{grid-template-columns:1fr 1fr;gap:28px}
+@media(max-width:500px){.ft-grid{grid-template-columns:1fr;gap:24px}
+.ft-bottom{flex-direction:column;text-align:center}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AboutPage","name":"О студии Romanov Decor Studio","description":"Команда специалистов по микроцементу, наливным полам и декоративным покрытиям. Минск, Беларусь."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://romanovdecor.by/"},{"@type":"ListItem","position":2,"name":"О студии"}]}</script>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/favicon.svg">
+<meta name="theme-color" content="#2c2c2c">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Romanov Decor Studio">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:image" content="https://romanovdecor.by/img/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://romanovdecor.by/img/og-cover.png">
+<meta property="og:url" content="https://romanovdecor.by/about">
+<meta property="og:title" content="О студии — Romanov Decor Studio | Производство микроцемента, Минск">
+<meta property="og:description" content="Romanov Decor Studio — собственное производство микроцемента и студия монтажа наливных полов. История, команда, производственная база, сертификаты и партнёры.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="О студии — Romanov Decor Studio | Производство микроцемента, Минск">
+<meta name="twitter:description" content="Romanov Decor Studio — собственное производство микроцемента и студия монтажа наливных полов. История, команда, производственная база, сертификаты и партнёры.">
+</head>
+<body>
+
+<header class="hd">
+<div class="hd-pill hd-logo-pill"><a href="/" class="logo-r" aria-label="Romanov Decor Studio">r</a></div>
+<nav class="hd-pill hd-nav-pill nav">
+<div class="dd"><div class="dd-label">Микроцемент <i class="dd-arrow"></i></div><div class="dd-menu"><a href="/microcement">О микроцементе</a><div class="dd-group">Применение</div><a href="/microcement-walls">На стенах</a><a href="/microcement-floor">На полу</a><a href="/microcement-bathroom">В ванной</a><a href="/microcement-kitchen">На кухне</a><a href="/microcement-stairs">На лестнице</a><a href="/microcement-furniture">На мебели</a><a href="/microcement-facade">На фасаде</a><div class="dd-group">Гайды</div><a href="/walls">Подготовка стен</a><a href="/floors">Подготовка пола</a><a href="/bathroom">Микроцемент в ванной</a><a href="/furniture">Микроцемент на мебели</a></div></div>
+<div class="dd"><div class="dd-label">Наливные полы <i class="dd-arrow"></i></div><div class="dd-menu"><div class="dd-group">Покрытия</div><a href="/epoxy">Об эпоксиде</a><a href="/polyurethane">О полиуретане</a><div class="dd-group">Применение</div><a href="/garage">Гараж</a><a href="/warehouse">Склад</a><a href="/production">Производство</a><a href="/food">Пищевой цех</a><a href="/office">Офис</a><a href="/restaurant">Ресторан</a></div></div>
+<a href="/portfolio">Портфолио</a><a href="/price">Цены</a><a href="/blog">Блог</a><a href="/about" class="act">О студии</a>
+</nav>
+<div class="hd-pill hd-burger-pill">
+<button class="bur" id="burgerBtn" type="button" onclick="toggleDrawer()" aria-label="Меню"><span></span><span></span><span></span></button>
+</div>
+</header>
+<div class="overlay" id="overlay" onclick="closeDrawer()"></div>
+<div class="drawer" id="drawer">
+<a class="dr-a2" href="/" onclick="closeDrawer()" style="border-bottom:1px solid rgba(255,255,255,.06);padding-bottom:10px;margin-bottom:10px">Главная</a>
+<div class="dr-lb">Микроцемент</div>
+<a class="dr-a-main" href="/microcement" onclick="closeDrawer()">О микроцементе</a><a class="dr-a" href="/microcement-walls" onclick="closeDrawer()">На стенах</a><a class="dr-a" href="/microcement-floor" onclick="closeDrawer()">На полу</a><a class="dr-a" href="/microcement-bathroom" onclick="closeDrawer()">В ванной</a><a class="dr-a" href="/microcement-kitchen" onclick="closeDrawer()">На кухне</a><a class="dr-a" href="/microcement-stairs" onclick="closeDrawer()">На лестнице</a><a class="dr-a" href="/microcement-furniture" onclick="closeDrawer()">На мебели</a><a class="dr-a" href="/microcement-facade" onclick="closeDrawer()">На фасаде</a>
+<div class="dr-lb">Наливные полы</div>
+<a class="dr-a-main" href="/epoxy" onclick="closeDrawer()">Об эпоксиде</a><a class="dr-a-main" href="/polyurethane" onclick="closeDrawer()">О полиуретане</a><a class="dr-a" href="/garage" onclick="closeDrawer()">Пол для гаража</a><a class="dr-a" href="/warehouse" onclick="closeDrawer()">Пол для склада</a><a class="dr-a" href="/production" onclick="closeDrawer()">Пол для производства</a><a class="dr-a" href="/food" onclick="closeDrawer()">Пол для пищевого цеха</a><a class="dr-a" href="/office" onclick="closeDrawer()">Пол для офиса</a><a class="dr-a" href="/restaurant" onclick="closeDrawer()">Пол для ресторана</a><div class="dr-lb">Гайды</div><a class="dr-a" href="/walls" onclick="closeDrawer()">Подготовка стен</a><a class="dr-a" href="/floors" onclick="closeDrawer()">Подготовка пола</a><a class="dr-a" href="/bathroom" onclick="closeDrawer()">Микроцемент в ванной</a><a class="dr-a" href="/furniture" onclick="closeDrawer()">Микроцемент на мебели</a><div class="dr-div"></div>
+<a class="dr-a2" href="/portfolio" onclick="closeDrawer()">Портфолио</a><a class="dr-a2" href="/price" onclick="closeDrawer()">Цены</a><a class="dr-a2" href="/calculator" onclick="closeDrawer()">Калькулятор</a><a class="dr-a2" href="/blog" onclick="closeDrawer()">Блог</a><a class="dr-a2" href="/about" onclick="closeDrawer()">О студии</a><a class="dr-a2" href="/#contact" onclick="closeDrawer()">Контакты</a>
+<div class="dr-div"></div>
+<div class="dr-lb">Контакты</div>
+<div class="dr-it"><h4>Телефон</h4><a href="tel:+375XXXXXXXX">+375 (XX) XXX-XX-XX</a></div>
+<div class="dr-it"><h4>Email</h4><a href="/cdn-cgi/l/email-protection#f990979f96b98b96949897968f9d9c9a968bd79b80">info&#64;romanovdecor.by</a></div>
+<div class="dr-btns"><a href="https://t.me/" style="background:#2AABEE">Telegram</a><a href="viber://chat?number=" style="background:#7360F2">Viber</a></div>
+</div>
+
+<div class="bc"><a href="/">Главная</a> / О студии</div>
+
+<section class="hero-a">
+<span class="tag">О студии</span>
+<h1>Romanov Decor Studio — <b>декоративные покрытия</b> от практиков</h1>
+<p>Мы — студия с собственным производством микроцемента и командой мастеров с многолетним опытом монтажа наливных полов и декоративных покрытий. Работаем в Минске, Беларуси и России. Делаем стены, полы, мебель и столешницы под ключ — от замера до сдачи объекта с гарантией 5 лет в договоре.</p>
+
+<div class="stats">
+<div class="st-c"><b>8</b><span><span class="ph">{{ Лет опыта }}</span></span></div>
+<div class="st-c"><b>150+</b><span><span class="ph">{{ Проектов }}</span></span></div>
+<div class="st-c"><b>5</b><span>Лет гарантии</span></div>
+<div class="st-c"><b>2</b><span>Страны</span></div>
+</div>
+</section>
+
+<section class="s cream"><div class="mx">
+<span class="tag">История и миссия</span>
+<h2>Студия, выросшая из <b>практики</b></h2>
+<div class="ln"></div>
+<p>Мы начинали как монтажная бригада на наливных полах. Постепенно поняли: качество готового пола или микроцементной стены на 80% зависит не от навыков мастера, а от качества материалов и стабильности рецептуры. Тогда мы запустили собственное производство.</p>
+
+<div class="tl">
+<div class="tl-it"><div class="y"><span class="ph">{{ 2018 }}</span></div><h4>Старт студии</h4><p><span class="ph">{{ Год основания, как стартовали }}</span></p></div>
+<div class="tl-it"><div class="y"><span class="ph">{{ 2020 }}</span></div><h4>Первые 50 проектов</h4><p><span class="ph">{{ Ключевой этап — выход на серию }}</span></p></div>
+<div class="tl-it"><div class="y"><span class="ph">{{ 2022 }}</span></div><h4>Собственное производство</h4><p><span class="ph">{{ Когда запустили производство микроцемента }}</span></p></div>
+<div class="tl-it"><div class="y"><span class="ph">{{ 2024 }}</span></div><h4>Выход в Россию</h4><p><span class="ph">{{ Расширение, новые объекты }}</span></p></div>
+</div>
+
+<h3>Наша миссия</h3>
+<div class="miss">
+<div class="mi"><h4>Качество над объёмом</h4><p>Лучше сделать 30 проектов в год идеально, чем 100 — посредственно. Мы не берём в работу всё подряд и говорим «нет», если основание или сроки не позволяют дать 5-летнюю гарантию.</p></div>
+<div class="mi"><h4>Прозрачность во всём</h4><p>Цена в договоре до начала работ. Сроки в договоре. Гарантия в договоре. Без скрытых платежей, без «удорожаний по ходу», без серых схем.</p></div>
+<div class="mi"><h4>Оплата по факту</h4><p>Платите за результат, а не за обещания. Без предоплаты, без «давайте 50% и начнём» — работаем на своих материалах и устойчивых отношениях с поставщиками, не зависим от авансов клиента.</p></div>
+<div class="mi"><h4>Технология, а не магия</h4><p>За каждым нашим решением стоят технические нормы: марка стяжки, прочность на отрыв, влажность по CM-методу. Мы делаем то, что работает, а не то, что красиво звучит на сайте.</p></div>
+</div>
+
+<div class="note">Хотите глубже понять нашу инженерную часть — почитайте <a href="/walls" style="color:#b8965a">подготовку стен</a>, <a href="/floors" style="color:#b8965a">подготовку полов</a> или <a href="/microcement" style="color:#b8965a">руководство по микроцементу</a>. Эти материалы написали наши мастера на основе реальных объектов.</div>
+</div></section>
+
+<section class="s white"><div class="mx">
+<span class="tag">Производство</span>
+<h2>Собственное производство <b>микроцемента</b></h2>
+<div class="ln"></div>
+<p>Мы не просто монтажная бригада — мы производим собственный микроцемент, модернизируя базовую рецептуру немецких промышленных компонентов. Это даёт нам полный контроль качества и возможность адаптировать состав под конкретный проект: цвет, фактуру, эластичность, паропроницаемость.</p>
+
+<div class="pr-grid">
+<div class="pr-img" data-slot="about-production"></div>
+<div>
+<h3>Что мы делаем сами</h3>
+<ul class="pr-list">
+<li><strong>Грунтовочный слой</strong> — двухкомпонентная эпоксидная смола на немецких компонентах. Прочность на сжатие свыше 72 МПа.</li>
+<li><strong>Базовый микроцемент</strong> — авторская рецептура на водоэмульгированной смоле с собственными модифицирующими добавками.</li>
+<li><strong>Финишный полиуретановый лак</strong> — двухкомпонентный, текстурированный, с УФ-стойкостью.</li>
+<li><strong>Колеровка</strong> — по веерной палитре или по индивидуальному эталону заказчика.</li>
+<li><strong>Ремонтные составы</strong> — эпоксидная смола с кварцевым песком для трещин и штроб в стяжках.</li>
+</ul>
+</div>
+</div>
+
+<h3>Производственные мощности</h3>
+<div class="tl">
+<div class="tl-it"><div class="y">Площадь</div><h4><span class="ph">{{ X м² }}</span></h4><p>Производственная база и склад</p></div>
+<div class="tl-it"><div class="y">Объём</div><h4><span class="ph">{{ X тонн / месяц }}</span></h4><p>Производство микроцемента</p></div>
+<div class="tl-it"><div class="y">Контроль качества</div><h4>Лабораторные тесты</h4><p>Каждой партии перед отгрузкой</p></div>
+<div class="tl-it"><div class="y">Палитра</div><h4>50+ оттенков</h4><p>Готовых + индивидуальная колеровка</p></div>
+</div>
+
+<h3>Команда</h3>
+<div class="team">
+<div class="tm"><div class="tm-av">{{ фото }}</div><h4><span class="ph">{{ Имя Фамилия }}</span></h4><p><span class="ph">{{ Основатель }}</span></p></div>
+<div class="tm"><div class="tm-av">{{ фото }}</div><h4><span class="ph">{{ Имя Фамилия }}</span></h4><p><span class="ph">{{ Главный технолог }}</span></p></div>
+<div class="tm"><div class="tm-av">{{ фото }}</div><h4><span class="ph">{{ Имя Фамилия }}</span></h4><p><span class="ph">{{ Бригадир монтажа }}</span></p></div>
+<div class="tm"><div class="tm-av">{{ фото }}</div><h4><span class="ph">{{ Имя Фамилия }}</span></h4><p><span class="ph">{{ Менеджер проектов }}</span></p></div>
+</div>
+</div></section>
+
+<section class="s cream"><div class="mx">
+<span class="tag">Сертификаты и партнёры</span>
+<h2>Документы, гарантии, <b>поставщики</b></h2>
+<div class="ln"></div>
+<p>Все наши материалы и работы соответствуют стандартам безопасности и экологичности. Мы работаем напрямую с европейскими производителями базовых компонентов и отвечаем за каждый этап — от закупки сырья до сдачи объекта.</p>
+
+<div class="cert-grid">
+<div class="cert"><div class="ic">📋</div><h4>Сертификат экологичности</h4><p><span class="ph">{{ Без ЛОС после полимеризации }}</span></p></div>
+<div class="cert"><div class="ic">🛡</div><h4>Гарантийный договор</h4><p>5 лет на работы и материалы</p></div>
+<div class="cert"><div class="ic">🏭</div><h4>Сертификат производства</h4><p><span class="ph">{{ Стандарт качества }}</span></p></div>
+<div class="cert"><div class="ic">🇩🇪</div><h4>Немецкие компоненты</h4><p>Европейские стандарты сырья</p></div>
+<div class="cert"><div class="ic">🔥</div><h4>Пожарная безопасность</h4><p>Класс горючести Г1</p></div>
+<div class="cert"><div class="ic">✓</div><h4><span class="ph">{{ Награда / премия }}</span></h4><p><span class="ph">{{ За что и в каком году }}</span></p></div>
+</div>
+
+<h3>Партнёры и поставщики</h3>
+<p>Работаем с проверенными подрядчиками по смежным работам и поставщиками сырья. Это позволяет закрывать проект «под ключ» без поиска дополнительных исполнителей.</p>
+<div class="partners">
+<div class="pt"><span class="ph">{{ Партнёр 1 }}</span></div>
+<div class="pt"><span class="ph">{{ Партнёр 2 }}</span></div>
+<div class="pt"><span class="ph">{{ Партнёр 3 }}</span></div>
+<div class="pt"><span class="ph">{{ Партнёр 4 }}</span></div>
+<div class="pt"><span class="ph">{{ Партнёр 5 }}</span></div>
+<div class="pt"><span class="ph">{{ Партнёр 6 }}</span></div>
+</div>
+
+<div class="note"><strong>Заполните плейсхолдеры <span class="ph">{{ ... }}</span></strong> реальными данными: годами, именами, фактами, наградами. Сейчас на странице оставлены метки в местах, которые требуют индивидуальной информации.</div>
+</div></section>
+
+<div class="cta-w">
+<div class="cta">
+<h3>Хотите познакомиться лично?</h3>
+<p>Приезжайте на производство в Минск или закажите бесплатный замер на свой объект. Покажем материалы, образцы фактур и палитру.</p>
+<a href="javascript:void(0)" onclick="openGM()" class="btn-g">Связаться с нами</a>
+</div>
+</div>
+
+<footer class="ft">
+<div class="ft-grid">
+<div class="ft-col">
+<div class="ft-logo">romanov <span>decor</span> studio</div>
+<div style="font-size:11px;color:rgba(255,255,255,.4);letter-spacing:1.5px;margin-top:6px">Поверхности, которые создают пространство</div>
+<p class="ft-desc">Собственное производство микроцемента на немецких компонентах. Официальные дилеры Remmers — монтаж полиуретановых и эпоксидных полов под ключ.</p>
+</div>
+<div class="ft-col">
+<h4>материалы</h4>
+<a href="/microcement">микроцемент</a>
+<a href="/epoxy">эпоксидные полы</a>
+<a href="/polyurethane">полиуретановые полы</a>
+<a href="/calculator">калькулятор</a>
+</div>
+<div class="ft-col">
+<h4>применение</h4>
+<a href="/garage">гараж</a><a href="/warehouse">склад</a><a href="/production">производство</a><a href="/food">пищевой цех</a><a href="/office">офис</a><a href="/restaurant">ресторан</a>
+</div>
+<div class="ft-col" id="ftContacts">
+<h4>контакты</h4>
+<a href="tel:+375XXXXXXXX">+375 (XX) XXX-XX-XX</a>
+<a href="/cdn-cgi/l/email-protection#e48d8a828ba4968b89858a8b928081878b96ca869d">info&#64;romanovdecor.by</a>
+<p>г. Минск, Беларусь</p>
+</div>
+</div>
+<div class="ft-bottom">
+<div class="ft-copy">© 2026 romanov decor studio</div>
+<div style="display:flex;gap:12px">
+<a href="/portfolio" style="font-size:11px;color:#666;letter-spacing:2px">портфолио</a>
+<a href="/about" style="font-size:11px;color:#666;letter-spacing:2px">о студии</a>
+<a href="/blog" style="font-size:11px;color:#666;letter-spacing:2px">блог</a>
+<a href="/price" style="font-size:11px;color:#666;letter-spacing:2px">цены</a>
+</div>
+</div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+function toggleDrawer(){var d=document.getElementById('drawer');var o=document.getElementById('overlay');if(d.classList.contains('show')){d.classList.remove('show');o.classList.remove('show')}else{d.classList.add('show');o.classList.add('show')}}
+function closeDrawer(){document.getElementById('drawer').classList.remove('show');document.getElementById('overlay').classList.remove('show')}
+(async function(){
+  try{
+    var r = await fetch('/api/slots');
+    if(!r.ok) return;
+    var j = await r.json();
+    var map = j && j.slots || {};
+    Object.keys(map).forEach(function(key){
+      var el = document.querySelector('[data-slot="'+key+'"]');
+      if(!el || !map[key]) return;
+      var url = '/api/image/' + map[key];
+      el.style.background = 'url("'+url+'") center/cover no-repeat';
+      if(key === 'about-production'){
+        var css = document.createElement('style');
+        css.textContent = '.pr-img::after{display:none !important}';
+        document.head.appendChild(css);
+      }
+    });
+  }catch(e){}
+})();
+</script>
+<div class="sticky-cta"><div class="sticky-pop" id="stickyPop"><a href="https://t.me/" style="background:#2AABEE">telegram</a><a href="viber://chat?number=" style="background:#7360F2">viber</a></div><button class="sticky-btn" onclick="document.getElementById('stickyPop').classList.toggle('show')" aria-label="Связаться"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.2L4 17.2V4h16v12z"/></svg></button></div>
+<!-- CONTACT + CALC MODALS (gm) -->
+<style>
+.gm{position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:700;display:none;align-items:flex-start;justify-content:center;padding:20px;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.gm.show{display:flex}
+.gm-body{background:#1e1e1e;border:1px solid rgba(255,255,255,.08);border-radius:20px;max-width:460px;width:100%;padding:36px;position:relative;margin:auto;color:#efece7}
+.gm-close{position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.08);border:none;color:#efece7;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:3}
+.gm-close:hover{background:rgba(255,255,255,.15)}
+.gm h3{font-family:'Geologica',sans-serif;font-size:22px;color:#efece7;margin:0 0 6px;font-weight:600;letter-spacing:2px;text-transform:lowercase}
+.gm h3 b{color:#b8965a;font-weight:500}
+.gm .gm-hint{font-size:13px;color:#a09a92;margin-bottom:18px;font-weight:300;letter-spacing:2px}
+.gm-form{display:flex;flex-direction:column;gap:10px}
+.gm-form input,.gm-form textarea{padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:#2c2c2c;color:#efece7;font-family:'Geologica',sans-serif;font-size:14px;outline:none;letter-spacing:1px}
+.gm-form input:focus,.gm-form textarea:focus{border-color:#b8965a}
+.gm-form textarea{resize:vertical;min-height:70px}
+.gm-form button{padding:14px;background:#b8965a;color:#1a1a1a;border:none;border-radius:12px;font-family:'Geologica',sans-serif;font-size:13px;font-weight:600;letter-spacing:2px;cursor:pointer;text-transform:uppercase;margin-top:6px}
+.gm-form button:hover{background:#d4b883}
+.gm-msg{display:flex;gap:8px;margin-top:14px}
+.gm-msg a{flex:1;padding:12px;border-radius:12px;color:#fff;font-size:12px;font-weight:600;text-align:center;letter-spacing:2px;text-transform:lowercase}
+.gm-calc{max-width:760px;padding:0;overflow:hidden;background:#1e1e1e;border:none}
+.gm-calc iframe{display:block;width:100%;height:min(92vh,820px);border:0;border-radius:20px;background:#1e1e1e}
+@media(max-width:600px){.gm-body{padding:28px 20px}.gm-calc iframe{height:90vh}}
+
+/* Global text justify */
+body section p:not(.tag):not(.bc):not(.fa):not([class*="hero-"]):not(.cell-meta):not(.fcopy){text-align:justify;hyphens:none;-webkit-hyphens:none}
+
+/* Headings: убрать color-split — b наследует цвет заголовка */
+h1 b,h2 b,h3 b,h4 b,.ttl b,.hero h1 b,.hero-headline b,.hero-content h1 b{color:inherit!important;font-weight:600}
+
+/* Mobile compact buttons (.btn-sm + auto-fit для парных hero-кнопок) */
+@media(max-width:600px){
+  .btn-g.btn-sm,.btn-o.btn-sm{padding:10px 14px;font-size:11px;letter-spacing:1.2px;white-space:nowrap;flex:1;text-align:center}
+  .hero-btns,.hero-text .btns,div[style*="display:flex"][style*="gap:8px"][style*="flex-wrap:wrap"]{flex-wrap:nowrap!important}
+  .hero-btns .btn,.hero-text .btn-g,.hero-text .btn-o{padding:10px 14px;font-size:11px;letter-spacing:1.2px;white-space:nowrap;flex:1;text-align:center}
+}
+
+/* READ MORE — collapsible на мобиле */
+@media(max-width:600px){
+  .rm-wrap{display:block;width:100%;flex:1 1 100%;min-width:0}
+  .rm-block{position:relative;max-height:240px;overflow:hidden;transition:max-height .55s cubic-bezier(.34,1.2,.64,1)}
+  .rm-block.rm-expanded{max-height:8000px}
+  .rm-block::after{content:"";position:absolute;bottom:0;left:0;right:0;height:60px;background:linear-gradient(transparent,var(--rm-bg,#fff));pointer-events:none;transition:opacity .3s}
+  .rm-block.rm-expanded::after{opacity:0}
+  .rm-btn{position:relative;display:flex;align-items:center;justify-content:center;gap:8px;margin:16px 0 4px;padding:14px 22px;background:transparent;border:none;border-radius:50px;color:#b8965a;font-family:'Geologica',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:lowercase;cursor:pointer;-webkit-tap-highlight-color:transparent;box-sizing:border-box;outline:none;width:100%;overflow:hidden;text-align:center;transition:background-color .25s ease,color .25s ease}
+  .rm-svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;display:block;overflow:hidden}
+  .rm-svg path{fill:none;stroke:#b8965a;stroke-width:1.5;stroke-linejoin:round;stroke-linecap:round;transition:stroke-dashoffset 3.5s cubic-bezier(.4,0,.2,1)}
+  .rm-btn span,.rm-btn::after{position:relative;z-index:1}
+  .rm-btn::after{content:"↓";font-weight:400;font-size:12px;transition:transform .3s}
+  .rm-btn.exp::after{transform:rotate(180deg)}
+  .rm-btn:hover{background-color:rgba(184,150,90,.06);color:#d4b883}
+}
+</style>
+
+<div class="gm" id="gmContact" onclick="if(event.target===this)gmClose('Contact')">
+<div class="gm-body">
+<button class="gm-close" onclick="gmClose('Contact')" aria-label="Закрыть">✕</button>
+<h3>обсудить <b>проект</b></h3>
+<p class="gm-hint">Перезвоним в течение 30 минут в рабочее время.</p>
+<form class="gm-form" onsubmit="gmSubmit(event)">
+<input type="text" placeholder="имя" required>
+<input type="tel" placeholder="телефон" required>
+<textarea placeholder="кратко опишите задачу"></textarea>
+<button type="submit">отправить</button>
+</form>
+<div class="gm-msg">
+<a href="https://t.me/" style="background:#2AABEE">telegram</a>
+<a href="viber://chat?number=" style="background:#7360F2">viber</a>
+</div>
+</div>
+</div>
+
+<div class="gm" id="gmCalc" onclick="if(event.target===this)gmClose('Calc')">
+<div class="gm-body gm-calc">
+<button class="gm-close" onclick="gmClose('Calc')" aria-label="Закрыть">✕</button>
+<iframe id="gmCalcFrame" src="about:blank" loading="lazy" title="Калькулятор стоимости"></iframe>
+</div>
+</div>
+
+<script>
+function gmOpen(id){var m=document.getElementById('gm'+id);if(!m)return;if(id==='Calc'){var fr=document.getElementById('gmCalcFrame');if(fr&&(!fr.src||fr.src==='about:blank'))fr.src='/calculator'}m.classList.add('show');document.body.style.overflow='hidden'}
+function gmClose(id){var m=document.getElementById('gm'+id);if(m){m.classList.remove('show');document.body.style.overflow=''}}
+async function gmSubmit(e){e.preventDefault();var f=e.target;var btn=f.querySelector('button[type=submit]');var inputs=f.querySelectorAll('input,textarea');var data={name:inputs[0]&&inputs[0].value||'',phone:inputs[1]&&inputs[1].value||'',message:inputs[2]&&inputs[2].value||'',source:location.pathname};if(btn)btn.disabled=true;try{var r=await fetch('/api/lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});var j=await r.json();if(j.ok){f.innerHTML='<div style="text-align:center;padding:16px"><p style="font-size:16px;color:#efece7;margin-bottom:6px;letter-spacing:2px">спасибо!</p><p style="font-size:12px;color:#a09a92;letter-spacing:2px">перезвоним в течение 30 минут</p></div>';setTimeout(function(){gmClose('Contact')},2500)}else{alert('Ошибка: '+(j.error||'попробуйте ещё раз'));if(btn)btn.disabled=false}}catch(err){alert('Ошибка сети: '+err.message);if(btn)btn.disabled=false}}
+function openGM(){gmOpen('Contact')}
+function openCalc(){gmOpen('Calc')}
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){gmClose('Contact');gmClose('Calc')}});
+</script>
+
+
+<script>
+// READ MORE — авто-collapse длинных СПЛОШНЫХ текстовых блоков на мобиле, кроме hero/steps/cards
+(function(){
+  if (window.innerWidth > 600) return;
+  var drawIO = ('IntersectionObserver' in window) ? new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) {
+        var btn = e.target;
+        var pth = btn.querySelector('.rm-svg path');
+        setTimeout(function(){
+          btn.classList.add('drawn');
+          if (pth) requestAnimationFrame(function(){
+            requestAnimationFrame(function(){ pth.style.strokeDashoffset = '0'; });
+          });
+        }, 700);
+        drawIO.unobserve(btn);
+      }
+    });
+  }, {threshold:.25}) : null;
+  function makeCollapsible(el) {
+    if (!el || el.dataset.rmDone) return;
+    if (el.closest('.hero, .hero-min, .hero-2col, .hero-text, .hero-content, [class*="hero-"]')) return;
+    if (el.querySelector('form,table,.cmp-wrap,.cmp-scroll,.char-grid,.apply-row,.tex-grid,.pf,.px-grid,.bn-wrap,.why-grid,.partners-grid,.ag,.ms-block,iframe,video,.proc-step,.step-card,.steps,.st,.pc,.sys-grid,.sys-card,.fi,.app-grid,.gen-grid,.grid2,.grid3,.pf-mini,.cta')) return;
+    if (el.scrollHeight < 320) return;
+    el.dataset.rmDone = '1';
+    var wrap = document.createElement('div');
+    wrap.className = 'rm-wrap';
+    el.parentNode.insertBefore(wrap, el);
+    wrap.appendChild(el);
+    el.classList.add('rm-block');
+    var target = wrap, bg = '';
+    while (target && target !== document.body) {
+      var c = getComputedStyle(target).backgroundColor;
+      if (c && c !== 'rgba(0, 0, 0, 0)' && c !== 'transparent') { bg = c; break; }
+      target = target.parentElement;
+    }
+    if (!bg) bg = getComputedStyle(document.body).backgroundColor || '#fff';
+    el.style.setProperty('--rm-bg', bg);
+    var btn = document.createElement('button');
+    btn.className = 'rm-btn';
+    btn.type = 'button';
+    btn.innerHTML = '<svg class="rm-svg"><path d=""/></svg><span>развернуть</span>';
+    wrap.appendChild(btn);
+    btn.addEventListener('click', function(){
+      var isExp = el.classList.toggle('rm-expanded');
+      btn.classList.toggle('exp', isExp);
+      btn.querySelector('span').textContent = isExp ? 'свернуть' : 'развернуть';
+    });
+    requestAnimationFrame(function(){
+      var w = btn.offsetWidth, h = btn.offsetHeight;
+      if (!w || !h) return;
+      var svg = btn.querySelector('.rm-svg');
+      var path = svg.querySelector('path');
+      path.style.transition = 'none';
+      svg.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
+      var r = h / 2;
+      var cx = w / 2;
+      var d = 'M ' + cx + ',0.75 H ' + (w - r) +
+              ' A ' + (r - 0.75) + ',' + (r - 0.75) + ' 0 0 1 ' + (w - 0.75) + ',' + r +
+              ' A ' + (r - 0.75) + ',' + (r - 0.75) + ' 0 0 1 ' + (w - r) + ',' + (h - 0.75) +
+              ' H ' + r +
+              ' A ' + (r - 0.75) + ',' + (r - 0.75) + ' 0 0 1 0.75,' + r +
+              ' A ' + (r - 0.75) + ',' + (r - 0.75) + ' 0 0 1 ' + r + ',0.75 H ' + cx + ' Z';
+      path.setAttribute('d', d);
+      var len = path.getTotalLength ? path.getTotalLength() : (w * 2 + h * Math.PI);
+      path.style.strokeDasharray = len + 'px';
+      path.style.strokeDashoffset = len + 'px';
+      void path.getBoundingClientRect();
+      path.style.transition = '';
+      if (drawIO) drawIO.observe(btn);
+      else setTimeout(function(){
+        btn.classList.add('drawn');
+        requestAnimationFrame(function(){ path.style.strokeDashoffset = '0'; });
+      }, 200);
+    });
+  }
+  var sels = '.manifesto-right, .prod-text .inner, section .mx, .hw-content';
+  document.querySelectorAll(sels).forEach(makeCollapsible);
+  document.querySelectorAll('section div, section article').forEach(function(el){
+    if (el.dataset.rmDone) return;
+    var blockChildren = Array.from(el.children).filter(function(c){
+      return ['P','UL','OL'].indexOf(c.tagName) !== -1;
+    });
+    if (blockChildren.length >= 3) makeCollapsible(el);
+  });
+})();
+
+(function(){var d=document.getElementById('drawer');if(!d||d.dataset.accInit)return;d.dataset.accInit='1';var labels=Array.from(d.querySelectorAll('.dr-lb,.dr-label'));labels.forEach(function(lbl){var n=lbl.nextElementSibling;if(!n||n.tagName!=='A')return;var ls=[],c=n;while(c&&c.tagName==='A'){ls.push(c);c=c.nextElementSibling}if(ls.length<3)return;var w=document.createElement('div');w.className='dr-sub';lbl.parentNode.insertBefore(w,ls[0]);ls.forEach(function(a){w.appendChild(a)});lbl.classList.add('dr-toggle');lbl.setAttribute('role','button');lbl.setAttribute('tabindex','0');lbl.setAttribute('aria-expanded','false');function t(){var o=lbl.classList.toggle('open');w.classList.toggle('open',o);lbl.setAttribute('aria-expanded',String(o))}lbl.addEventListener('click',t);lbl.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();t()}})})})();
+(function(){var d=document.getElementById('drawer');if(!d||d.dataset.closeBtnInit)return;d.dataset.closeBtnInit='1';var b=document.createElement('button');b.className='dr-close-btn';b.setAttribute('aria-label','Закрыть меню');b.setAttribute('type','button');b.innerHTML='<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><polyline points="12 5 19 12 12 19"/></svg>';b.addEventListener('click',function(){if(typeof closeDrawer==='function'){closeDrawer();return}d.classList.remove('show');var ov=document.getElementById('overlay');if(ov)ov.classList.remove('show')});d.insertBefore(b,d.firstChild)})();
+// Подгрузить контакты
+(async function(){
+  try{
+    var r=await fetch('/api/contacts');if(!r.ok)return;
+    var j=await r.json();var c=j&&j.contacts||{};
+    if(c.phone)document.querySelectorAll('a[href^="tel:"]').forEach(function(a){a.href='tel:'+c.phone.replace(/[\s()-]/g,'');a.textContent=c.phone});
+    if(c.email)document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){a.href='mailto:'+c.email;a.textContent=c.email});
+    if(c.telegram)document.querySelectorAll('a[href^="https://t.me"]').forEach(function(a){a.href=c.telegram});
+    if(c.viber)document.querySelectorAll('a[href^="viber:"]').forEach(function(a){a.href='viber://chat?number='+c.viber.replace(/[^+\d]/g,'')});
+    var fc=document.getElementById('ftContacts');
+    if(fc){var esc=function(s){return String(s||'').replace(/[&<>"']/g,function(m){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]})};var h='<h4>контакты</h4>';if(c.phone)h+='<a href="tel:'+esc(c.phone).replace(/[\s()-]/g,'')+'">'+esc(c.phone)+'</a>';if(c.email)h+='<a href="mailto:'+esc(c.email)+'">'+esc(c.email)+'</a>';if(c.address)h+='<p>'+esc(c.address)+'</p>';if(c.hours)h+='<p>'+esc(c.hours)+'</p>';fc.innerHTML=h}
+  }catch(e){}
+})();
+</script>
+</body></html>

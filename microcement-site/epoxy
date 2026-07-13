@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Эпоксидные наливные полы в Минске | Romanov Decor Studio</title>
+<meta name="description" content="Эпоксидные полы Remmers под ключ. Прочность до 118 МПа, химстойкость, гарантия 5 лет. Для гаражей, складов, производств и квартир. Официальный дилер. Минск и Беларусь.">
+<link rel="canonical" href="https://romanovdecor.by/epoxy">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}body{font-family:'Geologica',sans-serif;background:#fff;color:#1e1e1e;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;font-feature-settings:'kern' 1,'liga' 1,'calt' 1}a{text-decoration:none;color:inherit}
+.hd{position:fixed;top:14px;left:0;right:0;z-index:500;display:flex;align-items:center;justify-content:space-between;padding:0 14px;background:none;border:none;height:auto;pointer-events:none}
+.hd > *{pointer-events:auto}
+.hd-pill{background:#2c2c2c;border:1px solid rgba(255,255,255,.08);border-radius:24px;box-shadow:0 8px 24px rgba(0,0,0,.4),0 0 0 1px rgba(184,150,90,.04) inset;height:42px;display:flex;align-items:center;transition:all .3s cubic-bezier(.34,1.2,.64,1);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+.hd-logo-pill{width:42px;justify-content:center;padding:0;border-radius:10px}
+.hd-logo-pill .logo-r{font-family:'Geologica',sans-serif;font-size:17px;font-weight:700;color:#efece7;text-transform:lowercase;line-height:1;letter-spacing:0;display:block}
+.hd-nav-pill{position:absolute;left:50%;transform:translateX(-50%);padding:0 20px;gap:14px;max-width:calc(100vw - 120px)}
+.hd-nav-pill > a, .hd-nav-pill > .dd, .hd-nav-pill .dd-label{font-size:10px!important;font-weight:500!important;letter-spacing:1.5px!important;text-transform:uppercase!important;line-height:1!important;color:#a09a92;white-space:nowrap}
+.hd-nav-pill:hover{background:#1f1f1f;box-shadow:0 12px 32px rgba(0,0,0,.5),0 0 0 1px rgba(184,150,90,.12) inset}
+.hd-burger-pill{width:42px;justify-content:center;padding:0;border-radius:10px;overflow:hidden;position:relative}
+.hd-burger-pill::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at center,rgba(184,150,90,.25),transparent 70%);opacity:0;transition:opacity .4s cubic-bezier(.34,1.2,.64,1)}
+.hd-burger-pill:hover{background:#1f1f1f;border-color:rgba(184,150,90,.25);box-shadow:0 8px 24px rgba(0,0,0,.5),0 0 0 1px rgba(184,150,90,.18) inset}
+.hd-burger-pill:hover::before{opacity:1}
+.hd-burger-pill .bur{width:42px;height:42px;border-radius:10px;border:none;background:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;-webkit-tap-highlight-color:transparent;position:relative;z-index:1}
+.hd-burger-pill .bur span{display:block;width:14px;height:1.5px;background:#efece7;border-radius:1px;transition:transform .35s cubic-bezier(.34,1.5,.64,1),background .25s ease,width .35s cubic-bezier(.34,1.5,.64,1)}
+.hd-burger-pill:hover .bur span{background:#b8965a}
+.hd-burger-pill:hover .bur span:nth-child(1){transform:translateY(2px) rotate(8deg);width:16px}
+.hd-burger-pill:hover .bur span:nth-child(2){width:8px;transform:translateX(-3px)}
+.hd-burger-pill:hover .bur span:nth-child(3){transform:translateY(-2px) rotate(-8deg);width:16px}
+@media(max-width:760px){.hd{padding:0 10px;top:10px}.hd-pill{height:38px;border-radius:22px}.hd-logo-pill{width:38px;border-radius:9px}.hd-logo-pill .logo-r{font-size:15px}.hd-burger-pill{width:38px;border-radius:9px}.hd-burger-pill .bur{width:38px;height:38px;border-radius:9px}.hd-nav-pill{display:none}}
+.logo{font-size:11px;font-weight:500;white-space:nowrap;letter-spacing:2px;text-transform:lowercase;color:#efece7}.logo span{color:#b8965a;font-weight:400}
+.nav{display:flex;gap:16px;align-items:center}.nav>a,.dd{font-size:11px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:#a09a92;transition:color .2s;cursor:pointer;position:relative}.nav>a:hover,.dd:hover{color:#b8965a}.nav>a.act{color:#b8965a}.dd-menu a.act{color:#b8965a;font-weight:600}
+.dd-label{font-size:11px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:#a09a92;display:flex;align-items:center;gap:3px}.dd-label:hover{color:#b8965a}
+.dd-arrow{border:solid #a09a92;border-width:0 1.5px 1.5px 0;display:inline-block;padding:2px;transform:rotate(45deg);transition:.2s;margin-top:-2px}.dd:hover .dd-arrow{transform:rotate(-135deg);border-color:#b8965a}
+.dd-menu{position:absolute;top:100%;left:-12px;min-width:260px;background:#2c2c2c;border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:8px 0;opacity:0;visibility:hidden;transform:translateY(8px);transition:all .25s;margin-top:12px;box-shadow:0 12px 32px rgba(0,0,0,.3)}.dd:hover .dd-menu{opacity:1;visibility:visible;transform:translateY(0)}
+.dd-group{padding:8px 16px 2px;font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#b8965a;opacity:.65}
+.dd-menu a{display:block;padding:8px 16px;font-size:12px;font-weight:400;letter-spacing:0;text-transform:none;color:#a09a92;transition:.15s}.dd-menu a:hover{color:#b8965a;background:rgba(184,150,90,.06)}
+
+.overlay{position:fixed;inset:0;z-index:510;background:rgba(0,0,0,.4);display:none}.overlay.show{display:block}
+.drawer{position:fixed;top:0;right:-340px;width:320px;max-width:85vw;height:100%;z-index:520;background:#2c2c2c;border-left:1px solid rgba(255,255,255,.06);transition:right .35s;padding:80px 24px 24px;overflow-y:auto;color:#efece7}
+.dr-close-btn{position:absolute;top:20px;right:20px;width:36px;height:36px;background:none;border:none;color:#a09a92;cursor:pointer;display:flex;align-items:center;justify-content:center;-webkit-tap-highlight-color:transparent;z-index:5;transition:color .2s,transform .2s;padding:0}.dr-close-btn:hover{color:#b8965a}.dr-close-btn:active{transform:translateX(3px)}.drawer.show{right:0}
+.dr-lb{font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#b8965a;margin-bottom:8px;margin-top:16px}
+.dr-lb.dr-toggle,.dr-label.dr-toggle{cursor:pointer;display:flex;align-items:center;justify-content:space-between;padding:8px 0;margin:0;-webkit-tap-highlight-color:transparent;user-select:none;transition:color .25s}
+.dr-lb.dr-toggle::after,.dr-label.dr-toggle::after{content:'';width:7px;height:7px;border:solid #a09a92;border-width:0 1.5px 1.5px 0;transform:rotate(45deg);transition:transform .25s ease,border-color .25s ease;margin-right:6px;display:inline-block}
+.dr-lb.dr-toggle.open,.dr-label.dr-toggle.open{color:#d4b883}
+.dr-lb.dr-toggle.open::after,.dr-label.dr-toggle.open::after{transform:rotate(-135deg);border-color:#b8965a}
+.dr-sub{max-height:0;overflow:hidden;transition:max-height .35s cubic-bezier(.4,0,.2,1);margin-bottom:0}
+.dr-sub.open{max-height:600px;margin-bottom:6px}
+.dr-a{display:block;padding:5px 0 5px 12px;font-size:14px;font-weight:400;color:#a09a92}.dr-a:hover{color:#b8965a}
+.dr-a-main{display:block;padding:9px 0 9px 14px;font-size:14px;font-weight:600;color:#efece7;border-left:2px solid #b8965a;margin:4px 0;letter-spacing:.3px;background:rgba(184,150,90,.06);border-radius:0 8px 8px 0;transition:background .2s,color .2s}
+.dr-a-main:hover{color:#b8965a;background:rgba(184,150,90,.12)}
+.dr-a2{display:block;padding:6px 0;font-size:15px;font-weight:500;color:#efece7}
+.dr-it{margin-bottom:10px}.dr-it h4{font-size:13px;font-weight:500;color:#efece7}.dr-it p,.dr-it a{font-size:12px;color:#a09a92;font-weight:300;display:block}
+.dr-div{height:1px;background:rgba(255,255,255,.06);margin:12px 0}
+.dr-btns{display:flex;gap:8px;margin-top:12px}.dr-btns a{flex:1;display:flex;align-items:center;justify-content:center;padding:12px;color:#fff;border-radius:14px;font-size:13px;font-weight:600}
+.s{padding:60px 20px}.mx{max-width:800px;margin:0 auto}
+.gray{background:#2c2c2c;color:#efece7}.white{background:#fff;color:#1e1e1e}.cream{background:#f7f5f0;color:#1e1e1e}
+.tag{font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#b8965a;margin-bottom:6px}
+.ln{width:30px;height:2px;background:#b8965a;margin-bottom:16px;border-radius:1px}
+.btn-g{display:inline-block;padding:12px 24px;font-family:'Geologica',sans-serif;font-size:13px;font-weight:600;border-radius:14px;background:#b8965a;color:#1a1a1a;border:none;cursor:pointer;transition:.2s;letter-spacing:2px}.btn-g:hover{background:#d4b883}
+.btn-o{display:inline-block;padding:12px 24px;font-family:'Geologica',sans-serif;font-size:13px;font-weight:600;border-radius:14px;background:none;border:1px solid rgba(184,150,90,.25);color:#b8965a;cursor:pointer;transition:.2s;letter-spacing:2px}.btn-o:hover{background:rgba(184,150,90,.06)}
+.bc{padding-top:68px;font-size:12px;color:#a09a92;letter-spacing:2px}.bc a{color:#b8965a}
+h1{font-size:32px;font-weight:600;line-height:1.15;margin-bottom:8px;color:#1e1e1e}h1 b{color:#1e1e1e;font-weight:600}
+h2{font-size:24px;font-weight:600;margin:48px 0 8px;line-height:1.3}h2 b{color:#b8965a;font-weight:500}
+h3{font-size:18px;font-weight:600;margin:32px 0 6px}
+p{font-size:15px;line-height:1.65;margin-bottom:12px;font-weight:300}.gray p{color:#ccc}.cream p,.white p{color:#555}
+strong{font-weight:600}
+table{width:100%;border-collapse:collapse;margin:16px 0 24px;font-size:14px;border-radius:14px;overflow:hidden}
+th{background:#2c2c2c;color:#b8965a;text-align:left;padding:10px 14px;font-weight:600;font-size:12px;letter-spacing:2px;text-transform:uppercase}
+td{padding:10px 14px;border-bottom:1px solid rgba(0,0,0,.06);font-weight:300}
+tr:last-child td{border:none}tr:nth-child(even){background:#f7f5f0}
+.win{color:#b8965a;font-weight:600}
+.fi{border-bottom:1px solid rgba(0,0,0,.06);padding:14px 0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.fq{display:flex;justify-content:space-between;align-items:center;gap:8px}.fq h4{font-size:15px;font-weight:500}
+.fq i{color:#b8965a;font-size:14px;font-style:normal;flex-shrink:0;transition:transform .3s}.fi.open .fq i{transform:rotate(45deg)}
+.fa{max-height:0;overflow:hidden;transition:max-height .35s;font-size:14px;line-height:1.7;font-weight:300;color:#555}.fi.open .fa{max-height:300px;padding-top:8px}
+/* HERO минималистичный (single-page стиль главной) */
+.hero-min{position:relative;display:flex;align-items:center;justify-content:center;text-align:center;padding:0;min-height:90vh;min-height:90svh;background:#2c2c2c;background-size:cover;background-position:center;overflow:hidden}
+.hero-min::after{content:"";position:absolute;inset:0;background:linear-gradient(rgba(30,30,30,.62),rgba(30,30,30,.45));pointer-events:none;z-index:1}
+.hero-min-bc{position:absolute;top:80px;left:0;right:0;text-align:center;font-size:11px;color:rgba(239,236,231,.7);letter-spacing:2px;text-transform:lowercase;z-index:3}
+.hero-min-bc a{color:#b8965a}
+.hero-min-in{position:relative;z-index:4;max-width:1100px;padding:80px 24px;margin:0 auto}
+.hero-min-brand{font-family:'Geologica',sans-serif;font-weight:300;font-size:clamp(40px,8vw,90px);line-height:1;letter-spacing:.02em;color:#fff;text-transform:lowercase;margin:0;text-shadow:0 4px 24px rgba(0,0,0,.45);white-space:nowrap}
+.hero-min-studio{font-family:'Geologica',sans-serif;font-weight:400;font-size:clamp(13px,1.5vw,18px);letter-spacing:6px;color:#fff;text-transform:lowercase;margin-top:18px;text-shadow:0 1px 8px rgba(0,0,0,.4)}
+.hero-min-studio span{color:#fff;font-weight:400}
+.hero-min-tag{font-family:'Geologica',sans-serif;font-weight:300;font-size:clamp(13px,1.4vw,16px);color:rgba(239,236,231,.8);letter-spacing:1.5px;margin-top:48px;line-height:1.5;text-shadow:0 1px 8px rgba(0,0,0,.4)}
+@media(max-width:600px){.hero-min-in{padding:60px 20px 40px}.hero-min-brand{font-size:clamp(40px,12vw,60px)}.hero-min-studio{font-size:13px;letter-spacing:2.5px;margin-top:8px}.hero-min-tag{margin-top:32px;font-size:13px;letter-spacing:.5px;line-height:1.45}.hero-min-bc{top:72px;font-size:10px}}
+.hero-scroll{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);width:24px;height:38px;border:1.5px solid rgba(255,255,255,.3);border-radius:14px;z-index:5;pointer-events:none;display:flex;justify-content:center}
+.hero-scroll span{display:block;width:3px;height:8px;background:rgba(255,255,255,.55);border-radius:2px;margin-top:6px;animation:scrollDot 1.6s cubic-bezier(.65,.05,.36,1) infinite}
+@keyframes scrollDot{0%{opacity:0;transform:translateY(-4px)}30%{opacity:1}80%{opacity:0;transform:translateY(14px)}100%{opacity:0;transform:translateY(14px)}}
+@media(max-width:600px){.hero-scroll{bottom:18px;width:22px;height:34px}}
+.hero-intro{background:#fff;padding:64px 20px 32px}
+.hero-intro .mx{max-width:800px;margin:0 auto}
+.hero-intro h1{font-size:clamp(26px,4vw,38px);line-height:1.15;margin:8px 0 0;color:#1e1e1e;font-weight:600}
+.hero-intro h1 b{color:#1e1e1e;font-weight:600}
+.hero-intro .ln{width:30px;height:2px;background:#b8965a;margin:18px 0}
+.hero-intro p{font-size:16px;line-height:1.65;color:#555;font-weight:300;margin:0 0 24px}
+.hero-intro-btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+@media(max-width:600px){.hero-intro{padding:48px 20px 24px}.hero-intro-btns .btn-g,.hero-intro-btns .btn-o{flex:1;text-align:center;padding:11px 16px;font-size:12px}}
+.prod-full{display:grid;grid-template-columns:1fr 1fr;gap:0;padding:60px clamp(20px,6vw,80px) !important;align-items:center}
+.prod-img-full{background:#e8e3da;background-size:cover;background-position:center;min-height:360px;border-radius:16px}
+.prod-text{padding:0 0 0 40px;display:flex;flex-direction:column;justify-content:center}
+.prod-text .inner{max-width:480px}
+@media(max-width:900px){.prod-full{grid-template-columns:1fr;padding:40px 20px !important}.prod-img-full{min-height:260px;order:-1;margin-bottom:24px}.prod-text{padding:0}}
+.tex-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.tex-card{position:relative;overflow:hidden;height:clamp(240px,30vw,360px);background:#e8e3da;background-size:cover;background-position:center;cursor:pointer}
+.tex-card::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.65) 0%,rgba(0,0,0,.1) 60%,transparent 100%)}
+.tex-card:hover::after{background:linear-gradient(to top,rgba(0,0,0,.75) 0%,rgba(0,0,0,.2) 70%,transparent 100%)}
+.tex-meta{position:absolute;bottom:20px;left:20px;right:20px;z-index:2;color:#fff}
+.tex-meta h4{font-size:18px;font-weight:600;margin-bottom:4px}.tex-meta p{font-size:12px;color:rgba(255,255,255,.75);margin:0;font-weight:300}
+@media(max-width:600px){.tex-grid{grid-template-columns:1fr}}
+.layers-section{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin:20px 0}
+.layers-img{border-radius:14px;background:#e8e3da;background-size:cover;background-position:center;min-height:320px}
+.layers-list{display:flex;flex-direction:column;gap:16px}
+.layer-card{display:flex;gap:16px;align-items:flex-start}
+.layer-dot{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;flex-shrink:0}
+.layer-card:nth-child(1) .layer-dot{background:#3a342c;color:#efece7}
+.layer-card:nth-child(2) .layer-dot{background:#8a7a5a;color:#fff}
+.layer-card:nth-child(3) .layer-dot{background:#b8965a;color:#1a1a1a}
+.layer-card h4{font-size:15px;font-weight:600;margin-bottom:3px}
+.layer-card p{font-size:13px;margin:0;color:#706a62;font-weight:300;line-height:1.5}
+.layer-card .layer-line{width:24px;height:2px;margin:6px 0;border-radius:1px}
+.layer-card:nth-child(1) .layer-line{background:#3a342c}
+.layer-card:nth-child(2) .layer-line{background:#8a7a5a}
+.layer-card:nth-child(3) .layer-line{background:#b8965a}
+@media(max-width:900px){.layers-section{grid-template-columns:1fr;gap:20px}.layers-img{min-height:220px;order:-1}}
+.pf-mini{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:20px 0}
+.pf-mini-card{border-radius:12px;aspect-ratio:1;background:#e8e3da;background-size:cover;background-position:center;transition:transform .2s}
+.pf-mini-card:hover{transform:translateY(-3px)}
+@media(max-width:600px){.pf-mini{grid-template-columns:repeat(2,1fr)}}
+.cta{background:#2c2c2c;color:#efece7;padding:40px;border-radius:20px;text-align:center;margin:40px 0}
+.cta h3{color:#b8965a;font-size:22px;margin:0 0 8px;letter-spacing:2px}.cta p{color:#a09a92;margin-bottom:16px;letter-spacing:2px}
+.ft{position:relative;background:#1a1a1a;border-top:1px solid rgba(184,150,90,.18);padding:64px 20px 28px;color:#a09a92}
+.ft::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,#b8965a 30%,#d4b883 50%,#b8965a 70%,transparent 100%);opacity:.7}
+.ft-grid{max-width:1100px;margin:0 auto 40px;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:48px}
+.ft-col h4{font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#b8965a;margin-bottom:18px;position:relative;padding-bottom:8px}
+.ft-col h4::after{content:"";position:absolute;bottom:0;left:0;width:24px;height:1px;background:#b8965a;opacity:.5}
+.ft-col p,.ft-col a{font-size:13px;color:#a09a92;font-weight:300;line-height:1.85;display:block;margin-bottom:2px;letter-spacing:1.5px;text-decoration:none;transition:color .25s ease,padding-left .25s ease}
+.ft-col a:hover{color:#efece7;padding-left:6px}
+.ft-logo{font-size:12px;font-weight:500;letter-spacing:2px;text-transform:lowercase;color:#efece7;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.ft-logo::before{content:"r";display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;background:#2c2c2c;border:1px solid rgba(184,150,90,.2);border-radius:8px;color:#b8965a;font-weight:700;font-size:16px;font-family:'Geologica',sans-serif}
+.ft-logo span{color:#b8965a;font-weight:500}
+.ft-desc{font-size:12px;color:#888;font-weight:300;line-height:1.7;letter-spacing:.8px;max-width:340px;margin-top:0}
+.ft-bottom{max-width:1100px;margin:0 auto;padding-top:24px;border-top:1px solid rgba(255,255,255,.06);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.ft-copy{font-size:10px;color:#555;letter-spacing:2px;text-transform:uppercase}
+.ft-bottom > div a{font-size:11px;color:#888;letter-spacing:2px;transition:color .25s ease;text-decoration:none;text-transform:lowercase}
+.ft-bottom > div a:hover{color:#b8965a}
+@media(max-width:768px){.ft{padding:48px 20px 24px}.ft-grid{grid-template-columns:1fr 1fr;gap:32px;margin-bottom:32px}.ft-col:first-child{grid-column:1/-1}.ft-bottom{flex-direction:column;gap:14px;text-align:center}.ft-bottom > div{flex-wrap:wrap;justify-content:center}.ft-desc{max-width:none}}
+@media(max-width:420px){.ft-grid{grid-template-columns:1fr;gap:28px}}
+@media(max-width:768px){.ft-grid{grid-template-columns:1fr 1fr;gap:28px}}
+@media(max-width:500px){.ft-grid{grid-template-columns:1fr;gap:24px}.ft-bottom{flex-direction:column;text-align:center}}
+@media(max-width:900px){.nav{display:none}}
+@media(max-width:600px){h1{font-size:24px}h2{font-size:20px}}
+.sticky-cta{position:fixed;bottom:24px;right:24px;z-index:550;display:flex;flex-direction:column;align-items:flex-end;gap:8px}.sticky-btn{width:52px;height:52px;border-radius:50%;background:#2c2c2c;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,.3);transition:.3s}.sticky-btn:hover{transform:scale(1.08)}.sticky-btn svg{width:22px;height:22px;fill:#efece7}.sticky-pop{display:none;flex-direction:column;gap:6px;margin-bottom:4px}.sticky-pop.show{display:flex}.sticky-pop a{display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:12px;font-size:12px;font-weight:600;color:#fff;letter-spacing:2px;text-transform:lowercase;box-shadow:0 4px 16px rgba(0,0,0,.3);transition:.2s;white-space:nowrap}.sticky-pop a:hover{transform:translateX(-4px)}
+.nw-grid{display:grid;grid-template-columns:minmax(150px,0.28fr) 1fr;min-height:280px}
+.nw-grid>div:nth-child(2){border-left:1px solid rgba(184,150,90,.25);padding:50px 40px;display:flex;align-items:center}
+.nw-grid>div:first-child{display:flex;align-items:center;justify-content:center;padding:40px 20px}
+@media(max-width:768px){.nw-grid{grid-template-columns:1fr;min-height:auto}.nw-grid>div:nth-child(2){border-left:none;border-top:1px solid rgba(184,150,90,.25);padding:32px 20px}.nw-grid>div:first-child{padding:28px 20px 8px}}
+.nw-grid-3{display:grid;grid-template-columns:minmax(150px,0.28fr) auto 1fr;min-height:280px}
+.nw-grid-3>div:first-child{display:flex;align-items:center;justify-content:center;padding:40px 20px}
+.nw-grid-3>div:nth-child(3){padding:50px 40px;display:flex;align-items:center}
+@media(max-width:768px){.nw-grid-3{grid-template-columns:1fr;min-height:auto}.nw-grid-3>div:nth-child(2){display:none}.nw-grid-3>div:nth-child(3){padding:32px 20px;border-top:1px solid rgba(184,150,90,.25)}.nw-grid-3>div:first-child{padding:28px 20px 8px}}
+@media(max-width:768px){[style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr 1fr !important}}@media(max-width:500px){[style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr !important}}
+.life-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0}
+.life-item{display:flex;gap:14px;align-items:flex-start;background:#fff;padding:18px;border-radius:16px;border:1px solid rgba(184,150,90,.12);transition:transform .25s,box-shadow .25s}
+.life-item:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(40,30,20,.06)}
+.life-item .ph{width:32px;height:32px;flex-shrink:0;color:#b8965a;margin-top:2px}
+.life-item .li-t{font-size:14px;font-weight:600;color:#1e1e1e;margin-bottom:4px;letter-spacing:.3px}
+.life-item .li-d{font-size:13px;color:#555;line-height:1.5;font-weight:300}
+@media(max-width:900px){.life-grid{grid-template-columns:repeat(2,1fr);gap:10px}.life-item{padding:14px;gap:10px}.life-item .ph{width:26px;height:26px}}
+@media(max-width:500px){.life-grid{grid-template-columns:1fr;gap:8px}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","serviceType":"Монтаж эпоксидных наливных полов","provider":{"@type":"LocalBusiness","name":"Romanov Decor Studio","areaServed":{"@type":"Country","name":"Беларусь"},"address":{"@type":"PostalAddress","addressLocality":"Минск","addressCountry":"BY"}},"description":"Монтаж эпоксидных наливных полов под ключ: промышленные, декоративные, для гаражей и коммерческих объектов. Немецкие материалы, гарантия 5 лет.","offers":{"@type":"Offer","priceCurrency":"USD","priceSpecification":{"@type":"UnitPriceSpecification","price":"40","unitCode":"MTK","priceCurrency":"USD"}}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Что такое эпоксидный пол?","acceptedAnswer":{"@type":"Answer","text":"Двухкомпонентное бесшовное полимерное покрытие на основе эпоксидной смолы и отвердителя. Самовыравнивается на бетоне и застывает в монолитный твёрдый слой."}},{"@type":"Question","name":"Сколько стоит эпоксидный пол?","acceptedAnswer":{"@type":"Answer","text":"От $40 за м² в зависимости от типа системы и площади. Рассчитываем после бесплатного замера, фиксируем цену в договоре."}},{"@type":"Question","name":"Подходит ли эпоксидный пол для гаража?","acceptedAnswer":{"@type":"Answer","text":"Да. Эпоксид устойчив к ГСМ, шинам, морозам до -30 °C, не пылит и легко моется. Одно из самых востребованных решений для гаражей."}}]}</script>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/favicon.svg">
+<meta name="theme-color" content="#2c2c2c">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Romanov Decor Studio">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:image" content="https://romanovdecor.by/img/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://romanovdecor.by/img/og-cover.png">
+<meta property="og:url" content="https://romanovdecor.by/epoxy">
+<meta property="og:title" content="Эпоксидные наливные полы в Минске — монтаж под ключ | Romanov Decor Studio">
+<meta property="og:description" content="Монтаж эпоксидных наливных полов под ключ: промышленные, декоративные, для гаражей, складов, магазинов и производств. Немецкие материалы, гарантия 5 лет. Минск и вся Беларусь.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Эпоксидные наливные полы в Минске — монтаж под ключ | Romanov Decor Studio">
+<meta name="twitter:description" content="Монтаж эпоксидных наливных полов под ключ: промышленные, декоративные, для гаражей, складов, магазинов и производств. Немецкие материалы, гарантия 5 лет. Минск и вся Беларусь.">
+</head>
+<body>
+
+<header class="hd">
+<div class="hd-pill hd-logo-pill"><a href="/" class="logo-r" aria-label="Romanov Decor Studio">r</a></div>
+<nav class="hd-pill hd-nav-pill nav">
+<div class="dd"><div class="dd-label">Микроцемент <i class="dd-arrow"></i></div><div class="dd-menu"><a href="/microcement">О микроцементе</a><div class="dd-group">Применение</div><a href="/microcement-walls">На стенах</a><a href="/microcement-floor">На полу</a><a href="/microcement-bathroom">В ванной</a><a href="/microcement-kitchen">На кухне</a><a href="/microcement-stairs">На лестнице</a><a href="/microcement-furniture">На мебели</a><a href="/microcement-facade">На фасаде</a><div class="dd-group">Гайды</div><a href="/walls">Подготовка стен</a><a href="/floors">Подготовка пола</a><a href="/bathroom">Микроцемент в ванной</a><a href="/furniture">Микроцемент на мебели</a></div></div>
+<div class="dd"><div class="dd-label">Наливные полы <i class="dd-arrow"></i></div><div class="dd-menu"><div class="dd-group">Покрытия</div><a href="/epoxy" class="act">Об эпоксиде</a><a href="/polyurethane">О полиуретане</a><div class="dd-group">Применение</div><a href="/garage">Гараж</a><a href="/warehouse">Склад</a><a href="/production">Производство</a><a href="/food">Пищевой цех</a><a href="/office">Офис</a><a href="/restaurant">Ресторан</a></div></div>
+<a href="/portfolio">Портфолио</a><a href="/price">Цены</a><a href="/blog">Блог</a><a href="/about">О студии</a>
+</nav>
+<div class="hd-pill hd-burger-pill">
+<button class="bur" id="burgerBtn" type="button" onclick="toggleDrawer()" aria-label="Меню"><span></span><span></span><span></span></button>
+</div>
+</header>
+<div class="overlay" id="overlay" onclick="closeDrawer()"></div>
+<div class="drawer" id="drawer">
+<a class="dr-a2" href="/" onclick="closeDrawer()" style="border-bottom:1px solid rgba(255,255,255,.06);padding-bottom:10px;margin-bottom:10px">Главная</a>
+<div class="dr-lb">Микроцемент</div>
+<a class="dr-a-main" href="/microcement" onclick="closeDrawer()">О микроцементе</a><a class="dr-a" href="/microcement-walls" onclick="closeDrawer()">На стенах</a><a class="dr-a" href="/microcement-floor" onclick="closeDrawer()">На полу</a><a class="dr-a" href="/microcement-bathroom" onclick="closeDrawer()">В ванной</a><a class="dr-a" href="/microcement-kitchen" onclick="closeDrawer()">На кухне</a><a class="dr-a" href="/microcement-stairs" onclick="closeDrawer()">На лестнице</a><a class="dr-a" href="/microcement-furniture" onclick="closeDrawer()">На мебели</a><a class="dr-a" href="/microcement-facade" onclick="closeDrawer()">На фасаде</a>
+<div class="dr-lb">Наливные полы</div>
+<a class="dr-a-main" href="/epoxy" onclick="closeDrawer()">Об эпоксиде</a><a class="dr-a-main" href="/polyurethane" onclick="closeDrawer()">О полиуретане</a><a class="dr-a" href="/garage" onclick="closeDrawer()">Пол для гаража</a><a class="dr-a" href="/warehouse" onclick="closeDrawer()">Пол для склада</a><a class="dr-a" href="/production" onclick="closeDrawer()">Пол для производства</a><a class="dr-a" href="/food" onclick="closeDrawer()">Пол для пищевого цеха</a><a class="dr-a" href="/office" onclick="closeDrawer()">Пол для офиса</a><a class="dr-a" href="/restaurant" onclick="closeDrawer()">Пол для ресторана</a><div class="dr-lb">Гайды</div><a class="dr-a" href="/walls" onclick="closeDrawer()">Подготовка стен</a><a class="dr-a" href="/floors" onclick="closeDrawer()">Подготовка пола</a><a class="dr-a" href="/bathroom" onclick="closeDrawer()">Микроцемент в ванной</a><a class="dr-a" href="/furniture" onclick="closeDrawer()">Микроцемент на мебели</a><div class="dr-div"></div>
+<a class="dr-a2" href="/portfolio" onclick="closeDrawer()">Портфолио</a><a class="dr-a2" href="/price" onclick="closeDrawer()">Цены</a><a class="dr-a2" href="/calculator" onclick="closeDrawer()">Калькулятор</a><a class="dr-a2" href="/blog" onclick="closeDrawer()">Блог</a><a class="dr-a2" href="/about" onclick="closeDrawer()">О студии</a><a class="dr-a2" href="/#contact" onclick="closeDrawer()">Контакты</a>
+<div class="dr-div"></div>
+<div class="dr-lb">Контакты</div>
+<div class="dr-it"><h4>Телефон</h4><a href="tel:+375XXXXXXXX">+375 (XX) XXX-XX-XX</a></div>
+<div class="dr-it"><h4>Email</h4><a href="/cdn-cgi/l/email-protection#244d4a424b64564b49454a4b524041474b560a465d">info&#64;romanovdecor.by</a></div>
+<div class="dr-btns"><a href="https://t.me/" style="background:#2AABEE">Telegram</a><a href="viber://chat?number=" style="background:#7360F2">Viber</a></div>
+</div>
+
+<!-- HERO минималистичный — бренд-обложка в стиле главной -->
+<section class="hero-min" data-slot="epoxy-hero">
+<div class="hero-min-bc"><a href="/">главная</a> / эпоксидные полы</div>
+<div class="hero-min-in">
+<div class="hero-min-brand">epoxy</div>
+<div class="hero-min-studio">romanov <span>decor</span> studio</div>
+<div class="hero-min-tag">Промышленные наливные полы Remmers</div>
+</div>
+<div class="hero-scroll" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ЧТО ТАКОЕ -->
+<section class="s gray" style="padding:60px clamp(20px,6vw,80px)">
+<div class="nw-grid">
+<div>
+<div style="text-align:center">
+<div style="font-size:10px;font-weight:500;letter-spacing:2px;text-transform:lowercase;color:#a09a92;line-height:1.8">romanov</div>
+<div style="font-size:22px;font-weight:600;letter-spacing:3px;text-transform:lowercase;color:#b8965a;line-height:1">epoxy floors</div>
+</div>
+</div>
+<div>
+<div style="line-height:1.55">
+<div class="tag" style="color:#b8965a">что такое эпоксидный пол</div>
+<h1 style="color:#efece7;margin:6px 0 14px;font-size:clamp(24px,3.4vw,32px);line-height:1.2;font-weight:600">Эпоксидный пол — промышленная прочность для <b style="color:#efece7">гаражей, складов, производств</b></h1>
+<p>Эпоксидный пол — бесшовное монолитное полимерное покрытие на основе двухкомпонентной эпоксидной смолы и отвердителя. При смешивании компонентов запускается химическая реакция: смесь самовыравнивается по основанию и застывает в твёрдую прочную поверхность без швов и стыков.</p>
+<p>Прочность на сжатие до 118 МПа — сопоставимо с высокомарочным бетоном. Покрытие устойчиво к ГСМ, кислотам, щелочам и бытовой химии, выдерживает погрузчики и стеллажные нагрузки, служит 20–30 лет. Толщина покрытия — до 3 мм в зависимости от задачи.</p>
+<p>Подходит для промышленных цехов, складов, гаражей, паркингов, магазинов, ресторанов, пищевых производств и квартир. Цвет — любой из 2100+ оттенков по RAL, с чипсами, флоками или металликом.</p>
+<p>Romanov Decor Studio — официальный дилер Remmers в Беларуси. Монтируем эпоксидные наливные полы под ключ в Минске и регионах Беларуси: для <a href="/garage" style="color:#b8965a;border-bottom:1px solid rgba(184,150,90,.4)">гаражей</a>, <a href="/warehouse" style="color:#b8965a;border-bottom:1px solid rgba(184,150,90,.4)">складов</a>, <a href="/production" style="color:#b8965a;border-bottom:1px solid rgba(184,150,90,.4)">производств</a>, <a href="/food" style="color:#b8965a;border-bottom:1px solid rgba(184,150,90,.4)">пищевых цехов</a>. Работаем с немецкими материалами, контролируем каждый этап, фиксируем цену и сроки в договоре.</p>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:18px">
+<a href="javascript:void(0)" onclick="openCalc()" class="btn-g">Рассчитать стоимость →</a>
+<a href="/portfolio?filter=industrial" class="btn-o">Посмотреть работы</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ВИДЫ — 3 карточки full-width -->
+<section class="gray" style="padding:40px 20px 0">
+<div style="padding:0 0 20px;max-width:none"><div style="padding:0 clamp(20px,4vw,40px)"><div class="tag">виды покрытий</div><h2 style="margin-top:0;color:#efece7">Четыре <b>типа эпоксидных полов</b></h2><p style="color:#a09a92;max-width:720px">Под каждый объект и бюджет — своя система: от бюджетного тонкослойного покрытия до промышленного пола с кварцем.</p></div></div>
+</section>
+<section style="padding:0">
+<div class="tex-grid" style="grid-template-columns:repeat(4,1fr)">
+<div class="tex-card" data-slot="epoxy-thin" style="background:linear-gradient(135deg,#4a443c,#2a2420)"><div class="tex-meta"><h4>Тонкослойные</h4><p>0.5-1 мм. Офисы, коридоры. Бюджетный вариант.</p></div></div>
+<div class="tex-card" data-slot="epoxy-selfleveling" style="background:linear-gradient(135deg,#3a342c,#1c1812)"><div class="tex-meta"><h4>Наливные</h4><p>2–3 мм. Квартиры, рестораны, торговые залы.</p></div></div>
+<div class="tex-card" data-slot="epoxy-industrial" style="background:linear-gradient(135deg,#2a2620,#181410)"><div class="tex-meta"><h4>Промышленные</h4><p>До 3 мм с кварцем. Производства, склады, гаражи.</p></div></div>
+<div class="tex-card" data-slot="epoxy-decorative" style="background:linear-gradient(135deg,#3a3028,#201a14)"><div class="tex-meta"><h4>Декоративные</h4><p>Чипсы, флоки, металлик, 3D-рисунки.</p></div></div>
+</div>
+</section>
+
+<!-- ХАРАКТЕРИСТИКИ (иконки на графите) -->
+<section class="s gray"><div class="mx">
+<h2 style="color:#efece7;margin-top:0">Характеристики</h2>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0">
+<div style="display:flex;align-items:flex-start;gap:14px;padding:20px 16px;background:rgba(255,255,255,.04);border-radius:14px;border:1px solid rgba(255,255,255,.05)">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#b8965a" stroke-width="1.5" style="flex-shrink:0;margin-top:2px"><path d="M4 20h16M4 20V10M20 20V10M12 20V4M8 20V14M16 20V8"/></svg>
+<div><div style="font-size:14px;font-weight:600;color:#efece7;margin-bottom:3px">Толщина до 3 мм</div><div style="font-size:12px;color:#a09a92;font-weight:300">Зависит от нагрузки</div></div>
+</div>
+<div style="display:flex;align-items:flex-start;gap:14px;padding:20px 16px;background:rgba(255,255,255,.04);border-radius:14px;border:1px solid rgba(255,255,255,.05)">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#b8965a" stroke-width="1.5" style="flex-shrink:0;margin-top:2px"><path d="M6 18L18 6"/><path d="M8 6h10v10"/><circle cx="6" cy="18" r="2"/></svg>
+<div><div style="font-size:14px;font-weight:600;color:#efece7;margin-bottom:3px">Прочность 118 МПа</div><div style="font-size:12px;color:#a09a92;font-weight:300">Выдерживает погрузчики</div></div>
+</div>
+<div style="display:flex;align-items:flex-start;gap:14px;padding:20px 16px;background:rgba(255,255,255,.04);border-radius:14px;border:1px solid rgba(255,255,255,.05)">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#b8965a" stroke-width="1.5" style="flex-shrink:0;margin-top:2px"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+<div><div style="font-size:14px;font-weight:600;color:#efece7;margin-bottom:3px">Химстойкость</div><div style="font-size:12px;color:#a09a92;font-weight:300">ГСМ, кислоты, щёлочи</div></div>
+</div>
+<div style="display:flex;align-items:flex-start;gap:14px;padding:20px 16px;background:rgba(255,255,255,.04);border-radius:14px;border:1px solid rgba(255,255,255,.05)">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#b8965a" stroke-width="1.5" style="flex-shrink:0;margin-top:2px"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+<div><div style="font-size:14px;font-weight:600;color:#efece7;margin-bottom:3px">Срок службы 20-30 лет</div><div style="font-size:12px;color:#a09a92;font-weight:300">Зависит от интенсивности</div></div>
+</div>
+<div style="display:flex;align-items:flex-start;gap:14px;padding:20px 16px;background:rgba(255,255,255,.04);border-radius:14px;border:1px solid rgba(255,255,255,.05)">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#b8965a" stroke-width="1.5" style="flex-shrink:0;margin-top:2px"><path d="M12 2v4m0 12v4M2 12h4m12 0h4"/><path d="M12 8l-2-2m2 2l2-2m-2 10l-2 2m2-2l2 2M8 12l-2-2m2 2l-2 2m10-2l2-2m-2 2l2 2"/><circle cx="12" cy="12" r="3"/></svg>
+<div><div style="font-size:14px;font-weight:600;color:#efece7;margin-bottom:3px">Морозостойкость</div><div style="font-size:12px;color:#a09a92;font-weight:300">от -30 °C до +60 °C</div></div>
+</div>
+<div style="display:flex;align-items:flex-start;gap:14px;padding:20px 16px;background:rgba(255,255,255,.04);border-radius:14px;border:1px solid rgba(255,255,255,.05)">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#b8965a" stroke-width="1.5" style="flex-shrink:0;margin-top:2px"><circle cx="13.5" cy="6.5" r="2.5"/><path d="M3 20c0-4 4-7 8-7h1c4 0 8 3 8 7"/></svg>
+<div><div style="font-size:14px;font-weight:600;color:#efece7;margin-bottom:3px">2100+ цветов RAL</div><div style="font-size:12px;color:#a09a92;font-weight:300">Любой оттенок + декоры</div></div>
+</div>
+</div>
+</div></section>
+
+<!-- ЧТО ВЫБРАТЬ -->
+<section class="s white prod-full">
+<div class="prod-img-full" data-slot="epoxy-compare"></div>
+<div class="prod-text">
+<div class="inner" style="max-width:560px;line-height:1.55">
+<div class="tag">какой материал под вашу задачу</div>
+<h2 style="margin-top:0">Что выбрать: <b>эпоксид, полиуретан или микроцемент</b></h2>
+<div class="ln"></div>
+<p>У каждого материала — своя задача. В Romanov Decor Studio мы не продаём что-то одно — подбираем решение под ваш объект.</p>
+
+<h3 style="font-size:17px;font-weight:600;margin:18px 0 4px;color:#b8965a">Эпоксид</h3>
+<p style="margin:0 0 4px">Твёрдый, прочный, промышленный. Выдерживает высокие механические нагрузки и агрессивную химию. Для гаражей, складов, производств, лабораторий, пищевых цехов — там, где нужна максимальная прочность и стойкость к ГСМ.</p>
+
+<h3 style="font-size:17px;font-weight:600;margin:18px 0 4px;color:#b8965a">Полиуретан</h3>
+<p style="margin:0 0 4px">Упругий и эластичный. Не трескается при усадке здания, на тёплом полу, при вибрациях основания. Подходит для жилых комнат, детских, спортзалов, ресторанов, больниц. Гипоаллергенный.</p>
+
+<h3 style="font-size:17px;font-weight:600;margin:18px 0 4px;color:#b8965a">Микроцемент</h3>
+<p style="margin:0 0 4px">Декоративный. С эффектом живого бетона или камня. Наносится без демонтажа на плитку, стяжку, дерево. Для стен, полов, столешниц, ванных, мебели — там, где важен внешний вид и бесшовность.</p>
+
+<p style="margin-top:18px">Не уверены, что подойдёт именно вам? Опишите задачу — подберём систему под ключ. Минск и вся Беларусь.</p>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px">
+<a href="javascript:void(0)" onclick="openGM()" class="btn-g">Обсудить задачу →</a>
+<a href="javascript:void(0)" onclick="openCalc()" class="btn-o">Рассчитать стоимость →</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ЭТАПЫ РАБОТЫ -->
+<section class="s cream"><div class="mx" style="max-width:960px">
+<div class="tag">этапы работы</div>
+<h2 style="margin-top:0">Монтаж эпоксидного пола: <b>от 3 до 5 рабочих дней</b></h2>
+<p>Romanov Decor Studio выполняет монтаж эпоксидного наливного пола под ключ — от диагностики основания до финишного защитного слоя. Точный срок зависит от площади, состояния основания и типа системы.</p>
+<div class="layers-section">
+<div class="layers-img" data-slot="epoxy-layers"></div>
+<div class="layers-list">
+<div class="layer-card">
+<div class="layer-dot">1</div>
+<div>
+<h4>Подготовка основания · 1 день</h4>
+<div class="layer-line"></div>
+<p>Алмазная шлифовка, удаление цементного молочка, обеспыливание промышленным пылесосом, ремонт трещин эпоксидной шпатлёвкой. От качества этого этапа зависит адгезия и срок службы всего покрытия.</p>
+</div>
+</div>
+<div class="layer-card">
+<div class="layer-dot">2</div>
+<div>
+<h4>Грунтовка · эпоксидный праймер</h4>
+<div class="layer-line"></div>
+<p>Двухкомпонентный эпоксидный праймер заполняет поры бетона и укрепляет основание. При промышленных нагрузках добавляем кварцевую посыпку для надёжной адгезии с базовым слоем.</p>
+</div>
+</div>
+<div class="layer-card">
+<div class="layer-dot">3</div>
+<div>
+<h4>Базовый и финишный слой · до 3 мм</h4>
+<div class="layer-line"></div>
+<p>Заливаем двухкомпонентную эпоксидную смесь на немецких компонентах, распределяем ракелью, прокатываем игольчатым валиком. По желанию — декоративные чипсы, флоки, металлик. Финишный лак — матовый или глянцевый, с УФ-защитой по запросу.</p>
+</div>
+</div>
+</div>
+</div>
+<p style="margin-top:24px">Хождение через 24 часа, полная нагрузка через 7 дней. Гарантия 5 лет на материал и работу — в Минске и регионах Беларуси.</p>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px">
+<a href="javascript:void(0)" onclick="openCalc()" class="btn-g">Рассчитать стоимость →</a>
+<a href="javascript:void(0)" onclick="openGM()" class="btn-o">Обсудить проект →</a>
+</div>
+</div></section>
+
+<!-- ЭПОКСИД В ГАРАЖЕ (full-bleed фото + текст) -->
+<section class="s white prod-full">
+<div class="prod-img-full" data-slot="epoxy-garage"></div>
+<div class="prod-text">
+<div class="inner" style="line-height:1.55">
+<div class="tag">популярное решение</div>
+<h2 style="margin-top:0">Эпоксидный пол <b>в гараже</b></h2>
+<div class="ln"></div>
+<p>Четыре главные задачи, которые решает эпоксид в гараже и паркинге — и ради которых его обычно выбирают.</p>
+<p><strong>Пыль.</strong> Бетон пылит всегда — даже свежая стяжка даёт мелкую цементную пыль на шины, инструменты и одежду. Эпоксид запечатывает поверхность и полностью устраняет пыление.</p>
+<p><strong>ГСМ.</strong> Масло, антифриз, бензин, тормозная жидкость — не проникают и не разрушают эпоксид. Пятна моются обычной водой с нейтральным средством.</p>
+<p><strong>Колёса.</strong> Горячие шины не оставляют следов, а тяжёлая машина не вдавливает и не царапает покрытие — прочность до 118 МПа.</p>
+<p><strong>Мороз.</strong> Выдерживает от −30 °C до +60 °C. Циклы заморозки и оттайки не приводят к растрескиванию и отслоению.</p>
+</div>
+</div>
+</section>
+
+<!-- ПРИМЕНЕНИЕ (теги) -->
+<section class="s white"><div class="mx">
+<h2>Где <b>применяется эпоксидный пол</b></h2>
+<p>Эпоксидное покрытие выбирают там, где нужна прочность, химстойкость и бесшовность: промышленные и коммерческие объекты, гаражи, жилые интерьеры.</p>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin:16px 0">
+<span style="padding:8px 16px;background:#f7f5f0;border-radius:50px;font-size:13px;font-weight:500;border:1px solid rgba(0,0,0,.04)">производства</span>
+<span style="padding:8px 16px;background:#f7f5f0;border-radius:50px;font-size:13px;font-weight:500;border:1px solid rgba(0,0,0,.04)">склады</span>
+<span style="padding:8px 16px;background:#f7f5f0;border-radius:50px;font-size:13px;font-weight:500;border:1px solid rgba(0,0,0,.04)">гаражи</span>
+<span style="padding:8px 16px;background:#f7f5f0;border-radius:50px;font-size:13px;font-weight:500;border:1px solid rgba(0,0,0,.04)">паркинги</span>
+<span style="padding:8px 16px;background:#f7f5f0;border-radius:50px;font-size:13px;font-weight:500;border:1px solid rgba(0,0,0,.04)">рестораны</span>
+<span style="padding:8px 16px;background:#f7f5f0;border-radius:50px;font-size:13px;font-weight:500;border:1px solid rgba(0,0,0,.04)">магазины</span>
+<span style="padding:8px 16px;background:#f7f5f0;border-radius:50px;font-size:13px;font-weight:500;border:1px solid rgba(0,0,0,.04)">офисы</span>
+<span style="padding:8px 16px;background:#f7f5f0;border-radius:50px;font-size:13px;font-weight:500;border:1px solid rgba(0,0,0,.04)">пищевые цеха</span>
+<span style="padding:8px 16px;background:#f7f5f0;border-radius:50px;font-size:13px;font-weight:500;border:1px solid rgba(0,0,0,.04)">автосервисы</span>
+<span style="padding:8px 16px;background:#f7f5f0;border-radius:50px;font-size:13px;font-weight:500;border:1px solid rgba(0,0,0,.04)">лаборатории</span>
+<span style="padding:8px 16px;background:#f7f5f0;border-radius:50px;font-size:13px;font-weight:500;border:1px solid rgba(0,0,0,.04)">квартиры</span>
+</div>
+</div></section>
+
+<!-- ПРОЧНОСТЬ И ЭКСПЛУАТАЦИЯ -->
+<section class="s cream"><div class="mx">
+<div class="tag">прочность и эксплуатация</div>
+<h2 style="margin-top:6px">Для серьёзных <b>нагрузок</b></h2>
+<p style="max-width:560px;color:#555">Промышленные характеристики и эксплуатация в коммерции — тезисно.</p>
+<div class="life-grid">
+
+<div class="life-item">
+<svg class="ph" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="14"><path d="M40,114V56a8,8,0,0,1,8-8H208a8,8,0,0,1,8,8v58c0,84-72,112-88,112S40,198,40,114Z"/></svg>
+<div>
+<div class="li-t">Прочность</div>
+<div class="li-d">До 118 МПа на сжатие. Выдерживает любые ударные нагрузки.</div>
+</div>
+</div>
+
+<div class="life-item">
+<svg class="ph" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="14"><path d="M128,16s-72,80-72,124a72,72,0,0,0,144,0C200,96,128,16,128,16Z"/></svg>
+<div>
+<div class="li-t">Химстойкость</div>
+<div class="li-d">ГСМ, масла, бензин, кислоты и щелочи — без следов и реакции.</div>
+</div>
+</div>
+
+<div class="life-item">
+<svg class="ph" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="14"><circle cx="64" cy="184" r="24"/><circle cx="184" cy="184" r="24"/><path d="M40,184H88M160,184H208M40,184L80,80h88l32,80"/></svg>
+<div>
+<div class="li-t">Нагрузки</div>
+<div class="li-d">Погрузчики, грузовая техника, шины — без вмятин и сколов.</div>
+</div>
+</div>
+
+<div class="life-item">
+<svg class="ph" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="14"><path d="M128,32V224M40,80L216,176M40,176,216,80"/></svg>
+<div>
+<div class="li-t">Температура</div>
+<div class="li-d">Диапазон −30 °C … +60 °C. Работает в неотапливаемых помещениях.</div>
+</div>
+</div>
+
+<div class="life-item">
+<svg class="ph" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="14"><path d="M120,40,138,86l46,18-46,18-18,46-18-46L56,122l46-18Z"/></svg>
+<div>
+<div class="li-t">Шероховатость</div>
+<div class="li-d">Кварцевая посыпка — противоскользящий эффект для гаражей и паркингов.</div>
+</div>
+</div>
+
+<div class="life-item">
+<svg class="ph" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="14"><circle cx="128" cy="128" r="96"/><path d="M128,72v56l40,24"/></svg>
+<div>
+<div class="li-t">HACCP</div>
+<div class="li-d">Гигиеничный, бесшовный. Соответствует требованиям пищевых производств и лабораторий.</div>
+</div>
+</div>
+
+</div>
+</div></section>
+
+<!-- FAQ -->
+<section class="s cream"><div class="mx">
+<h2>Частые <b>вопросы</b> об эпоксидных полах</h2>
+<div class="fi"><div class="fq"><h4>Что такое эпоксидный пол простыми словами?</h4><i>+</i></div><div class="fa">Двухкомпонентное полимерное покрытие: смешиваем эпоксидную смолу с отвердителем и заливаем на подготовленный бетон. Смесь самовыравнивается и за несколько часов застывает в бесшовный монолитный слой — твёрдый, химстойкий, любого цвета.</div></div>
+<div class="fi"><div class="fq"><h4>Подходит ли эпоксидный пол для гаража?</h4><i>+</i></div><div class="fa">Да, это одно из самых востребованных решений. Эпоксид не пылит, устойчив к маслу, бензину, антифризу, горячим шинам и морозам до −30 °C. Легко моется, служит 20–30 лет при правильном монтаже.</div></div>
+<div class="fi"><div class="fq"><h4>Эпоксидный или полиуретановый пол — что лучше?</h4><i>+</i></div><div class="fa">Зависит от задачи. Эпоксид твёрже и дешевле — для промышленности, гаражей, складов. Полиуретан эластичнее, не трескается при вибрациях и тёплом поле — для жилых, детских, спортзалов. Для универсальных коммерческих объектов комбинируем оба материала.</div></div>
+<div class="fi"><div class="fq"><h4>Будет ли эпоксидный пол желтеть на солнце?</h4><i>+</i></div><div class="fa">Чистый эпоксид под прямыми УФ-лучами может пожелтеть за 2–3 года. Для помещений с окнами мы закрываем покрытие финишным полиуретановым лаком с УФ-фильтром — цвет остаётся стабильным. Для гаражей и промышленных цехов без окон проблема не актуальна.</div></div>
+<div class="fi"><div class="fq"><h4>Эпоксидный пол скользкий?</h4><i>+</i></div><div class="fa">Стандартное гладкое покрытие — да, особенно во влажном состоянии. Для мокрых зон, гаражей, пищевых цехов и производств добавляем противоскользящие частицы класса R10–R12 согласно DIN 51130.</div></div>
+<div class="fi"><div class="fq"><h4>Сколько стоит эпоксидный наливной пол?</h4><i>+</i></div><div class="fa">От $40 за м² в зависимости от типа системы, толщины и площади объекта. Тонкослойные — от $40/м², наливные 2–3 мм — от $55/м², промышленные с кварцем — от $70/м². Точную цену фиксируем в договоре после бесплатного замера.</div></div>
+<div class="fi"><div class="fq"><h4>Сколько дней занимает монтаж?</h4><i>+</i></div><div class="fa">3–5 рабочих дней на стандартном объекте. Хождение разрешено через 24 часа, полную эксплуатационную нагрузку покрытие набирает за 7 дней. На больших промышленных площадях работаем в несколько смен, чтобы не останавливать производство надолго.</div></div>
+<div class="fi"><div class="fq"><h4>Какая гарантия на эпоксидный пол?</h4><i>+</i></div><div class="fa">5 лет на материалы и работу — условия зафиксированы в договоре. Фактический срок службы — 20–30 лет при соблюдении режима эксплуатации.</div></div>
+<div class="fi"><div class="fq"><h4>На какую поверхность можно заливать эпоксид?</h4><i>+</i></div><div class="fa">Чаще всего — на бетон марки М250 и выше или цементно-песчаную стяжку. При необходимости работаем по старому бетонному полу после диагностики и шлифовки, по металлическим основаниям в цехах. Влажность основания — не выше 4% по CM-методу.</div></div>
+<div class="fi"><div class="fq"><h4>Можно ли сделать эпоксидный пол в квартире?</h4><i>+</i></div><div class="fa">Да, всё чаще заказывают в квартирах-студиях, лофтах, коммерческих апартаментах. Для жилых помещений предлагаем декоративные системы с чипсами, флоками или эффектом металлик, с матовым финишем. Для детских и спален обычно рекомендуем полиуретан — он эластичнее и теплее тактильно.</div></div>
+</div></section>
+
+<!-- CTA -->
+<section class="s white"><div class="mx">
+<div class="cta"><h3>Нужен эпоксидный пол в Минске?</h3><p>Бесплатный замер, расчёт сметы в день визита, гарантия 5 лет. Работаем по Минску и всей Беларуси.</p><div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center"><a href="javascript:void(0)" onclick="openCalc()" class="btn-g">рассчитать стоимость</a><a href="javascript:void(0)" onclick="openGM()" class="btn-o" style="color:#b8965a">обсудить проект</a></div></div>
+</div></section>
+
+<!-- FOOTER -->
+<footer class="ft">
+<div class="ft-grid">
+<div class="ft-col"><div class="ft-logo">romanov <span>decor</span> studio</div><div style="font-size:11px;color:rgba(255,255,255,.4);letter-spacing:1.5px;margin-top:6px">Поверхности, которые создают пространство</div><p class="ft-desc">Собственное производство микроцемента на немецких компонентах. Официальные дилеры Remmers — монтаж полиуретановых и эпоксидных полов под ключ.</p></div>
+<div class="ft-col"><h4>материалы</h4><a href="/microcement">микроцемент</a><a href="/epoxy">эпоксидные полы</a><a href="/polyurethane">полиуретановые полы</a><a href="/calculator">калькулятор</a></div>
+<div class="ft-col"><h4>применение</h4><a href="/garage">гараж</a><a href="/warehouse">склад</a><a href="/production">производство</a><a href="/food">пищевой цех</a><a href="/office">офис</a><a href="/restaurant">ресторан</a></div>
+<div class="ft-col" id="ftContacts"><h4>контакты</h4><a href="tel:+375XXXXXXXX">+375 (XX) XXX-XX-XX</a><a href="/cdn-cgi/l/email-protection#d7beb9b1b897a5b8bab6b9b8a1b3b2b4b8a5f9b5ae">info&#64;romanovdecor.by</a><p>г. Минск, Беларусь</p></div>
+</div>
+<div class="ft-bottom"><div class="ft-copy">© 2026 romanov decor studio</div><div style="display:flex;gap:12px"><a href="/portfolio" style="font-size:11px;color:#666;letter-spacing:2px">портфолио</a><a href="/about" style="font-size:11px;color:#666;letter-spacing:2px">о студии</a><a href="/blog" style="font-size:11px;color:#666;letter-spacing:2px">блог</a><a href="/price" style="font-size:11px;color:#666;letter-spacing:2px">цены</a></div></div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+function toggleDrawer(){var d=document.getElementById('drawer');var o=document.getElementById('overlay');if(d.classList.contains('show')){d.classList.remove('show');o.classList.remove('show')}else{d.classList.add('show');o.classList.add('show')}}
+function closeDrawer(){document.getElementById('drawer').classList.remove('show');document.getElementById('overlay').classList.remove('show')}
+var f=document.querySelectorAll('.fi');for(var i=0;i<f.length;i++){f[i].addEventListener('click',function(){if(this.classList.contains('open')){this.classList.remove('open')}else{this.classList.add('open')}})}
+// Slots
+(async function(){try{var r=await fetch('/api/slots');if(!r.ok)return;var j=await r.json();var map=j&&j.slots||{};Object.keys(map).forEach(function(key){if(/__pos$|__x$|__y$|__zoom$/.test(key))return;var el=document.querySelector('[data-slot="'+key+'"]');if(!el||!map[key])return;var url='/api/image/'+map[key];var x=Number(map[key+'__x']);var y=Number(map[key+'__y']);var zoom=Number(map[key+'__zoom'])||100;if(isNaN(x))x=50;if(isNaN(y)){var legacy=map[key+'__pos'];y=legacy==='top'?0:legacy==='bottom'?100:50}el.style.backgroundImage='url("'+url+'")';el.style.backgroundRepeat='no-repeat';el.style.backgroundPosition=x+'% '+y+'%';el.style.backgroundSize=zoom === 100 ? 'cover' : (zoom+'%')})}catch(e){}})();
+// Contacts
+(async function(){try{var r=await fetch('/api/contacts');if(!r.ok)return;var j=await r.json();var c=j&&j.contacts||{};if(c.phone)document.querySelectorAll('a[href^="tel:"]').forEach(function(a){a.href='tel:'+c.phone.replace(/[\s()-]/g,'');a.textContent=c.phone});if(c.email)document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){a.href='mailto:'+c.email;a.textContent=c.email});if(c.telegram)document.querySelectorAll('a[href^="https://t.me"]').forEach(function(a){a.href=c.telegram});if(c.viber)document.querySelectorAll('a[href^="viber:"]').forEach(function(a){a.href='viber://chat?number='+c.viber.replace(/[^+\d]/g,'')});var fc=document.getElementById('ftContacts');if(fc){var esc=function(s){return String(s||'').replace(/[&<>"']/g,function(m){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]})};var h='<h4>контакты</h4>';if(c.phone)h+='<a href="tel:'+esc(c.phone).replace(/[\s()-]/g,'')+'">'+esc(c.phone)+'</a>';if(c.email)h+='<a href="mailto:'+esc(c.email)+'">'+esc(c.email)+'</a>';if(c.address)h+='<p>'+esc(c.address)+'</p>';if(c.hours)h+='<p>'+esc(c.hours)+'</p>';fc.innerHTML=h}}catch(e){}})();
+</script>
+<div class="sticky-cta"><div class="sticky-pop" id="stickyPop"><a href="https://t.me/" style="background:#2AABEE">telegram</a><a href="viber://chat?number=" style="background:#7360F2">viber</a></div><button class="sticky-btn" onclick="document.getElementById('stickyPop').classList.toggle('show')" aria-label="Связаться"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.2L4 17.2V4h16v12z"/></svg></button></div>
+<!-- CONTACT + CALC MODALS (gm) -->
+<style>
+.gm{position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:700;display:none;align-items:flex-start;justify-content:center;padding:20px;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.gm.show{display:flex}
+.gm-body{background:#1e1e1e;border:1px solid rgba(255,255,255,.08);border-radius:20px;max-width:460px;width:100%;padding:36px;position:relative;margin:auto;color:#efece7}
+.gm-close{position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.08);border:none;color:#efece7;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:3}
+.gm-close:hover{background:rgba(255,255,255,.15)}
+.gm h3{font-family:'Geologica',sans-serif;font-size:22px;color:#efece7;margin:0 0 6px;font-weight:600;letter-spacing:2px;text-transform:lowercase}
+.gm h3 b{color:#b8965a;font-weight:500}
+.gm .gm-hint{font-size:13px;color:#a09a92;margin-bottom:18px;font-weight:300;letter-spacing:2px}
+.gm-form{display:flex;flex-direction:column;gap:10px}
+.gm-form input,.gm-form textarea{padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:#2c2c2c;color:#efece7;font-family:'Geologica',sans-serif;font-size:14px;outline:none;letter-spacing:1px}
+.gm-form input:focus,.gm-form textarea:focus{border-color:#b8965a}
+.gm-form textarea{resize:vertical;min-height:70px}
+.gm-form button{padding:14px;background:#b8965a;color:#1a1a1a;border:none;border-radius:12px;font-family:'Geologica',sans-serif;font-size:13px;font-weight:600;letter-spacing:2px;cursor:pointer;text-transform:uppercase;margin-top:6px}
+.gm-form button:hover{background:#d4b883}
+.gm-msg{display:flex;gap:8px;margin-top:14px}
+.gm-msg a{flex:1;padding:12px;border-radius:12px;color:#fff;font-size:12px;font-weight:600;text-align:center;letter-spacing:2px;text-transform:lowercase}
+.gm-calc{max-width:760px;padding:0;overflow:hidden;background:#1e1e1e;border:none}
+.gm-calc iframe{display:block;width:100%;height:min(92vh,820px);border:0;border-radius:20px;background:#1e1e1e}
+@media(max-width:600px){.gm-body{padding:28px 20px}.gm-calc iframe{height:90vh}}
+
+/* Global text justify */
+body section p:not(.tag):not(.bc):not(.fa):not([class*="hero-"]):not(.cell-meta):not(.fcopy){text-align:justify;hyphens:none;-webkit-hyphens:none}
+
+/* Headings: убрать color-split — b наследует цвет заголовка */
+h1 b,h2 b,h3 b,h4 b,.ttl b,.hero h1 b,.hero-headline b,.hero-content h1 b{color:inherit!important;font-weight:600}
+
+/* Mobile compact buttons (.btn-sm + auto-fit для парных hero-кнопок) */
+@media(max-width:600px){
+  .btn-g.btn-sm,.btn-o.btn-sm{padding:10px 14px;font-size:11px;letter-spacing:1.2px;white-space:nowrap;flex:1;text-align:center}
+  .hero-btns,.hero-text .btns,div[style*="display:flex"][style*="gap:8px"][style*="flex-wrap:wrap"]{flex-wrap:nowrap!important}
+  .hero-btns .btn,.hero-text .btn-g,.hero-text .btn-o{padding:10px 14px;font-size:11px;letter-spacing:1.2px;white-space:nowrap;flex:1;text-align:center}
+}
+
+/* READ MORE — collapsible на мобиле */
+@media(max-width:600px){
+  .rm-wrap{display:block;width:100%;flex:1 1 100%;min-width:0}
+  .rm-block{position:relative;max-height:240px;overflow:hidden;transition:max-height .55s cubic-bezier(.34,1.2,.64,1)}
+  .rm-block.rm-expanded{max-height:8000px}
+  .rm-block::after{content:"";position:absolute;bottom:0;left:0;right:0;height:60px;background:linear-gradient(transparent,var(--rm-bg,#fff));pointer-events:none;transition:opacity .3s}
+  .rm-block.rm-expanded::after{opacity:0}
+  .rm-btn{position:relative;display:flex;align-items:center;justify-content:center;gap:8px;margin:16px 0 4px;padding:14px 22px;background:transparent;border:none;border-radius:50px;color:#b8965a;font-family:'Geologica',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:lowercase;cursor:pointer;-webkit-tap-highlight-color:transparent;box-sizing:border-box;outline:none;width:100%;overflow:hidden;text-align:center;transition:background-color .25s ease,color .25s ease}
+  .rm-svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;display:block;overflow:hidden}
+  .rm-svg path{fill:none;stroke:#b8965a;stroke-width:1.5;stroke-linejoin:round;stroke-linecap:round;transition:stroke-dashoffset 3.5s cubic-bezier(.4,0,.2,1)}
+  .rm-btn span,.rm-btn::after{position:relative;z-index:1}
+  .rm-btn::after{content:"↓";font-weight:400;font-size:12px;transition:transform .3s}
+  .rm-btn.exp::after{transform:rotate(180deg)}
+  .rm-btn:hover{background-color:rgba(184,150,90,.06);color:#d4b883}
+}
+</style>
+
+<div class="gm" id="gmContact" onclick="if(event.target===this)gmClose('Contact')">
+<div class="gm-body">
+<button class="gm-close" onclick="gmClose('Contact')" aria-label="Закрыть">✕</button>
+<h3>обсудить <b>проект</b></h3>
+<p class="gm-hint">Перезвоним в течение 30 минут в рабочее время.</p>
+<form class="gm-form" onsubmit="gmSubmit(event)">
+<input type="text" placeholder="имя" required>
+<input type="tel" placeholder="телефон" required>
+<textarea placeholder="кратко опишите задачу"></textarea>
+<button type="submit">отправить</button>
+</form>
+<div class="gm-msg">
+<a href="https://t.me/" style="background:#2AABEE">telegram</a>
+<a href="viber://chat?number=" style="background:#7360F2">viber</a>
+</div>
+</div>
+</div>
+
+<div class="gm" id="gmCalc" onclick="if(event.target===this)gmClose('Calc')">
+<div class="gm-body gm-calc">
+<button class="gm-close" onclick="gmClose('Calc')" aria-label="Закрыть">✕</button>
+<iframe id="gmCalcFrame" src="about:blank" loading="lazy" title="Калькулятор стоимости"></iframe>
+</div>
+</div>
+
+<script>
+function gmOpen(id){var m=document.getElementById('gm'+id);if(!m)return;if(id==='Calc'){var fr=document.getElementById('gmCalcFrame');if(fr&&(!fr.src||fr.src==='about:blank'))fr.src='/calculator'}m.classList.add('show');document.body.style.overflow='hidden'}
+function gmClose(id){var m=document.getElementById('gm'+id);if(m){m.classList.remove('show');document.body.style.overflow=''}}
+async function gmSubmit(e){e.preventDefault();var f=e.target;var btn=f.querySelector('button[type=submit]');var inputs=f.querySelectorAll('input,textarea');var data={name:inputs[0]&&inputs[0].value||'',phone:inputs[1]&&inputs[1].value||'',message:inputs[2]&&inputs[2].value||'',source:location.pathname};if(btn)btn.disabled=true;try{var r=await fetch('/api/lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});var j=await r.json();if(j.ok){f.innerHTML='<div style="text-align:center;padding:16px"><p style="font-size:16px;color:#efece7;margin-bottom:6px;letter-spacing:2px">спасибо!</p><p style="font-size:12px;color:#a09a92;letter-spacing:2px">перезвоним в течение 30 минут</p></div>';setTimeout(function(){gmClose('Contact')},2500)}else{alert('Ошибка: '+(j.error||'попробуйте ещё раз'));if(btn)btn.disabled=false}}catch(err){alert('Ошибка сети: '+err.message);if(btn)btn.disabled=false}}
+function openGM(){gmOpen('Contact')}
+function openCalc(){gmOpen('Calc')}
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){gmClose('Contact');gmClose('Calc')}});
+</script>
+
+
+<script>
+// READ MORE — авто-collapse длинных СПЛОШНЫХ текстовых блоков на мобиле, кроме hero/steps/cards
+(function(){
+  if (window.innerWidth > 600) return;
+  var drawIO = ('IntersectionObserver' in window) ? new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) {
+        var btn = e.target;
+        var pth = btn.querySelector('.rm-svg path');
+        setTimeout(function(){
+          btn.classList.add('drawn');
+          if (pth) requestAnimationFrame(function(){
+            requestAnimationFrame(function(){ pth.style.strokeDashoffset = '0'; });
+          });
+        }, 700);
+        drawIO.unobserve(btn);
+      }
+    });
+  }, {threshold:.25}) : null;
+  function makeCollapsible(el) {
+    if (!el || el.dataset.rmDone) return;
+    if (el.closest('.hero, .hero-min, .hero-2col, .hero-text, .hero-content, [class*="hero-"]')) return;
+    if (el.querySelector('form,table,.cmp-wrap,.cmp-scroll,.char-grid,.apply-row,.tex-grid,.pf,.px-grid,.bn-wrap,.why-grid,.partners-grid,.ag,.ms-block,iframe,video,.proc-step,.step-card,.steps,.st,.pc,.sys-grid,.sys-card,.fi,.app-grid,.gen-grid,.grid2,.grid3,.pf-mini,.cta')) return;
+    if (el.scrollHeight < 320) return;
+    el.dataset.rmDone = '1';
+    var wrap = document.createElement('div');
+    wrap.className = 'rm-wrap';
+    el.parentNode.insertBefore(wrap, el);
+    wrap.appendChild(el);
+    el.classList.add('rm-block');
+    var target = wrap, bg = '';
+    while (target && target !== document.body) {
+      var c = getComputedStyle(target).backgroundColor;
+      if (c && c !== 'rgba(0, 0, 0, 0)' && c !== 'transparent') { bg = c; break; }
+      target = target.parentElement;
+    }
+    if (!bg) bg = getComputedStyle(document.body).backgroundColor || '#fff';
+    el.style.setProperty('--rm-bg', bg);
+    var btn = document.createElement('button');
+    btn.className = 'rm-btn';
+    btn.type = 'button';
+    btn.innerHTML = '<svg class="rm-svg"><path d=""/></svg><span>развернуть</span>';
+    wrap.appendChild(btn);
+    btn.addEventListener('click', function(){
+      var isExp = el.classList.toggle('rm-expanded');
+      btn.classList.toggle('exp', isExp);
+      btn.querySelector('span').textContent = isExp ? 'свернуть' : 'развернуть';
+    });
+    requestAnimationFrame(function(){
+      var w = btn.offsetWidth, h = btn.offsetHeight;
+      if (!w || !h) return;
+      var svg = btn.querySelector('.rm-svg');
+      var path = svg.querySelector('path');
+      path.style.transition = 'none';
+      svg.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
+      var r = h / 2;
+      var cx = w / 2;
+      var d = 'M ' + cx + ',0.75 H ' + (w - r) +
+              ' A ' + (r - 0.75) + ',' + (r - 0.75) + ' 0 0 1 ' + (w - 0.75) + ',' + r +
+              ' A ' + (r - 0.75) + ',' + (r - 0.75) + ' 0 0 1 ' + (w - r) + ',' + (h - 0.75) +
+              ' H ' + r +
+              ' A ' + (r - 0.75) + ',' + (r - 0.75) + ' 0 0 1 0.75,' + r +
+              ' A ' + (r - 0.75) + ',' + (r - 0.75) + ' 0 0 1 ' + r + ',0.75 H ' + cx + ' Z';
+      path.setAttribute('d', d);
+      var len = path.getTotalLength ? path.getTotalLength() : (w * 2 + h * Math.PI);
+      path.style.strokeDasharray = len + 'px';
+      path.style.strokeDashoffset = len + 'px';
+      void path.getBoundingClientRect();
+      path.style.transition = '';
+      if (drawIO) drawIO.observe(btn);
+      else setTimeout(function(){
+        btn.classList.add('drawn');
+        requestAnimationFrame(function(){ path.style.strokeDashoffset = '0'; });
+      }, 200);
+    });
+  }
+  var sels = '.manifesto-right, .prod-text .inner, section .mx, .hw-content';
+  document.querySelectorAll(sels).forEach(makeCollapsible);
+  document.querySelectorAll('section div, section article').forEach(function(el){
+    if (el.dataset.rmDone) return;
+    var blockChildren = Array.from(el.children).filter(function(c){
+      return ['P','UL','OL'].indexOf(c.tagName) !== -1;
+    });
+    if (blockChildren.length >= 3) makeCollapsible(el);
+  });
+})();
+
+(function(){var d=document.getElementById('drawer');if(!d||d.dataset.accInit)return;d.dataset.accInit='1';var labels=Array.from(d.querySelectorAll('.dr-lb,.dr-label'));labels.forEach(function(lbl){var n=lbl.nextElementSibling;if(!n||n.tagName!=='A')return;var ls=[],c=n;while(c&&c.tagName==='A'){ls.push(c);c=c.nextElementSibling}if(ls.length<3)return;var w=document.createElement('div');w.className='dr-sub';lbl.parentNode.insertBefore(w,ls[0]);ls.forEach(function(a){w.appendChild(a)});lbl.classList.add('dr-toggle');lbl.setAttribute('role','button');lbl.setAttribute('tabindex','0');lbl.setAttribute('aria-expanded','false');function t(){var o=lbl.classList.toggle('open');w.classList.toggle('open',o);lbl.setAttribute('aria-expanded',String(o))}lbl.addEventListener('click',t);lbl.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();t()}})})})();
+(function(){var d=document.getElementById('drawer');if(!d||d.dataset.closeBtnInit)return;d.dataset.closeBtnInit='1';var b=document.createElement('button');b.className='dr-close-btn';b.setAttribute('aria-label','Закрыть меню');b.setAttribute('type','button');b.innerHTML='<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><polyline points="12 5 19 12 12 19"/></svg>';b.addEventListener('click',function(){if(typeof closeDrawer==='function'){closeDrawer();return}d.classList.remove('show');var ov=document.getElementById('overlay');if(ov)ov.classList.remove('show')});d.insertBefore(b,d.firstChild)})();</script>
+</body></html>
