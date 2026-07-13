@@ -207,7 +207,7 @@ strong{font-weight:600}
 <div class="dr-div"></div>
 <div class="dr-lb">Контакты</div>
 <div class="dr-it"><h4>Телефон</h4><a href="tel:+375XXXXXXXX">+375 (XX) XXX-XX-XX</a></div>
-<div class="dr-it"><h4>Email</h4><a href="/cdn-cgi/l/email-protection#01686f676e41736e6c606f6e776564626e732f6378">info&#64;romanovdecor.by</a></div>
+<div class="dr-it"><h4>Email</h4><a href="mailto:info@romanovdecor.by">info&#64;romanovdecor.by</a></div>
 <div class="dr-btns"><a href="https://t.me/" style="background:#2AABEE">Telegram</a><a href="viber://chat?number=" style="background:#7360F2">Viber</a></div>
 </div>
 
@@ -352,12 +352,12 @@ strong{font-weight:600}
 <div class="ft-col"><div class="ft-logo">romanov <span>decor</span> studio</div><div style="font-size:11px;color:rgba(255,255,255,.4);letter-spacing:1.5px;margin-top:6px">Поверхности, которые создают пространство</div><p class="ft-desc">Собственное производство микроцемента на немецких компонентах. Официальные дилеры Remmers — монтаж полиуретановых и эпоксидных полов под ключ.</p></div>
 <div class="ft-col"><h4>материалы</h4><a href="/microcement">микроцемент</a><a href="/epoxy">эпоксидные полы</a><a href="/polyurethane">полиуретановые полы</a><a href="/calculator">калькулятор</a></div>
 <div class="ft-col"><h4>применение</h4><a href="/garage">гараж</a><a href="/warehouse">склад</a><a href="/production">производство</a><a href="/food">пищевой цех</a><a href="/office">офис</a><a href="/restaurant">ресторан</a></div>
-<div class="ft-col" id="ftContacts"><h4>контакты</h4><a href="tel:+375XXXXXXXX">+375 (XX) XXX-XX-XX</a><a href="/cdn-cgi/l/email-protection#7b12151d143b0914161a15140d1f1e181409551902">info&#64;romanovdecor.by</a><p>г. Минск, Беларусь</p></div>
+<div class="ft-col" id="ftContacts"><h4>контакты</h4><a href="tel:+375XXXXXXXX">+375 (XX) XXX-XX-XX</a><a href="mailto:info@romanovdecor.by">info&#64;romanovdecor.by</a><p>г. Минск, Беларусь</p></div>
 </div>
 <div class="ft-bottom"><div class="ft-copy">© 2026 romanov decor studio</div><div style="display:flex;gap:12px"><a href="/portfolio" style="font-size:11px;color:#666;letter-spacing:2px">портфолио</a><a href="/about" style="font-size:11px;color:#666;letter-spacing:2px">о студии</a><a href="/blog" style="font-size:11px;color:#666;letter-spacing:2px">блог</a><a href="/price" style="font-size:11px;color:#666;letter-spacing:2px">цены</a></div></div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 function toggleDrawer(){var d=document.getElementById('drawer');var o=document.getElementById('overlay');if(d.classList.contains('show')){d.classList.remove('show');o.classList.remove('show')}else{d.classList.add('show');o.classList.add('show')}}
 function closeDrawer(){document.getElementById('drawer').classList.remove('show');document.getElementById('overlay').classList.remove('show')}
 var f=document.querySelectorAll('.fi');for(var i=0;i<f.length;i++){f[i].addEventListener('click',function(){if(this.classList.contains('open')){this.classList.remove('open')}else{this.classList.add('open')}})}

@@ -177,7 +177,7 @@ footer{padding:20px;border-top:1px solid rgba(0,0,0,.06);display:flex;justify-co
 <div class="dr-div"></div>
 <div class="dr-lb">Контакты</div>
 <div class="dr-it"><h4>Телефон</h4><a href="tel:+375XXXXXXXX">+375 (XX) XXX-XX-XX</a></div>
-<div class="dr-it"><h4>Email</h4><a href="/cdn-cgi/l/email-protection#cea7a0a8a18ebca1a3afa0a1b8aaabada1bce0acb7">info&#64;romanovdecor.by</a></div>
+<div class="dr-it"><h4>Email</h4><a href="mailto:info@romanovdecor.by">info&#64;romanovdecor.by</a></div>
 <div class="dr-btns"><a href="https://t.me/" style="background:#2AABEE">Telegram</a><a href="viber://chat?number=" style="background:#7360F2">Viber</a></div>
 </div>
 
@@ -388,7 +388,7 @@ footer{padding:20px;border-top:1px solid rgba(0,0,0,.06);display:flex;justify-co
 <div class="ft-col" id="ftContacts">
 <h4>контакты</h4>
 <a href="tel:+375XXXXXXXX">+375 (XX) XXX-XX-XX</a>
-<a href="/cdn-cgi/l/email-protection#442d2a222b04362b29252a2b322021272b366a263d">info&#64;romanovdecor.by</a>
+<a href="mailto:info@romanovdecor.by">info&#64;romanovdecor.by</a>
 <p>г. Минск, Беларусь</p>
 </div>
 </div>
@@ -403,7 +403,7 @@ footer{padding:20px;border-top:1px solid rgba(0,0,0,.06);display:flex;justify-co
 </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 function toggleDrawer(){var d=document.getElementById('drawer');var o=document.getElementById('overlay');if(d.classList.contains('show')){d.classList.remove('show');o.classList.remove('show')}else{d.classList.add('show');o.classList.add('show')}}
 function closeDrawer(){document.getElementById('drawer').classList.remove('show');document.getElementById('overlay').classList.remove('show')}
 var f=document.querySelectorAll('.fi');for(var i=0;i<f.length;i++){f[i].addEventListener('click',function(){if(this.classList.contains('open')){this.classList.remove('open')}else{this.classList.add('open')}})}
